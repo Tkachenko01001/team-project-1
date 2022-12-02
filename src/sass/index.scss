@@ -1,12 +1,14 @@
 @import './common';
 
 @import './base/typography'; // fonts
-@import './utils/variables'; // colors/animations etc..
-
+@import './utils/variables';
+@import './components/conteiner'; // colors/animations etc..
+@import './components/visually-hidden';
+@import './components/about-kitchen';
 // @import './example';
 
 body {
-  font-family: 'Montserrat', 'Times New Roman', sans-serif;
+  font-family: 'Times New Roman', 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.02em;
