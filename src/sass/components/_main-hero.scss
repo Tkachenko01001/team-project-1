@@ -32,6 +32,22 @@
 
     font-family: 'Times New Roman';
     font-size: 32px;
-    text
+    text-transform: uppercase;
+    text-align: center;
+    color: $white-color;
+  }
+
+  &__address {
+    padding: 8px 3px 9px 23px;
+    width: 210px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+
+    text-decoration: underline;
+    color: $address-text-color;
+
+    border: 1px solid $accent-transparent-color;
   }
 }
