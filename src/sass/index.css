@@ -56,14 +56,18 @@
   font-display: swap;
 }
 /* Film P3 */
-@font-face {
-  font-family: "Film P3";
-  src: url("../fonts/FilmP3Bold.eot");
-  src: local("Film P3 Bold"), local("FilmP3Bold"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
+/* @font-face {
+  font-family: 'Film P3';
+  src: url('../fonts/FilmP3Bold.eot');
+  src: local('Film P3 Bold'), local('FilmP3Bold'),
+    url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff'),
+    url('../fonts/FilmP3Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: swap; 
 }
+*/
 body {
   font-family: "Montserrat", "Times New Roman", sans-serif;
   font-size: 16px;
