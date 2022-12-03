@@ -103,6 +103,82 @@
   }
 }
 
+.our-hotel {
+  background-color: rgb(255, 253, 238);
+  width: 414px;
+  height: 1191px;
+  position: relative;
+}
+.our-hotel__line-l {
+  margin-left: 140px;
+  margin-right: 134px;
+  width: 1191px;
+  height: 0px;
+  left: 140px;
+  top: 1191px;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+  transform: rotate(-90deg);
+}
+.our-hotel__line-r {
+  margin-right: 140px;
+  width: 1191px;
+  height: 0px;
+  left: 274px;
+  top: 1191px;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+  transform: rotate(-90deg);
+}
+.our-hotel__subtitle {
+  position: absolute;
+  width: 190px;
+  height: 23px;
+  left: 209px;
+  top: 18px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgb(180, 180, 180);
+}
+.our-hotel__logo-title {
+  position: absolute;
+  width: 127px;
+  height: 43px;
+  left: 272px;
+  top: 47px;
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43px;
+  /* identical to box height */
+  letter-spacing: 0.3em;
+  color: rgb(73, 72, 72);
+}
+.our-hotel__list {
+  list-style: none;
+}
+.our-hotel__item {
+  position: absolute;
+  width: 242px;
+  height: 76px;
+  left: 158px;
+  top: 106px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: rgb(95, 95, 95);
+}
+.our-hotel .our-hotel__item--active {
+  color: rgb(199, 144, 2);
+}
+
 body {
   font-family: "Montserrat", "Times New Roman", sans-serif;
   font-size: 16px;
