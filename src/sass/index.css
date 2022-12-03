@@ -109,6 +109,7 @@
   color: rgb(243, 198, 83);
   font-weight: inherit;
   line-height: inherit;
+  letter-spacing: 0.02em;
   background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 25px;
@@ -140,4 +141,12 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.header-main {
+  font-family: "Times new roman";
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */
