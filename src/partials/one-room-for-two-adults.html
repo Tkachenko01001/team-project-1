@@ -1,29 +1,97 @@
-<section class="container">
-  <p class="room__subtitle">Amet minim mollit non</p>
-  <h2 class="houtel__title">MIMIHO</h2>
+<section class="section double-room">
+  <div class="container double-room__section">
+    <p class="section-room__subtitle">Amet minim mollit non</p>
+    <h2 class="hotel__title">MIMIHO</h2>
+    <h3 class="hotel__title-three">ДВОМІСНИЙ НОМЕР</h3>
+    <p class="double-room__describe">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <div class="room-picture">
+      <picture>
+        <source
+          srcset="
+            ./images/tablet/hotel/tablet-hotel-pic-1@1x.jpg 1x,
+            ./images/tablet/hotel/tablet-hotel-pic-1@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/hotel/mobile-hotel-pic@1x.jpg 1x,
+            ./images/mobile/hotel/mobile-hotel-pic@2x.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/desktop/hotel/desktop-hotel-pic-1@1x.jpg"
+          alt="Номер готелю"
+          width="460"
+        />
+      </picture>
+    </div>
+  </div>
 
-  <h3 class="title_three">ДВОМІСНИЙ НОМЕР</h3>
-  <p class="about">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit. Exercitation veniam
-    consequat sunt nostrud amet.
-  </p>
-  <ul>
-    <li>
-      <img class="people-list__img" src="#" alt="Номер готеля" width="450" />
-    </li>
-    <li>
-      <img class="people-list__img" src="#" alt="Ванна кімната" width="450" />
-    </li>
+  <div class="room-pictures">
+    <ul class="room-pictures-list list">
+      <li class="room-pictures-list__item">
+        <picture>
+          <source
+            srcset="
+              ./images/tablet/hotel/tablet-hotel-carusel-pic-1@1x.jpg 1x,
+              ./images/tablet/hotel/tablet-hotel-carusel-pic-1@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/hotel/mobile-hotel-carusel-pic-2@1x.jpg 1x,
+              ./images/mobile/hotel/mobile-hotel-carusel-pic-2@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            class="double-room__img"
+            src="./images/desktop/hotel/desktop-hotel-carusel -1-pic-1@1x.jpg"
+            alt="Номер готелю"
+            width="255"
+          />
+        </picture>
+      </li>
+      <li class="room-pictures-list__item">
+        <picture>
+          <source
+            srcset="
+              ./images/tablet/hotel/tablet-hotel-carusel-pic-2@1x.jpg 1x,
+              ./images/tablet/hotel/tablet-hotel-carusel-pic-2@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg 1x,
+              ./images/mobile/hotel/mobile-hotel-carusel-pic-1@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            class="double-room__img"
+            src="./images/desktop/hotel/desktop-hotel-carusel -1-pic-2@1x.jpg"
+            alt="Ванна кімната"
+            width="255"
+          />
+        </picture>
+      </li>
+    </ul>
 
-    <li>
-      <img class="people-list__img" src="#" alt="Вид з вікна" width="450" />
-    </li>
-  </ul>
-  <div class="button-styli">
-    <button class="button" type="button" data-modal-open>Детальніше</button>
-    <button class="button" type="button" data-modal-open>
-      Переглянути ціни
-    </button>
+    <div class="buttons-container">
+      <button class="hotel-button" type="button" data-modal-open>
+        Детальніше
+      </button>
+      <button class="hotel-button" type="button" data-modal-open>
+        Переглянути ціни
+      </button>
+    </div>
   </div>
 </section>
