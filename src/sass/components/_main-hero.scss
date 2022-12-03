@@ -77,7 +77,6 @@
   &__subtitle {
     margin-bottom: 40px;
 
-    font-family: 'Montserrat';
     font-style: normal;
     font-size: 16px;
     font-weight: 600;
@@ -125,25 +124,26 @@
 .address {
   width: 210px;
   display: flex;
+  gap: 13px;
   align-items: center;
   justify-content: right;
+
+  position: absolute;
+  top: 64px;
+  right: 15px;
+
   border: 1px solid $accent-color;
   border-radius: 2px;
-  padding: 8px 6px 9px 3px;
+  padding: 8px 3px 9px 3px;
 
   @media screen and (max-width: 1023px) {
-    position: absolute;
-    top: 64px;
-    right: 15px;
-    padding: 8px 8px 8px 10px;
+    // position: absolute;
+    // top: 64px;
+    // right: 15px;
+    // padding: 8px 8px 8px 10px;
   }
 
   &__icon {
-    width: 20px;
-    height: 20px;
-    fill: $accent-color;
-    margin-left: 0;
-    margin-right: 8px;
     fill: $accent-color;
 
     @media screen and (min-width: 1024px) {
