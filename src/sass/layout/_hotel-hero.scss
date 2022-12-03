@@ -5,7 +5,7 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 100wh;
+    width: 100wh;
     height: auto;
     object-fit: cover;
     padding-top: 181px;
@@ -178,6 +178,7 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
 }
 
 .hero__butons {
+    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,11 +187,36 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
 
 .hero__button-room {
     margin-bottom: 24px;
-    //     @extend %button;
+    @extend .btn;
+    height: 48px;
+
+    & hover,
+    & focus {
+        background-color: $white-color;
+        border-color: $white-color;
+        color: $accent-color;
+
+    }
+
     //     padding: 8px 28px;
     //     min-width: 200px;
 
     //     @media screen and (min-width: 1200px) {
     //         min-width: 216px;
     //     }
+}
+
+.hero__button-price {
+    margin-bottom: 24px;
+    @extend .btn;
+    width: 236px;
+    height: 48px;
+
+    & hover,
+    & focus {
+        background-color: $white-color;
+        border-color: $white-color;
+        color: $accent-color;
+
+    }
 }
