@@ -1,12 +1,7 @@
 .main-hero {
-  position: relative;
   padding: 181px 0px 102px 0px;
   background-color: $footer-bgc;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
+  background-image: linear-gradient($gradient-color, $gradient-color),
     url(../images/mobile/homepage/mobile-homepage-hero@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,11 +12,6 @@
     screen and (min-resolution: 2dppx) and (max-width: 1023px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/mobile/homepage/mobile-homepage-hero@2x.jpg);
-  }
-
-  @media screen and (max-width: 1023px) {
-    background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/mobile/homepage/mobile-homepage-hero@1x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
@@ -113,10 +103,6 @@
       line-height: 1.14;
       margin-bottom: 137px;
     }
-
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 135px;
-    }
   }
   &__list {
     display: flex;
@@ -128,6 +114,10 @@
       gap: 40px;
       justify-content: flex-end;
       align-items: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+      gap: 60px;
     }
   }
   &__item {
@@ -155,6 +145,10 @@
     left: 47px;
     gap: 16px;
     padding: 8px 8px 8px 8px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 85px;
   }
 
   &__icon {
