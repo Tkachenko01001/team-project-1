@@ -1,13 +1,27 @@
 <main>
-  <section class="section hero">
+  <section class="section hotel-hero">
     <div class="container">
-      <div class="hotel-hero_address">
-        <p>Україна, м. Полтава,</p>
-        <p>вул. Маршала Бірюзова, 15</p>
-      </div>
-      <h1 class="hero__title">Mimino</h1>
-      <h2>Готель</h2>
-      <div>
+      <address>
+        <a
+          class="hotel-hero__address"
+          href="https://www.google.com.ua/maps/place/Marshala+Biryuzova+St,+15/@49.599194,34.5239714,17z/data=!4m6!3m5!1s0x40d82601f3347a5f:0x36f3f9aeec44a6a!4b1!8m2!3d49.599194!4d34.5265463?hl=en"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <div class="hotel-hero__where">
+            <svg width="20" height="20" class="hotel-hero__pin-icon">
+              <use href="./images/symbol-defs.svg#icon-location-pin"></use>
+            </svg>
+            <div>
+              <p class="hotel-hero__address-item">Україна, м. Полтава,</p>
+              <p class="hotel-hero__address-item">вул. Маршала Бірюзова, 15</p>
+            </div>
+          </div>
+        </a>
+      </address>
+      <h1 class="hero__title" lang="en">Mimiho</h1>
+      <h2 class="hero__subtitle">Готель</h2>
+      <div class="hero__butons">
         <button class="hero__button-room" type="button">
           Забронювати номер
         </button>
@@ -15,7 +29,7 @@
           Переглянути ціни
         </button>
       </div>
-      <div>
+      <div class="hero__net-box">
         <ul class="hero__net-list">
           <li>
             <a href="" class="hero__net-link">
