@@ -112,23 +112,17 @@
 .our-hotel__line-l {
   margin-left: 140px;
   margin-right: 134px;
-  width: 1191px;
-  height: 0px;
-  left: 140px;
-  top: 1191px;
+  width: 0;
+  height: 1191px;
   border: 1px solid rgba(186, 186, 186, 0.4);
   filter: blur(0.5px);
-  transform: rotate(-90deg);
 }
 .our-hotel__line-r {
   margin-right: 140px;
-  width: 1191px;
-  height: 0px;
-  left: 274px;
-  top: 1191px;
+  width: 0;
+  height: 1191px;
   border: 1px solid rgba(186, 186, 186, 0.4);
   filter: blur(0.5px);
-  transform: rotate(-90deg);
 }
 .our-hotel__subtitle {
   position: absolute;
@@ -177,6 +171,10 @@
 }
 .our-hotel .our-hotel__item--active {
   color: rgb(199, 144, 2);
+}
+
+.lines {
+  display: flex;
 }
 
 body {

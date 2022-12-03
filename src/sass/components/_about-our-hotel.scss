@@ -7,26 +7,22 @@
 &__line-l {
     margin-left: 140px;
     margin-right: 134px;
-    width: 1191px;
-    height: 0px;
-    left: 140px;
-    top: 1191px;
+    width: 0;
+    height: 1191px;
+   
 
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
-    transform: rotate(-90deg);
-    }
+        }
 
 &__line-r {
 margin-right: 140px;
-    width: 1191px;
-    height: 0px;
-    left: 274px;
-    top: 1191px;
+    width: 0;
+    height: 1191px;
+ 
     
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
-    transform: rotate(-90deg);
     }
 
 &__subtitle {
@@ -90,3 +86,6 @@ color: $primary-dark-text;
     }
 }
 
+.lines {
+    display: flex;
+}
