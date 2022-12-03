@@ -182,3 +182,9 @@
     margin-bottom: 0;
   }
 }
+
+
+.btn:hover,
+.btn:focus {
+  background-color: $white-color;
+}
