@@ -1,4 +1,5 @@
 .main-hero {
+  padding: 181px 0px 102px 0px;
   background-color: $footer-bgc;
   background-image: linear-gradient(
       to right,
@@ -10,61 +11,164 @@
   background-size: cover;
   background-position: center;
 
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+    screen and (min-resolution: 192dpi) and (max-width: 1023px),
+    screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/mobile/homepage/mobile-homepage-hero@2x.jpg);
+  }
+
+  @media screen and (max-width: 1023px) {
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/mobile/homepage/mobile-homepage-hero@1x.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+    screen and (min-resolution: 192dpi) and (min-width: 1024px),
+    screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/tablet/homepage/tablet-homepage-hero@2x.jpg);
+    padding: 188px 0px 64px 0px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/tablet/homepage/tablet-homepage-hero@1x.jpg);
+    padding: 188px 0px 64px 0px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
+    padding: 164px 0px 64px 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/desktop/homepage/desktop-homepage-hero@1x.jpg);
+    padding: 164px 0px 64px 0px;
+  }
+
   &__title {
     margin-bottom: 24px;
 
     font-family: 'Film P3';
-
     font-size: 96px;
-    // line-height: 100%;
+    line-height: 1.07;
     letter-spacing: 0.3em;
-    text-align: center;
+
     text-transform: uppercase;
+    text-align: center;
+
     color: $white-color;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 128px;
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1028px) {
+      margin-bottom: 32px;
+    }
   }
 
   &__subtitle {
     margin-bottom: 40px;
 
     font-family: 'Montserrat';
+    font-style: normal;
     font-size: 16px;
     font-weight: 600;
+
     text-align: center;
     color: $white-color;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 1.2;
+      color: $white-color;
+      margin-bottom: 56px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 64px;
+    }
   }
 
   &__text {
     margin-bottom: 113px;
 
     font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
     font-size: 32px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     text-align: center;
     color: $white-color;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 36px;
+      line-height: 1.14;
+      color: $white-color;
+      margin-bottom: 137px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 135px;
+    }
+  }
+}
+.address {
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  border: 1px solid $accent-color;
+  border-radius: 2px;
+  padding: 8px 6px 9px 3px;
+
+  @media screen and (max-width: 1023px) {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+    padding: 8px 8px 8px 10px;
   }
 
-  &__address {
-    display: block;
-    padding: 8px 3px 9px 23px;
-    width: 210px;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $accent-color;
+    margin-left: 0;
+    margin-right: 8px;
+    fill: $accent-color;
+
+    @media screen and (min-width: 1024px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__location {
     font-family: 'Montserrat';
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
+    letter-spacing: 0.01em;
 
     text-decoration: none;
     color: $address-text-color;
-
-    border: 1px solid $accent-transparent-color;
   }
-
-  &__button {
-    padding: 15px 24px;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.25;
-    color: $accent-color;
-    background-color: $btn-bgc;
-  }
+}
+.button {
+  padding: 15px 24px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $accent-color;
+  background-color: $btn-bgc;
 }
