@@ -125,7 +125,6 @@
   }
 }
 .address {
-  width: 210px;
   display: flex;
   gap: 13px;
   align-items: center;
@@ -137,14 +136,14 @@
 
   border: 1px solid $accent-color;
   border-radius: 2px;
-  padding: 8px 3px 9px 3px;
+  padding: 8px 5px 9px 11px;
 
   @media screen and (min-width: 1023px) {
     width: 285px;
     top: 600px;
     left: 47px;
-    gap: 16px;
-    padding: 8px 8px 8px 8px;
+    gap: 10px;
+    padding: 8px 8px 8px 10px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -152,6 +151,8 @@
   }
 
   &__icon {
+    width: 20px;
+    height: 20px;
     fill: $accent-color;
 
     @media screen and (min-width: 1024px) {
@@ -159,7 +160,6 @@
       height: 24px;
     }
   }
-
   &__location {
     font-size: 12px;
     font-style: normal;
@@ -182,7 +182,6 @@
     margin-bottom: 0;
   }
 }
-
 
 .btn:hover,
 .btn:focus {
