@@ -120,6 +120,10 @@
       margin-bottom: 135px;
     }
   }
+
+  &__item {
+    text-align: center;
+  }
 }
 .address {
   width: 210px;
@@ -153,7 +157,6 @@
   }
 
   &__location {
-    font-family: 'Montserrat';
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -165,10 +168,13 @@
 }
 .button {
   padding: 15px 24px;
-  font-family: 'Montserrat';
+  margin-bottom: 24px;
+
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
   color: $accent-color;
   background-color: $btn-bgc;
+  border: 2px solid $white-color;
+  border-radius: 25px;
 }
