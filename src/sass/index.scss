@@ -3,6 +3,9 @@
 @import './base/typography'; // fonts
 @import './utils/variables'; // colors/animations etc..
 
+@import './components/visually-hidden'; // Hidden blocks
+@import './components/container'; // Container
+@import './layout/about-our-restaurant';
 // @import './example';
 
 body {
