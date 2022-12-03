@@ -119,14 +119,18 @@
     }
   }
   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
     @media screen and (min-width: 1024px) {
-      display: flex;
+      flex-direction: row;
       gap: 40px;
       justify-content: flex-end;
+      align-items: center;
     }
   }
   &__item {
-    text-align: center;
     list-style: none;
   }
 }
@@ -176,16 +180,9 @@
     }
   }
 }
-.button {
-  padding: 15px 24px;
-  margin-bottom: 24px;
-
-  font-weight: 700;
-  line-height: 1.25;
-  color: $accent-color;
-  background-color: $btn-bgc;
-  border: 2px solid $white-color;
-  border-radius: 25px;
+.btn--mobile {
+  margin: 0 auto;
+  width: auto;
 
   @media screen and (min-width: 1024px) {
     margin-bottom: 0;
