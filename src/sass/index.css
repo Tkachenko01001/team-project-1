@@ -102,6 +102,20 @@
   }
 }
 
+.btn {
+  display: block;
+  width: 240px;
+  padding: 15px 24px;
+  color: rgb(243, 198, 83);
+  font-weight: inherit;
+  line-height: inherit;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
 body {
   font-family: "Montserrat", "Times New Roman", sans-serif;
   font-size: 16px;
