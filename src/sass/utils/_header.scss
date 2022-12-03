@@ -56,6 +56,7 @@
   }
   .nav__link-restaurant-phone {
     visibility: hidden;
+    display: none;
   }
 
   .nav__link-hotel {
@@ -71,9 +72,11 @@
 
   .nav__link-hotel-phone {
     visibility: hidden;
+    display: none;
   }
 
   .header__social-net {
     visibility: hidden;
+    display: none;
   }
 }
