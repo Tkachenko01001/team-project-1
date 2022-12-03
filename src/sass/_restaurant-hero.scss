@@ -78,14 +78,12 @@
         max-width: 404px;
     }
 
-    @media screen and (min-width: 1028px) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 32px;
     }
 }
 
 .restaurant-hero__subtitle {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.25;
@@ -129,7 +127,7 @@
     }
 }
 
-.button__list {
+.restaurant-button__list {
     list-style: none;
 
     @media screen and (min-width:1024px) {
@@ -137,7 +135,7 @@
     }
 }
 
-.button__item {
+.restaurant-button__item {
     margin-bottom: 24px;
 
     &:last-child {
@@ -162,21 +160,15 @@
     }
 }
 
-.button {
+.restaurant-button {
+    display: inline;
     width: 236px;
     height: 48px;
-    background: $btn-bgc;
-    border: 2px solid $white-color;
-    border-radius: 25px;
-    font-family: 'Montserrat';
-    font-style: normal;
+    padding: 0;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: $accent-color;
+    line-height: 1.25;
     transition: color 250ms $animation , background-color 250ms $animation ;
-    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -189,8 +181,18 @@
     }
 }
 
+.restaurant__link {
+    text-decoration: none;
+    color: $accent-color;
 
-.address {
+    &:hover,
+    &:focus {
+        color: $accent-transparent-color;
+
+    }
+}
+
+.restaurant-address {
     display: flex;
     align-items: center;
     justify-content: right;
@@ -206,7 +208,7 @@
     }
 }
 
-.address__link {
+.restaurant-address__link {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -216,11 +218,9 @@
     color: $address-text-color;
     text-decoration: none;
     text-align: left;
-
-
 }
 
-.address__icon {
+.restaurant-address__icon {
     width: 20px;
     height: 20px;
     fill: $accent-color;

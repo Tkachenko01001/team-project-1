@@ -6,6 +6,7 @@
 @import './components/visually-hidden'; // Hidden blocks
 @import './components/container'; // Container
 @import './components/btn'; // default button
+@import './restaurant-hero'; // Restaurant page hero
 
 // @import './example';
 
@@ -35,5 +36,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-@import './restaurant-hero'; // Restaurant page hero
