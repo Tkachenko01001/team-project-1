@@ -1,17 +1,79 @@
 @media screen and (min-width: 414px) and (max-width: 1023px) {
   .container-header {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
     background: #0e0c07;
+    display: flex;
+    flex-direction: row;
   }
-}
 
-@media screen and (min-width: 414px) and (max-width: 1023px) {
   .logo {
+    margin-top: 16px;
+    margin-bottom: 0;
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.08;
     letter-spacing: 0.3em;
-    color: black;
+    color: $white-color;
+    text-decoration: none;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .nav__list-restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .nav__item-restaurant {
+    margin-left: 52px;
+    margin-top: 28px;
+  }
+
+  .nav__link-restaurant {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  .icon-phone-restaurant {
+    fill: $accent-color;
+    width: 12px;
+    height: 20px;
+    visibility: visible;
+  }
+  .nav__link-restaurant-phone {
+    visibility: hidden;
+  }
+
+  .nav__link-hotel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  .nav__link-hotel-phone {
+    visibility: hidden;
+  }
+
+  .header__social-net {
+    visibility: hidden;
   }
 }
