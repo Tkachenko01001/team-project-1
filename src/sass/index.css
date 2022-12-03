@@ -73,8 +73,7 @@
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -99,7 +98,7 @@
   .container {
     width: 1280px;
     padding-left: 85px;
-    padding-left: 85px;
+    padding-right: 85px;
   }
 }
 
