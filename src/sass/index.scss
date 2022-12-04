@@ -2,6 +2,7 @@
 
 @import './base/typography'; // fonts
 @import './utils/variables'; // colors/animations etc..
+@import './utils/mixin'; // colors/animations etc..
 
 @import './components/visually-hidden'; // Hidden blocks
 @import './components/container'; // Container
@@ -17,6 +18,7 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.25;
 }
+
 
 h1,
 h2,
