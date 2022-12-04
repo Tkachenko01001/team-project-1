@@ -136,9 +136,11 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 33.81%;
   border: 1px solid rgba(122, 122, 122, 0.4);
   filter: blur(0.5px);
+}
+.about-our-restaurant__background-line--line1 {
+  left: 33.81%;
   @media screen and (min-width: 1024px) {
     left: 278px;
   }
