@@ -1,5 +1,6 @@
 .about-our-restaurant {
   background: $fon-lemon;
+  position: relative;
 }
 .about-our-restaurant .container {
   position: relative;
@@ -152,7 +153,6 @@
   }
 }
 .about-our-restaurant__background-line--line3 {
-  left: 0;
   right: 140px;
   @media screen and (min-width: 1024px) {
     right: 278px;
