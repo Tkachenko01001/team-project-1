@@ -1,0 +1,96 @@
+/* montserrat-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/montserrat-v25-latin_cyrillic-300.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-300.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-300.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-300.ttf') format('truetype');
+}
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v25-latin_cyrillic-regular.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.ttf') format('truetype');
+}
+
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v25-latin_cyrillic-500.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.ttf') format('truetype');
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v25-latin_cyrillic-600.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.ttf') format('truetype');
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v25-latin_cyrillic-700.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.ttf') format('truetype');
+}
+
+/* Times New Roman */
+@font-face {
+  font-family: 'Times New Roman';
+  src: url('../fonts/TimesNewRomanMTStd.eot');
+  src: local('Times New Roman MT Std Regular'), local('TimesNewRomanMTStd'),
+    url('../fonts/TimesNewRomanMTStd.woff2') format('woff2'),
+    url('../fonts/TimesNewRomanMTStd.woff') format('woff'),
+    url('../fonts/TimesNewRomanMTStd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Times New Roman';
+  src: url('../fonts/TimesNewRomanMTStd-Bold.eot');
+  src: local('../fonts/Times New Roman MT Std Bold'),
+    local('TimesNewRomanMTStd-Bold'),
+    url('../fonts/TimesNewRomanMTStd-Bold.woff2') format('woff2'),
+    url('../fonts/TimesNewRomanMTStd-Bold.woff') format('woff'),
+    url('../fonts/TimesNewRomanMTStd-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Film P3 */
+@font-face {
+  font-family: 'Film P3';
+  src: url('../fonts/FilmP3Bold.eot');
+  src: local('Film P3 Bold'), local('FilmP3Bold'),
+    url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff'),
+    url('../fonts/FilmP3Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; 
+}
