@@ -11,4 +11,6 @@
   border-radius: 25px;
   cursor: pointer;
   outline: none;
+
+  transition: background-color 250ms $animation;
 }
