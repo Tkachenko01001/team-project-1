@@ -103,16 +103,25 @@
             -moz-appearance: none;
             appearance: none;
             position: relative;
-    
-            &::after {
-                content: '';
-                width: 24px;
-                height: 24px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-color: black;
-            }
+        }
+    }
+
+    &__select-icon {
+        position: relative;
+    }
+
+    &__dropdown-icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        fill: $brown-color;
+        pointer-events: none;
+
+        @media (min-width: 1024px) {
+            top: 20px;
+            right: 20px;
         }
     }
 
