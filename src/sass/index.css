@@ -1,65 +1,90 @@
 @import '~node_modules/modern-normalize/modern-normalize.css'; /* montserrat-300 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/montserrat-v25-latin_cyrillic-300.eot");
-  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-300.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-300.ttf") format("truetype");
+  src: url('../fonts/montserrat-v25-latin_cyrillic-300.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-300.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-300.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-300.ttf') format('truetype');
 }
 /* montserrat-regular - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat-v25-latin_cyrillic-regular.eot");
-  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype");
+  src: url('../fonts/montserrat-v25-latin_cyrillic-regular.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.ttf') format('truetype');
 }
 /* montserrat-500 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/montserrat-v25-latin_cyrillic-500.eot");
-  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-500.ttf") format("truetype");
+  src: url('../fonts/montserrat-v25-latin_cyrillic-500.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.ttf') format('truetype');
 }
 /* montserrat-600 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/montserrat-v25-latin_cyrillic-600.eot");
-  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-600.ttf") format("truetype");
+  src: url('../fonts/montserrat-v25-latin_cyrillic-600.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.ttf') format('truetype');
 }
 /* montserrat-700 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserrat-v25-latin_cyrillic-700.eot");
-  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-700.ttf") format("truetype");
+  src: url('../fonts/montserrat-v25-latin_cyrillic-700.eot');
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.ttf') format('truetype');
 }
 /* Times New Roman */
 @font-face {
-  font-family: "Times New Roman";
-  src: url("../fonts/TimesNewRomanMTStd.eot");
-  src: local("Times New Roman MT Std Regular"), local("TimesNewRomanMTStd"), url("../fonts/TimesNewRomanMTStd.woff2") format("woff2"), url("../fonts/TimesNewRomanMTStd.woff") format("woff"), url("../fonts/TimesNewRomanMTStd.ttf") format("truetype");
+  font-family: 'Times New Roman';
+  src: url('../fonts/TimesNewRomanMTStd.eot');
+  src: local('Times New Roman MT Std Regular'), local('TimesNewRomanMTStd'),
+    url('../fonts/TimesNewRomanMTStd.woff2') format('woff2'),
+    url('../fonts/TimesNewRomanMTStd.woff') format('woff'),
+    url('../fonts/TimesNewRomanMTStd.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Times New Roman";
-  src: url("../fonts/TimesNewRomanMTStd-Bold.eot");
-  src: local("../fonts/Times New Roman MT Std Bold"), local("TimesNewRomanMTStd-Bold"), url("../fonts/TimesNewRomanMTStd-Bold.woff2") format("woff2"), url("../fonts/TimesNewRomanMTStd-Bold.woff") format("woff"), url("../fonts/TimesNewRomanMTStd-Bold.ttf") format("truetype");
+  font-family: 'Times New Roman';
+  src: url('../fonts/TimesNewRomanMTStd-Bold.eot');
+  src: local('../fonts/Times New Roman MT Std Bold'),
+    local('TimesNewRomanMTStd-Bold'),
+    url('../fonts/TimesNewRomanMTStd-Bold.woff2') format('woff2'),
+    url('../fonts/TimesNewRomanMTStd-Bold.woff') format('woff'),
+    url('../fonts/TimesNewRomanMTStd-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 /* Film P3 */
 @font-face {
-  font-family: "Film P3";
-  src: url("../fonts/FilmP3Bold.eot");
-  src: local("Film P3 Bold"), local("FilmP3Bold"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
+  font-family: 'Film P3';
+  src: url('../fonts/FilmP3Bold.eot');
+  src: local('Film P3 Bold'), local('FilmP3Bold'),
+    url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff'),
+    url('../fonts/FilmP3Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -84,7 +109,7 @@ li {
     text-transform: uppercase;
     margin-top: 16px;
     margin-bottom: 0;
-    font-family: "Film P3";
+    font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -102,7 +127,7 @@ li {
     padding-bottom: 16px;
   }
   .nav__link-restaurant {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -129,7 +154,7 @@ li {
     padding-bottom: 16px;
   }
   .nav__link-hotel {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -174,7 +199,7 @@ li {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 47px;
-    font-family: "Film P3";
+    font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -196,7 +221,7 @@ li {
     padding-bottom: 36px;
   }
   .nav__link-restaurant {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -217,7 +242,7 @@ li {
   .nav__link-restaurant-phone {
     padding-right: 8px;
     justify-content: end;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -242,7 +267,7 @@ li {
     padding-bottom: 36px;
   }
   .nav__link-hotel {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -253,7 +278,7 @@ li {
   }
   .nav__link-hotel-phone {
     text-decoration: none;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -279,7 +304,7 @@ li {
   .nav__list-phone2 {
     padding-right: 8px;
     justify-content: end;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -316,7 +341,7 @@ li {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 85px;
-    font-family: "Film P3";
+    font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -338,7 +363,7 @@ li {
     padding-bottom: 36px;
   }
   .nav__link-restaurant {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -359,7 +384,7 @@ li {
   .nav__link-restaurant-phone {
     padding-right: 8px;
     justify-content: end;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -384,7 +409,7 @@ li {
     padding-bottom: 36px;
   }
   .nav__link-hotel {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -395,7 +420,7 @@ li {
   }
   .nav__link-hotel-phone {
     text-decoration: none;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -418,7 +443,7 @@ li {
   .nav__list-phone2 {
     padding-right: 8px;
     justify-content: end;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -470,8 +495,61 @@ li {
     cursor: pointer;
   }
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+  .container {
+    width: 414px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+.btn {
+  display: block;
+  width: 240px;
+  padding: 15px 24px;
+  color: rgb(243, 198, 83);
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: 0.02em;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
 body {
-  font-family: "Montserrat", "Times New Roman", sans-serif;
+  font-family: 'Montserrat', 'Times New Roman', sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -494,4 +572,4 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
