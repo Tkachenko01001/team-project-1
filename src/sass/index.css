@@ -1,90 +1,65 @@
 @import '~node_modules/modern-normalize/modern-normalize.css'; /* montserrat-300 - latin_cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/montserrat-v25-latin_cyrillic-300.eot');
-  src: local(''),
-    url('../fonts/montserrat-v25-latin_cyrillic-300.woff2') format('woff2'),
-    url('../fonts/montserrat-v25-latin_cyrillic-300.woff') format('woff'),
-    url('../fonts/montserrat-v25-latin_cyrillic-300.ttf') format('truetype');
+  src: url("../fonts/montserrat-v25-latin_cyrillic-300.eot");
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-300.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-300.ttf") format("truetype");
 }
 /* montserrat-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v25-latin_cyrillic-regular.eot');
-  src: local(''),
-    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'),
-    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'),
-    url('../fonts/montserrat-v25-latin_cyrillic-regular.ttf') format('truetype');
+  src: url("../fonts/montserrat-v25-latin_cyrillic-regular.eot");
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype");
 }
 /* montserrat-500 - latin_cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/montserrat-v25-latin_cyrillic-500.eot');
-  src: local(''),
-    url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'),
-    url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'),
-    url('../fonts/montserrat-v25-latin_cyrillic-500.ttf') format('truetype');
+  src: url("../fonts/montserrat-v25-latin_cyrillic-500.eot");
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-500.ttf") format("truetype");
 }
 /* montserrat-600 - latin_cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/montserrat-v25-latin_cyrillic-600.eot');
-  src: local(''),
-    url('../fonts/montserrat-v25-latin_cyrillic-600.woff2') format('woff2'),
-    url('../fonts/montserrat-v25-latin_cyrillic-600.woff') format('woff'),
-    url('../fonts/montserrat-v25-latin_cyrillic-600.ttf') format('truetype');
+  src: url("../fonts/montserrat-v25-latin_cyrillic-600.eot");
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-600.ttf") format("truetype");
 }
 /* montserrat-700 - latin_cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/montserrat-v25-latin_cyrillic-700.eot');
-  src: local(''),
-    url('../fonts/montserrat-v25-latin_cyrillic-700.woff2') format('woff2'),
-    url('../fonts/montserrat-v25-latin_cyrillic-700.woff') format('woff'),
-    url('../fonts/montserrat-v25-latin_cyrillic-700.ttf') format('truetype');
+  src: url("../fonts/montserrat-v25-latin_cyrillic-700.eot");
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-700.ttf") format("truetype");
 }
 /* Times New Roman */
 @font-face {
-  font-family: 'Times New Roman';
-  src: url('../fonts/TimesNewRomanMTStd.eot');
-  src: local('Times New Roman MT Std Regular'), local('TimesNewRomanMTStd'),
-    url('../fonts/TimesNewRomanMTStd.woff2') format('woff2'),
-    url('../fonts/TimesNewRomanMTStd.woff') format('woff'),
-    url('../fonts/TimesNewRomanMTStd.ttf') format('truetype');
+  font-family: "Times New Roman";
+  src: url("../fonts/TimesNewRomanMTStd.eot");
+  src: local("Times New Roman MT Std Regular"), local("TimesNewRomanMTStd"), url("../fonts/TimesNewRomanMTStd.woff2") format("woff2"), url("../fonts/TimesNewRomanMTStd.woff") format("woff"), url("../fonts/TimesNewRomanMTStd.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Times New Roman';
-  src: url('../fonts/TimesNewRomanMTStd-Bold.eot');
-  src: local('../fonts/Times New Roman MT Std Bold'),
-    local('TimesNewRomanMTStd-Bold'),
-    url('../fonts/TimesNewRomanMTStd-Bold.woff2') format('woff2'),
-    url('../fonts/TimesNewRomanMTStd-Bold.woff') format('woff'),
-    url('../fonts/TimesNewRomanMTStd-Bold.ttf') format('truetype');
+  font-family: "Times New Roman";
+  src: url("../fonts/TimesNewRomanMTStd-Bold.eot");
+  src: local("../fonts/Times New Roman MT Std Bold"), local("TimesNewRomanMTStd-Bold"), url("../fonts/TimesNewRomanMTStd-Bold.woff2") format("woff2"), url("../fonts/TimesNewRomanMTStd-Bold.woff") format("woff"), url("../fonts/TimesNewRomanMTStd-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 /* Film P3 */
 @font-face {
-  font-family: 'Film P3';
-  src: url('../fonts/FilmP3Bold.eot');
-  src: local('Film P3 Bold'), local('FilmP3Bold'),
-    url('../fonts/FilmP3Bold.woff2') format('woff2'),
-    url('../fonts/FilmP3Bold.woff') format('woff'),
-    url('../fonts/FilmP3Bold.ttf') format('truetype');
+  font-family: "Film P3";
+  src: url("../fonts/FilmP3Bold.eot");
+  src: local("Film P3 Bold"), local("FilmP3Bold"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -109,7 +84,7 @@ li {
     text-transform: uppercase;
     margin-top: 16px;
     margin-bottom: 0;
-    font-family: 'Film P3';
+    font-family: "Film P3";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -127,7 +102,7 @@ li {
     padding-bottom: 16px;
   }
   .nav__link-restaurant {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -154,7 +129,7 @@ li {
     padding-bottom: 16px;
   }
   .nav__link-hotel {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -199,7 +174,7 @@ li {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 47px;
-    font-family: 'Film P3';
+    font-family: "Film P3";
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -221,7 +196,7 @@ li {
     padding-bottom: 36px;
   }
   .nav__link-restaurant {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -242,7 +217,7 @@ li {
   .nav__link-restaurant-phone {
     padding-right: 8px;
     justify-content: end;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -267,7 +242,7 @@ li {
     padding-bottom: 36px;
   }
   .nav__link-hotel {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -278,7 +253,7 @@ li {
   }
   .nav__link-hotel-phone {
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -304,7 +279,7 @@ li {
   .nav__list-phone2 {
     padding-right: 8px;
     justify-content: end;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -341,7 +316,7 @@ li {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 85px;
-    font-family: 'Film P3';
+    font-family: "Film P3";
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -363,7 +338,7 @@ li {
     padding-bottom: 36px;
   }
   .nav__link-restaurant {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -384,7 +359,7 @@ li {
   .nav__link-restaurant-phone {
     padding-right: 8px;
     justify-content: end;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -409,7 +384,7 @@ li {
     padding-bottom: 36px;
   }
   .nav__link-hotel {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -420,7 +395,7 @@ li {
   }
   .nav__link-hotel-phone {
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -443,7 +418,7 @@ li {
   .nav__list-phone2 {
     padding-right: 8px;
     justify-content: end;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -504,7 +479,8 @@ li {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -546,10 +522,196 @@ li {
   border-radius: 25px;
   cursor: pointer;
   outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-hero {
+  padding: 181px 0px 102px 0px;
+  background-color: rgb(14, 12, 7);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/homepage/mobile-homepage-hero@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px), screen and (min-resolution: 192dpi) and (max-width: 1023px), screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .main-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/homepage/mobile-homepage-hero@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (min-resolution: 192dpi) and (min-width: 1024px), screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .main-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/homepage/tablet-homepage-hero@2x.jpg);
+    padding: 188px 0px 64px 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/homepage/tablet-homepage-hero@1x.jpg);
+    padding: 188px 0px 64px 0px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .main-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
+    padding: 164px 0px 64px 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/homepage/desktop-homepage-hero@1x.jpg);
+    padding: 164px 0px 64px 0px;
+  }
+}
+.main-hero__title {
+  margin-bottom: 24px;
+  font-family: "Film P3";
+  font-size: 96px;
+  line-height: 1.04;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 1024px) {
+  .main-hero__title {
+    font-size: 128px;
+    margin-bottom: 16px;
+    line-height: 1.07;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-hero__title {
+    margin-bottom: 32px;
+  }
+}
+.main-hero__subtitle {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 1024px) {
+  .main-hero__subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 56px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-hero__subtitle {
+    margin-bottom: 64px;
+  }
+}
+.main-hero__text {
+  margin-bottom: 113px;
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 1024px) {
+  .main-hero__text {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-bottom: 137px;
+  }
+}
+.main-hero__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .main-hero__list {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-hero__list {
+    gap: 60px;
+  }
+}
+.main-hero__item {
+  list-style: none;
+}
+
+.address {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  justify-content: right;
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  border: 1px solid rgb(243, 198, 83);
+  border-radius: 2px;
+  padding: 8px 5px 9px 11px;
+}
+@media screen and (min-width: 1023px) {
+  .address {
+    width: 285px;
+    top: 600px;
+    left: 47px;
+    gap: 10px;
+    padding: 8px 8px 8px 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .address {
+    left: 85px;
+  }
+}
+.address__icon {
+  width: 20px;
+  height: 20px;
+  fill: rgb(243, 198, 83);
+}
+@media screen and (min-width: 1024px) {
+  .address__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.address__location {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: rgb(229, 229, 229);
+}
+@media screen and (min-width: 1024px) {
+  .address__location {
+    font-size: 16px;
+  }
+}
+
+.btn--mobile {
+  margin: 0 auto;
+  width: auto;
+}
+@media screen and (min-width: 1024px) {
+  .btn--mobile {
+    margin-bottom: 0;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(255, 255, 255);
 }
 
 body {
-  font-family: 'Montserrat', 'Times New Roman', sans-serif;
+  font-family: "Montserrat", "Times New Roman", sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -572,4 +734,4 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
