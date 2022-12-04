@@ -56,7 +56,7 @@
   }
 
   &__title {
-    max-width: 303px;
+    width: 303px;
     margin: 0 auto;
     margin-bottom: 24px;
 
@@ -229,5 +229,12 @@
     width: 24px;
     height: 24px;
     fill: $accent-transparent-color;
+
+    transition: background-color 250ms $animation;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
 }
