@@ -10,8 +10,7 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    padding-top: 181px;
-    padding-bottom: 15px;
+    padding: 181px 0 102px 0;
 
     @media (min-width:1024px) {
         padding-top: 188px;
@@ -24,7 +23,6 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
 
     }
 
-
     background-color: $img-hero-color;
     text-align: center;
     margin-left: auto;
@@ -35,11 +33,6 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    // @media (min-width: 1200px) {
-    //     padding-top: 200px;
-    //     padding-bottom: 200px;
-
 
     @media (max-width: 1024px) {
         background-image:
@@ -92,9 +85,8 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
 
 .hero__title {
     max-width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     margin-left: auto;
-    margin-right: auto;
 
     font-family: 'Film P3';
     font-weight: 700;
@@ -116,9 +108,7 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
 
 .hero__subtitle {
     max-width: 100%;
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 178px;
 
     font-weight: 600;
     font-size: 20px;
@@ -126,24 +116,32 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
     letter-spacing: 0.02em;
     color: $white-color;
     text-align: center;
-}
 
-.hero__net-list {
+    @media (min-width: 1024px) {
+        margin-bottom: 226px;
+    }
 
-    display: flex;
-    fill: $accent-transparent-color;
-    list-style: none;
-    gap: 20px;
-
-    @media screen and (min-width: 1024px) {
-        display: none;
+    @media (min-width: 1280px) {
+        margin-bottom: 226px;
     }
 }
 
-.hero__net-link {
-    fill: $accent-transparent-color;
-    cursor: pointer;
-}
+// .hero__net-list {
+
+//     display: flex;
+//     fill: $accent-transparent-color;
+//     list-style: none;
+//     gap: 20px;
+
+//     @media screen and (min-width: 1024px) {
+//         display: none;
+//     }
+// }
+
+// .hero__net-link {
+//     fill: $accent-transparent-color;
+//     cursor: pointer;
+// }
 
 .hero__menu {
     @media (min-width:1024px) {
@@ -173,7 +171,7 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
         top: 64px;
         width: 210px;
         height: 47px;
-        // margin-bottom: 70px;
+
         margin-left: auto;
         margin-right: auto;
         text-decoration: none;
