@@ -91,6 +91,10 @@
   align-items: center;
   gap: 20px;
   margin-bottom: 32px;
+  @media screen and (max-width: 1024px) {
+    gap: 20px;
+    margin-bottom: 32px;
+  }
   @media screen and (min-width: 1024px) {
     gap: 48px;
   }
@@ -123,13 +127,6 @@
     width: 312px;
     font-size: 16px;
   }
-}
-.slider {
-  display: block;
-  width: 245px;
-  height: 245px;
-  margin: 0 auto;
-  background: #dadada;
 }
 .about-our-restaurant__background-line {
   z-index: 0;
@@ -167,4 +164,90 @@
   @media screen and (min-width: 1280px) {
     right: 338px;
   }
+}
+// swiper
+.swiper {
+  width: 330px;
+  height: 100%;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: 0;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+
+  padding-left: -15px;
+}
+.swiper-vertical > .swiper-wrapper {
+  flex-direction: column;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 245px;
+  height: 245px;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  margin-bottom: 20px;
+}
+// .swiper-android .swiper-slide,
+// .swiper-wrapper {
+//   transform: translate3d(0px, 0, 0);
+// }
+// .swiper-pointer-events {
+//   touch-action: pan-y;
+// }
+// .swiper-pointer-events.swiper-vertical {
+//   touch-action: pan-x;
+// }
+.swiper-slide {
+  flex-shrink: 0;
+  width: 245px;
+  height: 245px;
+  position: relative;
+  transition-property: transform;
+}
+.swiper-slide-invisible-blank {
+  visibility: hidden;
+}
+/* Auto Height */
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.swiper-buttons-wrap {
+  width: auto;
+  display: flex;
+  justify-content: end;
+
+  gap: 32px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  fill: $black-color;
+  transition: fill 250ms $animation;
+}
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  fill: $accent-color;
 }
