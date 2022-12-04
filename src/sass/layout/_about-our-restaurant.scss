@@ -1,10 +1,12 @@
 .about-our-restaurant {
   background: $fon-lemon;
-  position: relative;
 }
 .about-our-restaurant .container {
   position: relative;
   padding-bottom: 20px;
+}
+.about-our-restaurant__wrap {
+  position: relative;
   z-index: 2;
 }
 .about-our-restaurant__about-content {
@@ -134,7 +136,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 140px;
+  left: 33.81%;
   border: 1px solid rgba(122, 122, 122, 0.4);
   filter: blur(0.5px);
   @media screen and (min-width: 1024px) {
@@ -153,7 +155,10 @@
   }
 }
 .about-our-restaurant__background-line--line3 {
-  right: 140px;
+  right: 33.81%;
+  @media screen and (min-width: 414px) {
+    right: 140px;
+  }
   @media screen and (min-width: 1024px) {
     right: 278px;
   }
