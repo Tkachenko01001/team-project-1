@@ -19,6 +19,12 @@
       url(../images/mobile/homepage/mobile-homepage-hero@2x.jpg);
   }
 
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/tablet/homepage/tablet-homepage-hero@1x.jpg);
+    padding: 188px 0px 64px 0px;
+  }
+
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
     screen and (min-resolution: 192dpi) and (min-width: 1024px),
     screen and (min-resolution: 2dppx) and (min-width: 1024px) {
@@ -27,10 +33,10 @@
     padding: 188px 0px 64px 0px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/tablet/homepage/tablet-homepage-hero@1x.jpg);
-    padding: 188px 0px 64px 0px;
+      url(../images/desktop/homepage/desktop-homepage-hero@1x.jpg);
+    padding: 164px 0px 64px 0px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
@@ -38,12 +44,6 @@
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
-    padding: 164px 0px 64px 0px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/desktop/homepage/desktop-homepage-hero@1x.jpg);
     padding: 164px 0px 64px 0px;
   }
 
