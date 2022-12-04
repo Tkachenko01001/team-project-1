@@ -8,8 +8,11 @@
 @import './components/btn'; // default button
 
 @import './components/main-hero';
+@import './footer'; // Container
+@import './components/restaurant-hero'; // Restaurant page Hero
 
 // @import './example';
+
 
 body {
   font-family: 'Montserrat', 'Times New Roman', sans-serif;
