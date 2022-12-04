@@ -9,6 +9,7 @@
 
 @import './components/main-hero';
 @import './footer'; // Container
+@import './details_restaurant_mainpage';
 
 // @import './example';
 
@@ -36,6 +37,5 @@ ul {
 // Images
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
