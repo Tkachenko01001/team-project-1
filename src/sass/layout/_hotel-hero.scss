@@ -2,24 +2,36 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
 
 .hotel-hero {
     position: relative;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100wh;
-    height: auto;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     padding-top: 181px;
     padding-bottom: 15px;
+
+    @media (min-width:1024px) {
+        padding-top: 188px;
+        padding-bottom: 64px;
+    }
+
+    @media (min-width:1280px) {
+        padding-top: 164px;
+        padding-bottom: 64px;
+
+    }
 
 
     background-color: $img-hero-color;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-        url(../images/mobile/hotel/mobile-hotel-hero@1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+    url(../images/mobile/hotel/mobile-hotel-hero@1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,31 +90,112 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
     }
 }
 
-.hotel-hero__address {
-    position: absolute;
-    right: 15px;
-    top: 34px;
-    display: block;
-    width: 210px;
-    height: 47px;
+.hero__title {
+    max-width: 100%;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
 
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: calc(103 / 96);
+    color: $white-color;
+
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 128px;
+        line-height: calc(138 / 128);
+        letter-spacing: 0.3em;
+    }
+
+}
+
+.hero__subtitle {
+    max-width: 100%;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24/ 20);
+    letter-spacing: 0.02em;
+    color: $white-color;
+    text-align: center;
+}
+
+.hero__net-list {
+
+    display: flex;
+    fill: $accent-transparent-color;
+    list-style: none;
+    gap: 20px;
+
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.hero__net-link {
+    fill: $accent-transparent-color;
+    cursor: pointer;
+}
+
+.hero__menu {
+    @media (min-width:1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+}
+
+.hotel-hero__address {
+    display: block;
     border: 1px solid;
     border-color: $accent-transparent-color;
     border-radius: 2px;
-    margin-bottom: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-    padding-left: 6px;
-    padding-top: -3px;
-    padding-top: 8px;
-    padding-bottom: 9px;
+    color: $address-text-color;
 
+    & hover,
+    & focus {
+        cursor: pointer;
+    }
+
+    @media (max-width: 1023px) {
+        position: absolute;
+        left: auto;
+        right: auto;
+        right: 15px;
+        top: 64px;
+        width: 210px;
+        height: 47px;
+        // margin-bottom: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        padding-left: 6px;
+        padding-top: -3px;
+        padding-top: 8px;
+        padding-bottom: 9px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 285px;
+        height: 56px;
+        text-decoration: none;
+        padding-left: 8px;
+        padding-top: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 }
 
 .hotel-hero__pin-icon {
     fill: $accent-transparent-color;
-
 }
 
 .hotel-hero__where {
@@ -120,93 +213,56 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
     line-height: calc(15/ 12);
     letter-spacing: 0.01em;
     text-align: left;
-}
 
-.hero__title {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
+    @media (min-width:1024px) {
 
-    font-family: 'Film P3';
-    font-weight: 700;
-    font-size: 96px;
-    line-height: calc(103 / 96);
-    color: $white-color;
-
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    text-align: center;
-    //     @media screen and (min-width: 768px) {
-    //         max-width: 360px;
-    //     }
-
-    //     @media screen and (min-width: 1200px) {
-    //         max-width: 696px;
-    //         font-size: 44px;
-    //         line-height: calc(60 / 44);
-    //     }
-}
-
-.hero__subtitle {
-    display: block;
-    max-width: 100%;
-    // margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
-
-    font-weight: 600;
-    font-size: 20px;
-    line-height: calc(24/ 20);
-    letter-spacing: 0.02em;
-    color: $white-color;
-    text-align: center;
-}
-
-.hero__net-box {}
-
-.hero__net-list {
-    display: flex;
-    fill: $accent-transparent-color;
-    list-style: none;
-    gap: 20px;
-}
-
-.hero__net-link {
-    fill: $accent-transparent-color;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(20/ 16);
+    }
 }
 
 .hero__butons {
-    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    @media (min-width:1024px) {
+        flex-direction: row;
+        gap: 40px;
+    }
+
 }
 
 .hero__button-room {
+    display: block;
     margin-bottom: 24px;
     @extend .btn;
-    height: 48px;
+    width: 232px;
+    padding: 13px;
+
 
     & hover,
     & focus {
         background-color: $white-color;
         border-color: $white-color;
         color: $accent-color;
+        cursor: pointer;
 
     }
 
-    //     padding: 8px 28px;
-    //     min-width: 200px;
 
-    //     @media screen and (min-width: 1200px) {
-    //         min-width: 216px;
-    //     }
+    @media (min-width: 1024px) {
+        width: 236px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 240px;
+    }
 }
 
 .hero__button-price {
+    display: block;
     margin-bottom: 24px;
     @extend .btn;
     width: 236px;
