@@ -262,3 +262,193 @@ li {
     height: 40px;
   }
 }
+
+// Desktop version
+@media screen and (min-width: 1280px) {
+  .container-header {
+    width: 1280px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: #0e0c07;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 85px;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: $white-color;
+    text-decoration: none;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .nav__list-restaurant {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav__item-restaurant {
+    padding-top: 36px;
+    padding-left: 91px;
+    padding-bottom: 36px;
+  }
+
+  .nav__link-restaurant {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  .icon-phone-restaurant {
+    fill: $accent-color;
+    width: 12px;
+    height: 20px;
+    visibility: visible;
+    position: relative;
+    top: 0;
+    right: -49px;
+  }
+
+  .nav__link-restaurant-phone {
+    padding-right: 8px;
+    justify-content: end;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 144px;
+    height: 40px;
+  }
+
+  .nav__item-hotel {
+    padding-top: 36px;
+    padding-left: 100px;
+    padding-bottom: 36px;
+  }
+
+  .nav__link-hotel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  .nav__link-hotel-phone {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
+  .icon-phone-hotel1 {
+    fill: $accent-color;
+    width: 12px;
+    height: 20px;
+    visibility: visible;
+    position: relative;
+    top: 0;
+    right: 129px;
+  }
+  .icon-phone-hotel2 {
+    display: none;
+  }
+
+  .nav__list-phone2 {
+    padding-right: 8px;
+    justify-content: end;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: relative;
+    top: -66px;
+    right: -201px;
+    width: 264px;
+    height: 40px;
+  }
+
+  .header__social-net {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-net__link {
+    display: none;
+  }
+
+  .icon-instagram {
+    position: relative;
+    top: 40px;
+    right: -260px;
+    width: 20px;
+    height: 20px;
+    fill: $accent-color;
+  }
+
+  .icon-facebook {
+    position: relative;
+    top: 40px;
+    right: -260px;
+    width: 20px;
+    height: 20px;
+    fill: $accent-color;
+    margin-left: 23px;
+  }
+
+  .icon-telegram-plane {
+    position: relative;
+    top: 40px;
+    right: -280px;
+    width: 20px;
+    height: 20px;
+    fill: $accent-color;
+  }
+}
