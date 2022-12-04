@@ -18,14 +18,59 @@
   }
   &__slider {
     height: 100vh;
-    padding-bottom: 48px;
+    padding-bottom: 24px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    @media (min-width: 1200px) {
+      padding-bottom: 48px;
+    }
     .text-container {
       margin-top: 25px;
       display: flex;
       align-items: center;
+    }
+    .social-block {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      margin-top: 25px;
+      @media (min-width: 1200px) {
+        display: none;
+      }
+      &__list {
+        display: flex;
+        gap: 23px;
+        list-style: none;
+      }
+      &__title-box {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+        padding: 8px 8px 8px 16px;
+        span {
+          fill: #f3c653;
+          margin-right: 15px;
+        }
+      }
+      &__adress {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #e5e5e5;
+        max-width: 233px;
+        display: flex;
+        align-items: center;
+      }
+      &__item {
+        cursor: pointer;
+        svg {
+          fill: rgba(243, 198, 83, 0.7);
+        }
+      }
     }
   }
   &__title {
@@ -83,11 +128,17 @@
   &__button-next {
     position: absolute;
     right: 0;
-    bottom: 268px;
+    bottom: 340px;
+    @media (min-width: 1200px) {
+      bottom: 268px;
+    }
   }
   &__button-prev {
     position: absolute;
     left: 0;
-    bottom: 268px;
+    bottom: 340px;
+    @media (min-width: 1200px) {
+      bottom: 268px;
+    }
   }
 }
