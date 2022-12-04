@@ -441,9 +441,6 @@ li {
     display: flex;
     flex-direction: row;
   }
-  .social-net__link {
-    display: none;
-  }
   .icon-instagram {
     position: relative;
     top: 40px;
@@ -451,6 +448,7 @@ li {
     width: 20px;
     height: 20px;
     fill: rgb(243, 198, 83);
+    cursor: pointer;
   }
   .icon-facebook {
     position: relative;
@@ -460,6 +458,7 @@ li {
     height: 20px;
     fill: rgb(243, 198, 83);
     margin-left: 23px;
+    cursor: pointer;
   }
   .icon-telegram-plane {
     position: relative;
@@ -468,6 +467,7 @@ li {
     width: 20px;
     height: 20px;
     fill: rgb(243, 198, 83);
+    cursor: pointer;
   }
 }
 body {

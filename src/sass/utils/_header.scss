@@ -420,10 +420,6 @@ li {
     flex-direction: row;
   }
 
-  .social-net__link {
-    display: none;
-  }
-
   .icon-instagram {
     position: relative;
     top: 40px;
@@ -431,6 +427,7 @@ li {
     width: 20px;
     height: 20px;
     fill: $accent-color;
+    cursor: pointer;
   }
 
   .icon-facebook {
@@ -441,6 +438,7 @@ li {
     height: 20px;
     fill: $accent-color;
     margin-left: 23px;
+    cursor: pointer;
   }
 
   .icon-telegram-plane {
@@ -450,5 +448,6 @@ li {
     width: 20px;
     height: 20px;
     fill: $accent-color;
+    cursor: pointer;
   }
 }
