@@ -4,6 +4,7 @@
 .about-our-restaurant .container {
   position: relative;
   padding-bottom: 20px;
+  z-index: 2;
 }
 .about-our-restaurant__about-content {
   @media screen and (max-width: 1024px) {
@@ -128,13 +129,12 @@
   background: #dadada;
 }
 .about-our-restaurant__background-line {
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 140px;
-  width: 2px;
-  background-color: rgba(186, 186, 186, 0.4);
+  border: 1px solid rgba(122, 122, 122, 0.4);
   filter: blur(0.5px);
   @media screen and (min-width: 1024px) {
     left: 278px;
@@ -144,12 +144,20 @@
   }
 }
 .about-our-restaurant__background-line--line2 {
+  @media screen and (max-width: 1024px) {
+    opacity: 0;
+  }
+  @media screen and (min-width: 1024px) {
+    left: 50%;
+  }
+}
+.about-our-restaurant__background-line--line3 {
   left: 0;
   right: 140px;
   @media screen and (min-width: 1024px) {
-    left: 512px;
+    right: 278px;
   }
   @media screen and (min-width: 1280px) {
-    left: 640px;
+    right: 338px;
   }
 }
