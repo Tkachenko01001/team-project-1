@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   align-items: center;
-  padding: 181px 15px 20px;
+  padding: 181px 0 20px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -53,10 +53,10 @@
       url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
   }
 
-  .container--position{
+  .container--position {
     @media screen and (max-width: 1024px) {
-position: relative;
-  }
+      position: relative;
+    }
   }
 
   &__content {
