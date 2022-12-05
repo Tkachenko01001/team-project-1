@@ -1,78 +1,66 @@
 <main>
   <section class="hotel-hero">
     <div class="container">
-      <h1 class="hero__title" lang="en">Mimiho</h1>
-      <h2 class="hero__subtitle">Готель</h2>
-      <div class="hero__menu">
-        <address>
-          <a
-            class="hotel-hero__address"
-            href="https://www.google.com.ua/maps/place/Marshala+Biryuzova+St,+15/@49.599194,34.5239714,17z/data=!4m6!3m5!1s0x40d82601f3347a5f:0x36f3f9aeec44a6a!4b1!8m2!3d49.599194!4d34.5265463?hl=en"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <div class="hotel-hero__where">
-              <svg width="20" height="20" class="hotel-hero__pin-icon">
-                <use href="./images/symbol-defs.svg#icon-location-pin"></use>
-              </svg>
-              <div>
-                <p class="hotel-hero__address-item">Україна, м. Полтава,</p>
-                <p class="hotel-hero__address-item">
-                  вул. Маршала Бірюзова, 15
-                </p>
-              </div>
-            </div>
-          </a>
-        </address>
-        <div class="hero__butons">
-          <button class="hero__button-room" type="button">
-            Забронювати номер
-          </button>
-          <button class="hero__button-price" type="button">
-            Переглянути ціни
-          </button>
+      <div class="hero__content">
+        <h1 class="hero__title" lang="en">Mimiho</h1>
+        <h2 class="hero__subtitle">Готель</h2>
+        <div class="hero__menu">
+          <address class="hotel-hero__address">
+            <svg class="hotel-hero__pin-icon">
+              <use href="./images/symbol-defs.svg#icon-location-pin"></use>
+            </svg>
+            <a
+              href="https://goo.gl/maps/bPxGBbEx7a43Xryj9"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="hotel-hero__address-item"
+              >Україна, м. Полтава, <br />
+              вул. Маршала Бірюзова, 15</a
+            >
+          </address>
+          <address>
+          <div class="hero__butons">
+            <ul class="hero__list">
+              <li class="hero__item">
+                <button type="submit" class="btn btn--mobile">
+                  Забронювати столик
+                </button>
+              </li>
+              <li class="hero__item">
+                <button type="submit" class="btn btn--mobile">
+                  Переглянути ціни
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div>
-        <ul class="hero__net-list">
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              class="hero__net-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="hero__net-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/"
-              class="hero__net-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="hero__net-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://telegram.org/"
-              class="hero__net-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="hero__net-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-telegram-plane"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="hero__net-list">
+        <li>
+          <a href="https://www.instagram.com/" class="hero__net-link" target="_blank"
+                        rel="noopener noreferrer nofollow">
+            <svg class="hero__net-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" class="hero__net-link" target="_blank"
+                        rel="noopener noreferrer nofollow">
+            <svg class="hero__net-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://web.telegram.org/" class="hero__net-link" target="_blank"
+                        rel="noopener noreferrer nofollow">
+            <svg class="hero__net-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-telegram-plane"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 </main>

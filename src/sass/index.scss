@@ -8,13 +8,13 @@
 @import './components/btn'; // default button
 
 @import './components/main-hero';
+@import './layout/about-our-restaurant';
 @import './footer'; // Container
 @import './layout/room-details';
 @import './components/restaurant-hero'; // Restaurant page Hero
-
+@import './details_restaurant_mainpage';
 // @import './example';
 @import './layout/hotel-hero'; // hotel Hero
-
 
 body {
   font-family: 'Montserrat', 'Times New Roman', sans-serif;
@@ -22,6 +22,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.25;
+  max-width: 1600px;
 }
 
 h1,
@@ -39,6 +40,5 @@ ul {
 // Images
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
