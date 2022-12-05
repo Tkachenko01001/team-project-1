@@ -59,14 +59,18 @@
     }
   }
   &__text1 {
-    width: 258px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 10px;
+    width: 230px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $primary-dark-text;
+    @media screen and (min-width: 414px) {
+      width: 258px;
+      font-size: 12px;
+    }
     @media screen and (min-width: 1024px) {
       width: 439px;
       font-size: 16px;
@@ -126,11 +130,14 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $brown-color;
-    width: 163px;
+    @media screen and (min-width: 414px) {
+      width: 163px;
+      font-size: 12px;
+    }
     @media screen and (min-width: 1024px) {
       width: 312px;
       font-size: 16px;
@@ -172,15 +179,15 @@
   }
   // swiper
   .swiper {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    @media screen and (max-width: 1024px) {
+    @media screen and (min-width: 414px) {
       position: relative;
       right: -15px;
       width: 330px;
     }
     @media screen and (min-width: 1024px) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
       width: 428px;
     }
     @media screen and (min-width: 1280px) {
