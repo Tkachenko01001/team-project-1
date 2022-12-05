@@ -9,7 +9,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 24px 0px 40px 0px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +56,13 @@
 
 .details-restaurant__container {
   z-index: 2;
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 48px;
+    padding-bottom: 94px;
+  }
 }
 
 .details-restaurant__info {
