@@ -40,4 +40,9 @@ ul {
 img {
   display: block;
   height: auto;
+
+  @media screen and (max-width: 414px)
+ {
+    width: auto;
+}
 }
