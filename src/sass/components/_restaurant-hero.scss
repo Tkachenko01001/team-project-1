@@ -60,16 +60,21 @@
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
+    font-size: 80px;
     line-height: 1.07;
     letter-spacing: 0.3em;
     color: $white-color;
     margin-bottom: 20px;
     margin-top: 0;
-    max-width: 303px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     text-transform: uppercase;
+
+    @media screen and (min-width: 418px) {
+        font-size: 96px;
+        max-width: 303px;
+    }
 
     @media screen and (min-width: 1024px) {
         font-size: 128px;
