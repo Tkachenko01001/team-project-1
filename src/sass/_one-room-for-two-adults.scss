@@ -1,5 +1,6 @@
 .double-room {    
-    background-color: $fon-lemon;   
+    background-color: $fon-lemon;
+    position: relative;
 }
 
 .double-room__section {
@@ -164,6 +165,7 @@
     gap: 40px;
     align-items: center;
     flex-wrap: nowrap;
+    padding-bottom: 15px;
 }
 
 .room-pictures-list__item {
@@ -221,5 +223,77 @@
     &.hotel-button:focus {
         background-color: $white-color;
         border-color: #F3C653;
+    }
 }
+
+.room-pictures-swiper__control {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+
+    @include tablet {
+        justify-content: flex-end;
+    }
+
+    @include desktop {
+        justify-content: flex-end;
+    }
+}
+
+.room-pictures-swiper__btn {
+    background: none;
+    border: none;
+    fill: black;
+    transition: fill 250ms $animation;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+.room-pictures-swiper__btn_next {
+    margin-right: 32px;
+}
+
+.doubleroom-line-one::after {
+    @media screen and (min-width:1024px) {
+        content: '';
+        height: 785px;
+        display: block;
+        top: 0;
+        position: absolute;
+        border: 1px solid rgba(122, 122, 122, 0.4);
+        filter: blur(0.5px);
+        z-index: 1;
+        right: 26.4%;
+    }
+}
+
+.doubleroom-line-two::after {
+    @media screen and (min-width:1024px) {
+        content: '';
+        height: 785px;
+        display: block;
+        top: 0;
+        position: absolute;
+        border: 1px solid rgba(122, 122, 122, 0.4);
+        filter: blur(0.5px);
+        z-index: 1;
+        left: 50%;
+    }
+}
+
+.doubleroom-line-three::after {
+    @media screen and (min-width:1024px) {
+        content: '';
+        height: 785px;
+        left: 26.4%;
+        display: block;
+        top: 0;
+        position: absolute;
+        border: 1px solid rgba(122, 122, 122, 0.4);
+        filter: blur(0.5px);
+        z-index: 1;
+    }
 }
