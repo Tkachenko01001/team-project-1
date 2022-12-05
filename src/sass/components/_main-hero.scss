@@ -45,7 +45,9 @@
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
   }
-
+  & .container {
+    position: relative;
+  }
   &__content {
     margin-bottom: 60px;
     @media screen and (min-width: 1024px) {
@@ -154,7 +156,7 @@
   align-items: center;
   justify-content: right;
   position: absolute;
-  top: 64px;
+  top: -117px;
   right: 15px;
   padding: 8px 8px 8px 10px;
 
@@ -162,9 +164,6 @@
   border-radius: 2px;
   padding: 8px 5px 9px 11px;
 
-  @media screen and (min-width: 414px) {
-    position: fixed;
-  }
   @media screen and (min-width: 1024px) {
     position: static;
   }
@@ -202,6 +201,7 @@
   margin: 0 auto;
   width: auto;
   max-height: 48px;
+  padding-top: 13px;
 
   @media screen and (min-width: 1024px) {
     margin-bottom: 0;
