@@ -1,0 +1,314 @@
+.details-restaurant {
+    text-align: center;
+    position: relative;
+}
+
+.details-restaurant__overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    max-width: 1600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+    screen and (min-resolution: 192dpi) and (max-width: 1023px),
+    screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+        background-image: linear-gradient($gradient-color, $gradient-color),
+            url(../images/mobile/homepage/mobile-homepage-bg-pic-1@2x.jpg);
+    }
+
+    @media screen and (max-width: 1023px) {
+        background-image: linear-gradient($gradient-color, $gradient-color),
+            url(../images/mobile/homepage/mobile-homepage-bg-pic-1@1x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+    screen and (min-resolution: 192dpi) and (min-width: 1024px),
+    screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+        background-image: linear-gradient($gradient-color, $gradient-color),
+            url(../images/tablet/homepage/tablet-homepage-bg-pic@2x.jpg);
+        padding: 48px 0px 96px 0px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        background-image: linear-gradient($gradient-color, $gradient-color),
+            url(../images/tablet/homepage/tablet-homepage-bg-pic@1x.jpg);
+        padding: 48px 0px 96px 0px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+        background-image: linear-gradient($gradient-color, $gradient-color),
+            url(../images/desktop/homepage/desktop-homepage-bg-pic@2x.jpg);
+        padding: 48px 0px 94px 0px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: linear-gradient($gradient-color, $gradient-color),
+            url(../images/desktop/homepage/desktop-homepage-bg-pic@1x.jpg);
+        padding: 48px 0px 94px 0px;
+    }
+}
+
+.details-restaurant__container {
+    z-index: 2;
+}
+
+.details-restaurant__info {
+    max-width: 259px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 398px;
+    text-align: left;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 610px;
+        margin-bottom: 198px;
+        margin-right: 89px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.details-restaurant__title {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    font-style: normal;
+    color: $white-color;
+    margin-bottom: 12px;
+    margin-top: 0;
+    height: 43px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        margin-bottom: 16px;
+        height: 69px;
+    }
+}
+
+.details-restaurant__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $white-color;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        margin-bottom: 8px;
+
+    }
+}
+
+.details-restaurant__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $grey-font;
+    height: 62px;
+
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        line-height: 1.25;
+        height: 44px;
+    }
+}
+
+.restaurant-btn__list {
+    list-style: none;
+
+    @media screen and (min-width:1024px) {
+        text-align: left;
+
+    }
+}
+
+.restaurant-btn__item {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.restaurant-btn {
+    display: inline;
+    width: 236px;
+    height: 48px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    transition: color 250ms $animation , background-color 250ms $animation ;
+
+    &:hover,
+    &:focus {
+        color: $accent-transparent-color;
+        background-color: $white-color;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        background-color: $black-color;
+    }
+}
+
+.restaurant-btn__link {
+    text-decoration: none;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-transparent-color;
+
+    }
+}
+
+.line-one::after {
+    content: '';
+    height: 735px;
+    right: 33.81%;
+    display: block;
+    top: 0;
+    position: absolute;
+    border: 1px solid rgba(122, 122, 122, 0.4);
+    filter: blur(0.5px);
+    z-index: 1;
+
+    @media screen and (min-width:1024px) {
+        height: 620px;
+        right: 27.14%;
+    }
+
+    @media screen and (min-width:1024px) {
+        right: 26.4%;
+    }
+}
+
+.line-two::after {
+    content: '';
+    height: 735px;
+    left: 33.81%;
+    display: block;
+    top: 0;
+    position: absolute;
+    border: 1px solid rgba(122, 122, 122, 0.4);
+    filter: blur(0.5px);
+    z-index: 1;
+
+    @media screen and (min-width:1024px) {
+        height: 620px;
+        left: 50%;
+    }
+}
+
+.line-three::after {
+    @media screen and (min-width:1024px) {
+        content: '';
+        height: 620px;
+        left: 27.14%;
+        display: block;
+        top: 0;
+        position: absolute;
+        border: 1px solid rgba(122, 122, 122, 0.4);
+        filter: blur(0.5px);
+        z-index: 1;
+
+        @media screen and (min-width:1024px) {
+            left: 26.4%;
+        }
+    }
+}
+
+.swiper {
+    max-width: 379px;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 664px;
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 876px;
+    }
+}
+
+.swiper__wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.swiper__container {
+    position: absolute;
+    top: 228px;
+    right: 0;
+    left: auto;
+    z-index: 2;
+    left: auto;
+
+    @media screen and (min-width: 1024px) {
+        top: 254px;
+        right: 50px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        right: 52px;
+    }
+
+}
+
+.swiper__slide {
+    margin-right: 20px;
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 86px;
+    }
+}
+
+.swiper__control {
+    display: flex;
+    text-align: left;
+}
+
+.swiper__btn {
+    background: none;
+    border: none;
+    fill: $white-color;
+    transition: fill 250ms $animation;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+.swiper__btn_next {
+    margin-right: 32px;
+}
