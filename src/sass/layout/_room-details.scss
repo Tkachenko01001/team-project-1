@@ -42,8 +42,46 @@
 }
 
 .room-details__buton {
+    display: block;
     @extend .btn;
     width: 384px;
     padding: 15px 24px;
-    color: $accent-color;
+    margin-bottom: 20px;
+    background-color: $black-color;
+    color: $white-color;
+    border: 1px solid $accent-color;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $black-color;
+        border-color: $accent-color;
+        cursor: pointer;
+    }
+}
+
+.room-details__return {
+    text-decoration: none;
+}
+
+.room-details__return-box {
+    display: flex;
+    gap: 12px;
+}
+
+.room-details__return-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20/16);
+    // letter-spacing: 0.02em;
+    color: $brown-color;
+}
+
+.room-details__return-icon {
+    fill: $brown-color;
 }
