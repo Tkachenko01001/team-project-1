@@ -147,10 +147,10 @@
   &__background-line--line1 {
     left: 33.81%;
     @media screen and (min-width: 1024px) {
-      left: 278px;
+      left: 27.148%;
     }
     @media screen and (min-width: 1280px) {
-      left: 338px;
+      left: 26.406%;
     }
   }
   &__background-line--line2 {
@@ -163,14 +163,11 @@
   }
   &__background-line--line3 {
     right: 33.81%;
-    @media screen and (min-width: 414px) {
-      right: 140px;
-    }
     @media screen and (min-width: 1024px) {
-      right: 278px;
+      right: 27.148%;
     }
     @media screen and (min-width: 1280px) {
-      right: 338px;
+      right: 26.406%;
     }
   }
 }
