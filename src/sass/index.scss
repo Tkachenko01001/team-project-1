@@ -13,6 +13,7 @@
 
 @import './components/about-our-hotel';
 
+@import './details_restaurant_mainpage';
 // @import './example';
 @import './layout/hotel-hero'; // hotel Hero
 
@@ -40,6 +41,5 @@ ul {
 // Images
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
