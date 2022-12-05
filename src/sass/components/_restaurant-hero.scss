@@ -5,6 +5,8 @@
 .restaurant-hero__overlay {
   background-color: rgba(0, 0, 0, 0.65);
   max-width: 1600px;
+  background-image: linear-gradient($gradient-color, $gradient-color),
+    url(../images/mobile/restaurant/mobile-restaurant-hero@1x.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,11 +22,6 @@
     screen and (min-resolution: 2dppx) and (max-width: 1023px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/mobile/restaurant/mobile-restaurant-hero@2x.jpg);
-  }
-
-  @media screen and (max-width: 1023px) {
-    background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/mobile/restaurant/mobile-restaurant-hero@1x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
@@ -191,23 +188,30 @@
 }
 
 .restaurant-address {
+  margin-right: 0;
   display: flex;
+  gap: 13px;
   align-items: center;
   justify-content: right;
-  border: 1px solid $accent-color;
-  border-radius: 2px;
-  padding: 8px 6px 9px 3px;
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  padding: 8px 8px 8px 10px;
 
-  @media screen and (max-width: 1023px) {
-    position: absolute;
-    top: 64px;
-    right: 15px;
-    padding: 8px 8px 8px 10px;
+  border: 1px solid $accent-transparent-color;
+  border-radius: 2px;
+  padding: 8px 5px 9px 11px;
+
+  @media screen and (min-width: 1024px) {
+    position: static;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 85px;
   }
 }
 
 .restaurant-address__link {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -216,14 +220,16 @@
   color: $address-text-color;
   text-decoration: none;
   text-align: left;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 .restaurant-address__icon {
   width: 20px;
   height: 20px;
   fill: $accent-color;
-  margin-left: 0;
-  margin-right: 8px;
 
   @media screen and (min-width: 1024px) {
     width: 24px;
