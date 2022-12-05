@@ -66,12 +66,12 @@
     }
   }
   &__title {
-    width: 303px;
+    max-width: 250px;
     margin: 0 auto;
     margin-bottom: 24px;
 
     font-family: 'Film P3';
-    font-size: 96px;
+    font-size: 80px;
     line-height: 1.04;
     letter-spacing: 0.3em;
 
@@ -79,6 +79,11 @@
 
     color: $white-color;
     text-shadow: 0px 4px 4px $img-shadow;
+
+    @media screen and (min-width: 418px) {
+      font-size: 96px;
+      max-width: 303px;
+    }
 
     @media screen and (min-width: 1024px) {
       width: 404px;
