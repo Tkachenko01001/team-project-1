@@ -11,8 +11,6 @@
 @import './footer'; // Container
 @import './components/restaurant-hero'; // Restaurant page Hero
 
-@import './components/about-our-hotel';
-
 // @import './example';
 @import './layout/hotel-hero'; // hotel Hero
 
@@ -40,6 +38,5 @@ ul {
 // Images
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
