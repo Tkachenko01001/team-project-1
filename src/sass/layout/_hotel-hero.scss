@@ -1,0 +1,254 @@
+$img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
+
+.hotel-hero {
+  width: 100%;
+  position: relative;
+  // top: 0;
+  // left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  // height: 100vh;
+  object-fit: cover;
+  padding: 181px 0 20px 0;
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    padding-top: 188px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 164px;
+    padding-bottom: 64px;
+  }
+
+  background-color: $img-hero-color;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/mobile/hotel/mobile-hotel-hero@1x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2) and (max-width: 1024px),
+    (min-resolution: 192dpi) and (max-width: 1024px),
+    (min-resolution: 2dppx) and (max-width: 1024px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/mobile/hotel/mobile-hotel-hero@2x.jpg);
+  }
+
+  @media (min-width: 1024px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/tablet/hotel/tablet-hotel-hero@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1024px) and (max-width: 1279px),
+    (min-resolution: 192dpi) and (min-width: 1024px) and (max-width: 1279px),
+    (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 1279px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/tablet/hotel/tablet-hotel-hero@2x.jpg);
+  }
+
+  @media (min-width: 1280px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/desktop/hotel/desktop-hotel-hero@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    (min-resolution: 192dpi) and (min-width: 1280px),
+    (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/desktop/hotel/desktop-hotel-hero@2x.jpg);
+  }
+}
+
+.hero__content {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0px;
+  }
+}
+
+.hero__title {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 80px;
+  line-height: calc(103 / 96);
+  color: $white-color;
+
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 4px 4px $img-shadow;
+
+  @media screen and (min-width: 414px) {
+    font-size: 96px;
+    max-width: 303px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 128px;
+    line-height: 1.07;
+    max-width: 404px;
+  }
+}
+
+.hero__subtitle {
+  max-width: 100%;
+  margin-bottom: 178px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: $white-color;
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 226px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 226px;
+  }
+}
+
+.hero__net-list {
+  display: flex;
+  fill: $accent-transparent-color;
+  list-style: none;
+  gap: 20px;
+
+  @media screen and (min-width: 1024px) {
+    left: 47px;
+    bottom: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.hero__net-link {
+  fill: $accent-transparent-color;
+  cursor: pointer;
+}
+
+.hero__menu {
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hotel-hero__address {
+  margin-right: 0;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  justify-content: right;
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  padding: 8px 8px 8px 10px;
+  text-decoration: none;
+
+  border: 1px solid $accent-transparent-color;
+  border-radius: 2px;
+  padding: 8px 5px 9px 11px;
+
+  @media screen and (min-width: 1024px) {
+    position: static;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 85px;
+  }
+}
+
+.hotel-hero__pin-icon {
+  fill: $accent-color;
+  width: 20px;
+  height: 20px;
+
+  @media screen and (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.hotel-hero__address-item {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-align: start;
+
+  text-decoration: none;
+  color: $address-text-color;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.hero__butons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.hero__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 60px;
+  }
+}
+.btn--mobile {
+  margin: 0 auto;
+  width: auto;
+  max-height: 48px;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  color: $accent-transparent-color;
+  background-color: $white-color;
+}
