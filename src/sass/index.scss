@@ -9,8 +9,11 @@
 
 @import './components/main-hero';
 @import './layout/about-our-restaurant';
+@import './footer'; // Container
+@import './components/restaurant-hero'; // Restaurant page Hero
 
 // @import './example';
+@import './layout/hotel-hero'; // hotel Hero
 
 body {
   font-family: 'Montserrat', 'Times New Roman', sans-serif;
