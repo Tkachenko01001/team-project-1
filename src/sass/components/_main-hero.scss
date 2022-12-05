@@ -1,6 +1,6 @@
 .main-hero {
   width: 100%;
-  position: relative;
+
   align-items: center;
   padding: 181px 0 20px;
   margin-right: auto;
@@ -13,13 +13,6 @@
   background-size: cover;
   background-position: center;
 
-  // @media screen and (min-width: 1024px) {
-  //   max-width: 1024px;
-  // }
-
-  // @media screen and (min-width: 1280px) {
-  //   max-width: 1280px;
-  // }
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
     screen and (min-resolution: 192dpi) and (max-width: 1023px),
     screen and (min-resolution: 2dppx) and (max-width: 1023px) {
@@ -51,12 +44,6 @@
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
-  }
-
-  .container--position {
-    @media screen and (max-width: 1024px) {
-      position: relative;
-    }
   }
 
   &__content {
@@ -134,7 +121,6 @@
   }
 
   &__nav {
-    position: static;
     @media screen and (min-width: 1024px) {
       display: flex;
       justify-content: space-between;
@@ -176,6 +162,9 @@
   border-radius: 2px;
   padding: 8px 5px 9px 11px;
 
+  @media screen and (min-width: 414px) {
+    position: fixed;
+  }
   @media screen and (min-width: 1024px) {
     position: static;
   }
@@ -235,7 +224,6 @@
   // bottom: 20px;
 
   @media screen and (min-width: 1024px) {
-    position: static;
     margin-top: 25px;
   }
 
