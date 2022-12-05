@@ -290,9 +290,7 @@
     left: 85px;
   }
 }
-.address__icon {
 
-}
 @media screen and (min-width: 1024px) {
   .address__icon {
     width: 24px;
