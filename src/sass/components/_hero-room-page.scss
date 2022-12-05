@@ -1,5 +1,12 @@
 .hero-room-page {
-  background-image: url('/src/images/desktop/room/desktop-room-hero@1x.jpg');
+  // background-image: url('/src/images/desktop/room/desktop-room-hero@1x.jpg');
+  background: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 10.17%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('/src/images/desktop/room/desktop-room-hero@1x.jpg');
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,7 +15,14 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/src/images/desktop/room/desktop-room-hero@2x.jpg');
+    // background-image: url('/src/images/desktop/room/desktop-room-hero@2x.jpg');
+    background: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 10.17%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('/src/images/desktop/room/desktop-room-hero@2x.jpg');
   }
   &__container {
     position: relative;
