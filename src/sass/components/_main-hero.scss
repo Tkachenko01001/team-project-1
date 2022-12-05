@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   align-items: center;
-  padding: 181px 15px 102px;
+  padding: 181px 15px 20px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -55,6 +55,17 @@
       url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
   }
 
+  // &__wrapper {
+  //   @media screen and (max-width: 1024px) {
+
+  // }
+  // }
+
+  &__content {
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 60px;
+    }
+  }
   &__title {
     width: 303px;
     margin: 0 auto;
@@ -196,6 +207,7 @@
 .btn--mobile {
   margin: 0 auto;
   width: auto;
+  max-height: 48px;
 
   @media screen and (min-width: 1024px) {
     margin-bottom: 0;
@@ -212,9 +224,9 @@
   gap: 20px;
   list-style: none;
 
-  position: absolute;
-  left: 15px;
-  bottom: 20px;
+  // position: absolute;
+  // left: 15px;
+  // bottom: 20px;
 
   @media screen and (min-width: 1024px) {
     position: static;
@@ -225,16 +237,7 @@
     display: none;
   }
 
-  &__icon {
-    width: 24px;
-    height: 24px;
+  &__link {
     fill: $accent-transparent-color;
-
-    transition: background-color 250ms $animation;
-
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
   }
 }
