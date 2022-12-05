@@ -79,12 +79,17 @@
       width: 518px;
     }
   }
+  &__picture1 {
+    max-width: auto;
+  }
   &__image1 {
-    margin-left: auto;
+    margin-left: 150px;
     border-radius: 2px;
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 32px;
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    max-width: auto;
+    margin-bottom: 32px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: 1024px) {
+      margin-left: auto;
     }
     @media screen and (min-width: 1024px) {
       position: absolute;
@@ -115,10 +120,11 @@
     }
   }
   &__picture {
-    flex-shrink: 0;
+    max-width: 200px;
   }
   &__image2 {
     border-radius: 2px;
+    max-width: 100%;
     @media screen and (max-width: 1024px) {
       box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     }
@@ -134,6 +140,7 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $brown-color;
+    max-width: 110px;
     @media screen and (min-width: 414px) {
       width: 163px;
       font-size: 12px;
@@ -179,8 +186,9 @@
   }
   // swiper
   .swiper {
+    position: relative;
+    width: 245px;
     @media screen and (min-width: 414px) {
-      position: relative;
       right: -15px;
       width: 330px;
     }
@@ -212,7 +220,7 @@
       box-sizing: content-box;
     }
     &-slide {
-      flex-shrink: 0;
+      flex-shrink: 1;
       width: 100%;
       height: 100%;
       position: relative;

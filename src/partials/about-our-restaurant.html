@@ -11,16 +11,16 @@
                     Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
-            <picture>
+            <picture class="about-our-restaurant__picture1">
                 <source
                     srcset="./images/mobile/homepage/mobile-homepage-pic-1@1x.jpg 1x, ./images/mobile/homepage/mobile-homepage-pic-1@2x.jpg 2x"
-                    type="image/jpeg" width="244" media="(max-width: 1023px)" />
+                    type="image/jpeg" media="(max-width: 1023px)" />
                 <source
                     srcset="./images/desktop/homepage/desktop-homepage-pic-1@1x.jpg 1x, ./images/desktop/homepage/desktop-homepage-pic-1@2x.jpg 2x"
-                    type="image/jpeg" width="460" media="(min-width: 1280px)" />
+                    type="image/jpeg" media="(min-width: 1280px)" />
                 <source
                     srcset="./images/tablet/homepage/tablet-homepage-pic-1@1x.jpg 1x, ./images/tablet/homepage/tablet-homepage-pic-1@2x.jpg 2x"
-                    type="image/jpeg" width="400" media="(min-width: 1024px)" />
+                    type="image/jpeg" media="(min-width: 1024px)" />
                 <img srcset="./images/tablet/homepage/tablet-homepage-pic-1@1x.jpg 1x, ./images/tablet/homepage/tablet-homepage-pic-1@2x.jpg 2x"
                     src="./images/tablet/homepage/tablet-homepage-pic-1@1x.jpg" alt="restaurant interior1"
                     class="about-our-restaurant__image1">
@@ -134,8 +134,10 @@
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
                     breakpoints: {
-                        300: {
+                        414: {
                             slidesPerView: 1.315,
                             spaceBetween: 25
                         },
