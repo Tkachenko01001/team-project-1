@@ -3,17 +3,18 @@
 @import './base/typography'; // fonts
 @import './utils/variables'; // colors/animations etc..
 
+@import './layout/header'; //header
+
 @import './components/visually-hidden'; // Hidden blocks
 @import './components/container'; // Container
 @import './components/btn'; // default button
-
 @import './components/main-hero';
-@import './footer'; // Container
+
+@import './footer'; // Footer
 @import './components/restaurant-hero'; // Restaurant page Hero
 @import './details_restaurant_mainpage';
 // @import './example';
 @import './layout/hotel-hero'; // hotel Hero
-
 
 body {
   font-family: 'Montserrat', 'Times New Roman', sans-serif;
