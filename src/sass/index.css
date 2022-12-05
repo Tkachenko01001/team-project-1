@@ -76,7 +76,7 @@ li {
   z-index: 1;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .container-header {
     width: 414px;
     height: 64px;
@@ -164,7 +164,7 @@ li {
     display: none;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) {
   .container-header {
     width: 1024px;
     height: 100px;
