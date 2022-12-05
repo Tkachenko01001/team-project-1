@@ -1,0 +1,222 @@
+td {
+    list-style-type: none;
+}
+
+.menu {
+
+    width: 100%;
+    padding-top: 32px;
+    margin: 0 auto;
+    background: #FFFDEE;
+
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 58;
+
+    }
+
+    &__container {
+        max-width: 411px;
+        margin: 0 auto;
+        padding: 0 15px;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 1024px;
+            padding: 0 47px 40px 47px;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;
+            padding: 0 85px 60px 85px;
+        }
+    }
+
+
+    &__title {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.16;
+        margin-bottom: 16px;
+
+        color: #000000;
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__box-flex {
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 89px;
+            width: 929px;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 1112px;
+
+            gap: 140px;
+        }
+
+    }
+
+
+    &__title-dish {
+        font-family: 'Times New Roman';
+        margin: 16px 0 16px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #000000;
+
+        @media screen and (min-width: 1024px) {
+            margin: 20px 0 20px;
+        }
+    }
+
+
+    &__list,
+    &__list-dessert {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 384px;
+        gap: 8px;
+
+        @media screen and (min-width: 1024px) {
+            width: 420px;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 485px;
+            gap: 12px;
+        }
+    }
+
+    &__list-dessert {
+        gap: 8px;
+
+        @media screen and (min-width: 1280px) {
+            gap: 9px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+
+
+
+        color: #000000;
+
+        @media screen and (min-width: 1024px) {
+            width: 420px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 485px;
+        }
+    }
+
+    &__dish {
+        width: 225px;
+
+        @media screen and (min-width: 1280px) {
+            width: 291px;
+        }
+    }
+
+    &__dish-name,
+    &__dish-dessert,
+    &__dish-late {
+        margin-bottom: 4px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+
+        @media screen and (min-width: 1280px) {
+            height: 20px;
+            font-size: 16px;
+            line-height: 1.25;
+        }
+    }
+
+    &__dish-dessert {
+        margin-bottom: 0;
+        height: 19px;
+
+        @media screen and (min-width: 1280px) {
+            height: 22px;
+
+        }
+
+    }
+
+    &__text {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+
+    &__weight {
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+
+        letter-spacing: 0.02em;
+
+        color: #000000;
+    }
+
+
+
+    &__price {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+
+        color: #000000;
+    }
+
+    &__button {
+        display: block;
+        padding: 15px 24px;
+        margin: 32px auto 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color: #F3C653;
+
+        background: #000000;
+        border: 2px solid #FFFDEE;
+        border-radius: 25px;
+
+        @media screen and (min-width: 1024px) {
+            margin: 40px 0 0 auto;
+        }
+
+    }
+
+}
