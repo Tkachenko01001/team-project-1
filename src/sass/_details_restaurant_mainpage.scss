@@ -136,7 +136,7 @@
     }
 }
 
-.restaurant-button__list {
+.restaurant-btn__list {
     list-style: none;
 
     @media screen and (min-width:1024px) {
@@ -145,7 +145,7 @@
     }
 }
 
-.restaurant-button__item {
+.restaurant-btn__item {
     margin-bottom: 16px;
 
     &:last-child {
@@ -153,7 +153,7 @@
     }
 }
 
-.restaurant-button {
+.restaurant-btn {
     display: inline;
     width: 236px;
     height: 48px;
@@ -174,7 +174,7 @@
     }
 }
 
-.restaurant__link {
+.restaurant-btn__link {
     text-decoration: none;
     color: $accent-color;
 
@@ -242,31 +242,32 @@
 }
 
 .swiper {
-    width: 379px;
+    max-width: 379px;
     overflow: hidden;
     margin-bottom: 16px;
 
     @media screen and (min-width: 1024px) {
-        width: 664px;
+        max-width: 664px;
         margin-bottom: 24px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 876px;
+        max-width: 876px;
     }
 }
 
 .swiper__wrapper {
     width: 100%;
     display: flex;
-
 }
 
 .swiper__container {
     position: absolute;
     top: 228px;
     right: 0;
+    left: auto;
     z-index: 2;
+    left: auto;
 
     @media screen and (min-width: 1024px) {
         top: 254px;
