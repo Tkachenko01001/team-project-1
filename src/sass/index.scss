@@ -9,10 +9,12 @@
 
 @import './components/main-hero';
 @import './footer'; // Container
+@import './components/restaurant-hero'; // Restaurant page Hero
 
 @import './components/about-our-hotel';
 
 // @import './example';
+@import './layout/hotel-hero'; // hotel Hero
 
 
 body {
