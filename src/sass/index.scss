@@ -11,9 +11,10 @@
 @import './components/main-hero';
 @import './footer'; // Container
 @import './components/restaurant-hero'; // Restaurant page Hero
-
+@import './details_restaurant_mainpage';
 // @import './example';
 @import './_one-room-for-two-adults';
+@import './layout/hotel-hero'; // hotel Hero
 
 
 body {
@@ -40,6 +41,5 @@ ul {
 // Images
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
