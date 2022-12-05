@@ -88,7 +88,7 @@
     width: 414px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) {
   .container {
     width: 1024px;
     padding-left: 47px;
@@ -103,7 +103,7 @@
   }
 }
 
-.btn {
+.btn, .hero__button-price, .hero__button-room {
   display: block;
   width: 240px;
   padding: 15px 24px;
@@ -120,9 +120,17 @@
 }
 
 .main-hero {
+
   min-width: 414px;
   width: 100%;
   padding: 181px 0px 102px 0px;
+
+  max-width: 1600px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  padding: 181px 15px 102px;
+
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -140,13 +148,19 @@
 @media screen and (min-width: 1024px) {
   .main-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/homepage/tablet-homepage-hero@1x.jpg);
+
     padding: 188px 0px 64px 0px;
+
+    padding: 188px 0px 15px 0px;
+
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (min-resolution: 192dpi) and (min-width: 1024px), screen and (min-resolution: 2dppx) and (min-width: 1024px) {
   .main-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/homepage/tablet-homepage-hero@2x.jpg);
+
     padding: 188px 0px 64px 0px;
+
   }
 }
 @media screen and (min-width: 1280px) {
@@ -158,7 +172,9 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .main-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
+
     padding: 164px 0px 64px 0px;
+
   }
 }
 .main-hero__title {
@@ -256,16 +272,28 @@
   gap: 13px;
   align-items: center;
   justify-content: right;
+
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  padding: 8px 8px 8px 10px;
+
   border: 1px solid rgb(243, 198, 83);
   border-radius: 2px;
   padding: 8px 5px 9px 11px;
 }
+
 @media screen and (max-width: 1024px) {
   .address {
     position: absolute;
     top: 64px;
     right: 15px;
     padding: 8px 8px 8px 10px;
+  }
+
+@media screen and (min-width: 1024px) {
+  .address {
+    position: static;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -274,9 +302,15 @@
   }
 }
 .address__icon {
+
   width: 20px;
   height: 20px;
   fill: rgb(243, 198, 83);
+
+  fill: rgb(243, 198, 83);
+  width: 20px;
+  height: 20px;
+
 }
 @media screen and (min-width: 1024px) {
   .address__icon {
@@ -289,6 +323,9 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.01em;
+
+  text-align: start;
+
   text-decoration: none;
   color: rgb(229, 229, 229);
 }
@@ -308,9 +345,47 @@
   }
 }
 
+
 .btn:hover,
 .btn:focus {
   background-color: rgb(255, 255, 255);
+}
+
+
+.btn:hover, .hero__button-price:hover, .hero__button-room:hover,
+.btn:focus,
+.hero__button-price:focus,
+.hero__button-room:focus {
+  background-color: rgb(255, 255, 255);
+}
+
+.social-net {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  position: absolute;
+  left: 15px;
+  bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .social-net {
+    position: static;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .social-net {
+    display: none;
+  }
+}
+.social-net__icon {
+  width: 24px;
+  height: 24px;
+  fill: rgba(243, 198, 83, 0.7);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-net__icon:hover, .social-net__icon:focus {
+  fill: rgb(243, 198, 83);
 }
 
 .list {
@@ -466,6 +541,287 @@
   .footer-social__icon {
     margin-left: 17px;
   }
+}
+
+
+.restaurant-hero {
+  text-align: center;
+}
+
+.restaurant-hero__overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  max-width: 1600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 181px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px), screen and (min-resolution: 192dpi) and (max-width: 1023px), screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .restaurant-hero__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/restaurant/mobile-restaurant-hero@2x.jpg);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .restaurant-hero__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/restaurant/mobile-restaurant-hero@1x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (min-resolution: 192dpi) and (min-width: 1024px), screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .restaurant-hero__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/restaurant/tablet-restaurant-hero@2x.jpg);
+    padding: 188px 0px 64px 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-hero__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/restaurant/tablet-restaurant-hero@1x.jpg);
+    padding: 188px 0px 15px 0px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .restaurant-hero__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/restaurant/desktop-restaurant-hero@2x.jpg);
+    padding: 164px 0px 15px 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant-hero__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/restaurant/desktop-restaurant-hero@1x.jpg);
+    padding: 164px 0px 64px 0px;
+  }
+}
+
+.restaurant-hero__title {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  margin-top: 0;
+  max-width: 303px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-hero__title {
+    font-size: 128px;
+    line-height: 1.07;
+    margin-bottom: 16px;
+    max-width: 404px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant-hero__title {
+    margin-bottom: 32px;
+  }
+}
+
+.restaurant-hero__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: rgb(253, 251, 236);
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-hero__subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    margin-bottom: 56px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant-hero__subtitle {
+    margin-bottom: 64px;
+  }
+}
+
+.restaurant-hero__text {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: rgb(253, 251, 236);
+  text-transform: uppercase;
+  margin-bottom: 113px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-hero__text {
+    font-size: 36px;
+    line-height: 1.14;
+    color: rgb(255, 255, 255);
+    margin-bottom: 137px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant-hero__text {
+    margin-bottom: 135px;
+  }
+}
+
+.restaurant-button__list {
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-button__list {
+    display: flex;
+  }
+}
+
+.restaurant-button__item {
+  margin-bottom: 24px;
+}
+.restaurant-button__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-button__item {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+  .restaurant-button__item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-button__item {
+    margin-right: 60px;
+  }
+  .restaurant-button__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.restaurant-button {
+  display: inline;
+  width: 236px;
+  height: 48px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.restaurant-button:hover, .restaurant-button:focus {
+  color: rgba(243, 198, 83, 0.7);
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-button {
+    height: 49px;
+  }
+}
+
+.restaurant__link {
+  text-decoration: none;
+  color: rgb(243, 198, 83);
+}
+.restaurant__link:hover, .restaurant__link:focus {
+  color: rgba(243, 198, 83, 0.7);
+}
+
+.restaurant-address {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  border: 1px solid rgb(243, 198, 83);
+  border-radius: 2px;
+  padding: 8px 6px 9px 3px;
+}
+@media screen and (max-width: 1023px) {
+  .restaurant-address {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+    padding: 8px 8px 8px 10px;
+  }
+}
+
+.restaurant-address__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: rgb(229, 229, 229);
+  text-decoration: none;
+  text-align: left;
+}
+
+.restaurant-address__icon {
+  width: 20px;
+  height: 20px;
+  fill: rgb(243, 198, 83);
+  margin-left: 0;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-address__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant-hero__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.restaurant-hero__content {
+  margin-bottom: 58px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-hero__content {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant-hero__content {
+    margin-bottom: 0;
+  }
+}
+
+.soc__list {
+  list-style: none;
+  display: flex;
+  text-align: left;
+}
+@media screen and (min-width: 1280px) {
+  .soc__list {
+    display: none;
+  }
+}
+
+.soc__link {
+  text-decoration: none;
+  fill: rgb(243, 198, 83);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc__link:hover, .soc__linkfocus {
+  color: rgba(243, 198, 83, 0.7);
+}
+
+.soc__item {
+  margin-right: 20px;
+}
+.soc__item:last-child {
+  margin-right: 0;
 }
 
 .our-hotel {
@@ -830,6 +1186,581 @@
   top: 0px;
 }
 
+.details-restaurant {
+  text-align: center;
+  position: relative;
+}
+
+.details-restaurant__overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  max-width: 1600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 24px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px), screen and (min-resolution: 192dpi) and (max-width: 1023px), screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .details-restaurant__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/homepage/mobile-homepage-bg-pic-1@2x.jpg);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .details-restaurant__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/homepage/mobile-homepage-bg-pic-1@1x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (min-resolution: 192dpi) and (min-width: 1024px), screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .details-restaurant__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/homepage/tablet-homepage-bg-pic@2x.jpg);
+    padding: 48px 0px 96px 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/homepage/tablet-homepage-bg-pic@1x.jpg);
+    padding: 48px 0px 96px 0px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .details-restaurant__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/homepage/desktop-homepage-bg-pic@2x.jpg);
+    padding: 48px 0px 94px 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/homepage/desktop-homepage-bg-pic@1x.jpg);
+    padding: 48px 0px 94px 0px;
+  }
+}
+
+.details-restaurant__container {
+  z-index: 2;
+}
+
+.details-restaurant__info {
+  max-width: 259px;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 398px;
+  text-align: left;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__info {
+    max-width: 610px;
+    margin-bottom: 198px;
+    margin-right: 89px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__info {
+    margin-bottom: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.details-restaurant__title {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  margin-bottom: 12px;
+  margin-top: 0;
+  height: 43px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__title {
+    font-size: 64px;
+    margin-bottom: 16px;
+    height: 69px;
+  }
+}
+
+.details-restaurant__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__subtitle {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.details-restaurant__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: rgb(130, 130, 130);
+  height: 62px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__text {
+    font-size: 16px;
+    line-height: 1.25;
+    height: 44px;
+  }
+}
+
+.restaurant-btn__list {
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-btn__list {
+    text-align: left;
+  }
+}
+
+.restaurant-btn__item {
+  margin-bottom: 16px;
+}
+.restaurant-btn__item:last-child {
+  margin-bottom: 0;
+}
+
+.restaurant-btn {
+  display: inline;
+  width: 236px;
+  height: 48px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.restaurant-btn:hover, .restaurant-btn:focus {
+  color: rgba(243, 198, 83, 0.7);
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .restaurant-btn {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+.restaurant-btn__link {
+  text-decoration: none;
+  color: rgb(243, 198, 83);
+}
+.restaurant-btn__link:hover, .restaurant-btn__link:focus {
+  color: rgba(243, 198, 83, 0.7);
+}
+
+.line-one::after {
+  content: "";
+  height: 735px;
+  right: 33.81%;
+  display: block;
+  top: 0;
+  position: absolute;
+  border: 1px solid rgba(122, 122, 122, 0.4);
+  filter: blur(0.5px);
+  z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .line-one::after {
+    height: 620px;
+    right: 27.14%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .line-one::after {
+    right: 26.4%;
+  }
+}
+
+.line-two::after {
+  content: "";
+  height: 735px;
+  left: 33.81%;
+  display: block;
+  top: 0;
+  position: absolute;
+  border: 1px solid rgba(122, 122, 122, 0.4);
+  filter: blur(0.5px);
+  z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .line-two::after {
+    height: 620px;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .line-three::after {
+    content: "";
+    height: 620px;
+    left: 27.14%;
+    display: block;
+    top: 0;
+    position: absolute;
+    border: 1px solid rgba(122, 122, 122, 0.4);
+    filter: blur(0.5px);
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  .line-three::after {
+    left: 26.4%;
+  }
+}
+
+.swiper {
+  max-width: 379px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .swiper {
+    max-width: 664px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper {
+    max-width: 876px;
+  }
+}
+
+.swiper__wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.swiper__container {
+  position: absolute;
+  top: 228px;
+  right: 0;
+  left: auto;
+  z-index: 2;
+  left: auto;
+}
+@media screen and (min-width: 1024px) {
+  .swiper__container {
+    top: 254px;
+    right: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .swiper__container {
+    right: 52px;
+  }
+}
+
+.swiper__slide {
+  margin-right: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .swiper__slide {
+    margin-right: 34px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper__slide {
+    margin-right: 86px;
+  }
+}
+
+.swiper__control {
+  display: flex;
+  text-align: left;
+}
+
+.swiper__btn {
+  background: none;
+  border: none;
+  fill: rgb(255, 255, 255);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.swiper__btn:hover, .swiper__btn:focus {
+  fill: rgb(243, 198, 83);
+}
+
+.swiper__btn_next {
+  margin-right: 32px;
+}
+
+.hotel-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 181px 0 102px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/hotel/mobile-hotel-hero@1x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  .hotel-hero {
+    padding-top: 188px;
+    padding-bottom: 64px;
+  }
+}
+@media (min-width: 1280px) {
+  .hotel-hero {
+    padding-top: 164px;
+    padding-bottom: 64px;
+  }
+}
+@media (max-width: 1024px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/hotel/mobile-hotel-hero@1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (max-width: 1024px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), (min-resolution: 192dpi) and (max-width: 1024px), (min-resolution: 2dppx) and (max-width: 1024px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/hotel/mobile-hotel-hero@2x.jpg);
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/hotel/tablet-hotel-hero@1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1024px) and (max-width: 1279px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px) and (max-width: 1279px), (min-resolution: 192dpi) and (min-width: 1024px) and (max-width: 1279px), (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 1279px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tablet/hotel/tablet-hotel-hero@2x.jpg);
+  }
+}
+@media (min-width: 1280px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/hotel/desktop-hotel-hero@1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1280px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), (min-resolution: 192dpi) and (min-width: 1280px), (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/hotel/desktop-hotel-hero@2x.jpg);
+  }
+}
+
+.hero__title {
+  max-width: 100%;
+  margin-bottom: 24px;
+  margin-left: auto;
+  font-family: "Film P3";
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.0729166667;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    font-size: 128px;
+    line-height: 1.078125;
+    letter-spacing: 0.3em;
+  }
+}
+
+.hero__subtitle {
+  max-width: 100%;
+  margin-bottom: 178px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .hero__subtitle {
+    margin-bottom: 226px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__subtitle {
+    margin-bottom: 226px;
+  }
+}
+
+.hero__net-list {
+  position: absolute;
+  left: 15px;
+  bottom: 20px;
+  display: flex;
+  fill: rgba(243, 198, 83, 0.7);
+  list-style: none;
+  gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__net-list {
+    left: 47px;
+    bottom: 15px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__net-list {
+    display: none;
+  }
+}
+
+.hero__net-link {
+  fill: rgba(243, 198, 83, 0.7);
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .hero__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hotel-hero__address {
+  display: block;
+  border: 1px solid;
+  border-color: rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  color: rgb(229, 229, 229);
+}
+.hotel-hero__address hover, .hotel-hero__address focus {
+  cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .hotel-hero__address {
+    position: absolute;
+    left: auto;
+    right: auto;
+    right: 15px;
+    top: 64px;
+    width: 210px;
+    height: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-top: -3px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+  }
+}
+@media (min-width: 1024px) {
+  .hotel-hero__address {
+    width: 285px;
+    height: 56px;
+    text-decoration: none;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.hotel-hero__pin-icon {
+  fill: rgba(243, 198, 83, 0.7);
+}
+
+.hotel-hero__where {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hotel-hero__address-item {
+  color: rgb(229, 229, 229);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+@media (min-width: 1024px) {
+  .hotel-hero__address-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.hero__butons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .hero__butons {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.hero__button-room {
+  display: block;
+  margin-bottom: 24px;
+  width: 232px;
+  padding: 13px;
+}
+@media (min-width: 1024px) {
+  .hero__button-room {
+    margin-bottom: 0px;
+  }
+}
+.hero__button-room hover, .hero__button-room focus {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(243, 198, 83);
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .hero__button-room {
+    width: 236px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__button-room {
+    width: 240px;
+  }
+}
+
+.hero__button-price {
+  display: block;
+  margin-bottom: 24px;
+  width: 232px;
+  padding: 13px;
+}
+@media (min-width: 1024px) {
+  .hero__button-price {
+    margin-bottom: 0px;
+  }
+}
+.hero__button-price hover, .hero__button-price focus {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(243, 198, 83);
+}
+
 body {
   font-family: "Montserrat", "Times New Roman", sans-serif;
   font-size: 16px;
@@ -852,6 +1783,5 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
-}/*# sourceMappingURL=index.css.map */
+}
