@@ -1,0 +1,49 @@
+.room-details {
+    width: 100vw;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $fon-lemon;
+}
+
+.room-deyails__list {
+    list-style: none;
+}
+
+.room-details__part {
+    margin-bottom: 32px;
+}
+
+.room-details__main-title {
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: calc(37/32);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.room-details__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(37/32);
+    color: $primary-text-color;
+    margin-bottom: 16px;
+}
+
+.room-details__title {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.room-details__buton {
+    @extend .btn;
+    width: 384px;
+    padding: 15px 24px;
+    color: $accent-color;
+}
