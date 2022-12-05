@@ -53,10 +53,11 @@
     color: $logo-color;
     margin-bottom: 12px;
     @media screen and (min-width: 1024px) {
-      color: $grey-font;
       font-size: 64px;
       margin-bottom: 24px;
     }
+     @media screen and (min-width: 1280px) {
+      color: $grey-font;}
   }
   &__text1 {
     font-family: 'Montserrat';
