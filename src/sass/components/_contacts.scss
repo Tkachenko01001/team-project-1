@@ -7,6 +7,7 @@
 .contacts {
   background-color: $fon-lemon;
   width: 100%;
+  
   padding: 36px 0 32px;
   
 
@@ -34,6 +35,7 @@
     max-width: 1280px;}
 }
 
+
 .contacts__subtitle {
   font-family: 'Film P3', sans-serif;
   font-weight: 700;
@@ -43,6 +45,11 @@
   letter-spacing: 0.3em;
   color: $logo-color;
   margin-bottom: 12px;
+
+  @media screen and (min-width:1024px) {
+    font-weight: 700;
+    font-size: 64px;
+  }
 }
 
 .contacts__desc {
@@ -53,6 +60,11 @@
   letter-spacing: 0.02em;
   color: $primary-dark-text;
   margin-bottom: 16px;
+
+  @media screen and (min-width:1024px){
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .contacts__list {
@@ -64,16 +76,35 @@
   align-items: center;
   color: $brown-color;
 
+  @media screen and (max-width: 414px) {
+    display: block;
+    justify-content: start;
+    }
+
   @media screen and (min-width: 1024px) {
     display: block;
     justify-content: start;
   }
+
 }
 
 .contacts__item {
   display: flex;
 }
 
+.contacts__restaurant,
+.contacts__hotel {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $brown-color;
+
+  @media screen and (min-width: 414px) {
+    font-size: 20px;
+  }
+
+}
 .contacts__item:nth-child(2n) {
   padding: 0;
 
@@ -96,8 +127,15 @@
 }
 
 .contacts__item:nth-child(2) {
-  margin-right: 100px;
-  margin-left: 38px;
+  width: 112px;
+  margin-right: 80px;
+  margin-left: 20px;
+
+  @media screen and (min-width: 414px){
+    width: 144px;
+    margin-right: 100px;
+    margin-left: 6px;
+  }
 
   @media screen and (min-width: 1024px) {
     margin-right: 100px;
@@ -107,7 +145,12 @@
 }
 
 .contacts__item:nth-child(4) {
-  margin-left: 64px;
+  margin-left: 195px;
+
+  @media screen and (min-width: 414px) {
+      width: 260px;
+      margin-left: 38px;
+    }
 
   @media screen and (min-width: 1024px) {
     margin-left: 0;
@@ -115,24 +158,14 @@
 
 }
 
-.contacts__item--right{
-  @media screen and (max-width: 1024px){
-    justify-content: end;
-  }
-}
-.contacts__item--left{
-  @media screen and (max-width: 1024px){
-    justify-content: start;
-  }
-}
 
 .contacts__link {
   display: flex;
   align-items: center;
-  padding: 9px 8px 7px 0px;
+  padding: 9px 8px 7px 5px;
 
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: $brown-color;
@@ -152,18 +185,18 @@
   }
 
 }
-
 .contacts__link-map {
   display: flex;
   align-items: center;
   padding: 8px 33px 7px 10px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.01em;
   text-decoration: none;
+  gap: 10px;
 
-  width: 247px;
+  width: 195px;
 
   color: $logo-color;
   background: $white-color;
@@ -172,9 +205,14 @@
   border-color: $accent-color;
   margin-bottom: 32px;
 
+  @media screen and (min-width: 414px) {
+    font-size: 16px;
+    width: 260px;
+  }
+
   @media screen and (min-width: 1024px) {
-      width: 292px;
-    }
+    padding: 8px 8px 7px 10px;
+  }
 }
 
 .contacts__icon {
@@ -189,10 +227,14 @@
 }
 
 .contacts__text {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: $logo-color;
+
+  @media screen and (min-width: 414px) {
+    font-size: 14px;
+  }
 
   @media screen and (min-width: 1024px) {
     display: block;
@@ -200,8 +242,12 @@
 }
 
 .contacts__map {
-  width: 384px;
-  height: 220px;
+  width: 100%;
+  
+  @media screen and (min-width: 414px) {
+    width: 384px;
+    height: 220px;
+  }
 
   @media screen and (min-width: 1024px) {
     width: 535px;
@@ -213,4 +259,60 @@
     height: 412px;
   }
 
+}
+
+.line-one::after {
+  content: '';
+  height: 735px;
+  right: 33.81%;
+  display: block;
+  top: 0;
+  position: absolute;
+  border: 1px solid rgba(122, 122, 122, 0.4);
+  filter: blur(0.5px);
+  z-index: 1;
+
+  @media screen and (min-width: 1024px) {
+    height: 620px;
+    right: 27.14%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    right: 26.4%;
+  }
+}
+
+.line-two::after {
+  content: '';
+  height: 735px;
+  left: 33.81%;
+  display: block;
+  top: 0;
+  position: absolute;
+  border: 1px solid rgba(122, 122, 122, 0.4);
+  filter: blur(0.5px);
+  z-index: 1;
+
+  @media screen and (min-width: 1024px) {
+    height: 620px;
+    left: 50%;
+  }
+}
+
+.line-three::after {
+  @media screen and (min-width: 1024px) {
+    content: '';
+    height: 620px;
+    left: 27.14%;
+    display: block;
+    top: 0;
+    position: absolute;
+    border: 1px solid rgba(122, 122, 122, 0.4);
+    filter: blur(0.5px);
+    z-index: 1;
+
+    @media screen and (min-width: 1024px) {
+      left: 26.4%;
+    }
+  }
 }
