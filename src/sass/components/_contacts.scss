@@ -5,6 +5,7 @@
 }
 
 .contacts {
+  position: relative;
   background-color: $fon-lemon;
   width: 100%;
   
@@ -21,6 +22,8 @@
 }
 
 .contacts__container {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   max-width: 414px;
@@ -90,8 +93,19 @@
 
 .contacts__item {
   display: flex;
+
+  @media screen and (max-width: 414px) {
+    display: inline-block;
+  }
 }
 
+.contacts__item--left{
+  margin-left: 0px;
+  display: block;
+}
+/*.contacts__item--right{
+  margin-left: 0px;
+}*/
 .contacts__restaurant,
 .contacts__hotel {
   font-weight: 500;
@@ -131,6 +145,11 @@
   margin-right: 80px;
   margin-left: 20px;
 
+  @media screen and (max-width: 414px) {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+
   @media screen and (min-width: 414px){
     width: 144px;
     margin-right: 100px;
@@ -146,6 +165,12 @@
 
 .contacts__item:nth-child(4) {
   margin-left: 195px;
+
+  @media screen and (max-width: 414px) {
+    width: 200px;
+    display: flex;
+    margin-left: 0px;
+  }
 
   @media screen and (min-width: 414px) {
       width: 260px;
@@ -180,6 +205,10 @@
   display: flex;
   justify-content: end;
 
+  @media screen and (max-width: 414px){
+    justify-content: start;
+  }
+
   @media screen and (min-width: 1024px) {
     justify-content: start;
   }
@@ -204,6 +233,10 @@
   border-radius: 2px;
   border-color: $accent-color;
   margin-bottom: 32px;
+
+  @media screen and (max-width: 414px) {
+    width: 200px;
+  } 
 
   @media screen and (min-width: 414px) {
     font-size: 16px;
@@ -261,58 +294,42 @@
 
 }
 
-.line-one::after {
-  content: '';
-  height: 735px;
-  right: 33.81%;
-  display: block;
-  top: 0;
-  position: absolute;
-  border: 1px solid rgba(122, 122, 122, 0.4);
+.contact-background-line {
+  z-index: 0;
   filter: blur(0.5px);
-  z-index: 1;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.contact-background-line--line1 {
+  left: 33.81%;
 
   @media screen and (min-width: 1024px) {
-    height: 620px;
-    right: 27.14%;
+    left: 27.148%;
   }
 
-  @media screen and (min-width: 1024px) {
-    right: 26.4%;
+  @media screen and (min-width: 1280px) {
+    left: 26.406%;
   }
 }
-
-.line-two::after {
-  content: '';
-  height: 735px;
-  left: 33.81%;
-  display: block;
-  top: 0;
-  position: absolute;
-  border: 1px solid rgba(122, 122, 122, 0.4);
-  filter: blur(0.5px);
-  z-index: 1;
+.contact-background-line--line2 {
+  @media screen and (max-width: 1024px) {
+    opacity: 0;
+  }
 
   @media screen and (min-width: 1024px) {
-    height: 620px;
     left: 50%;
   }
 }
+.contact-background-line--line3 {
+  right: 33.81%;
 
-.line-three::after {
   @media screen and (min-width: 1024px) {
-    content: '';
-    height: 620px;
-    left: 27.14%;
-    display: block;
-    top: 0;
-    position: absolute;
-    border: 1px solid rgba(122, 122, 122, 0.4);
-    filter: blur(0.5px);
-    z-index: 1;
+    right: 27.148%;
+  }
 
-    @media screen and (min-width: 1024px) {
-      left: 26.4%;
-    }
+  @media screen and (min-width: 1280px) {
+    right: 26.406%;
   }
 }
