@@ -1,10 +1,8 @@
 .main-hero {
-  max-width: 1600px;
-
   width: 100%;
   position: relative;
   align-items: center;
-  padding: 181px 15px 102px;
+  padding: 181px 15px 20px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -55,13 +53,25 @@
       url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
   }
 
+  // &__wrapper {
+  //   @media screen and (max-width: 1024px) {
+
+  // }
+  // }
+
+  &__content {
+    margin-bottom: 60px;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 0px;
+    }
+  }
   &__title {
-    width: 303px;
+    max-width: 250px;
     margin: 0 auto;
     margin-bottom: 24px;
 
     font-family: 'Film P3';
-    font-size: 96px;
+    font-size: 80px;
     line-height: 1.04;
     letter-spacing: 0.3em;
 
@@ -70,8 +80,13 @@
     color: $white-color;
     text-shadow: 0px 4px 4px $img-shadow;
 
+    @media screen and (min-width: 414px) {
+      font-size: 96px;
+      max-width: 303px;
+    }
+
     @media screen and (min-width: 1024px) {
-      width: 404px;
+      max-width: 404px;
       font-size: 128px;
       margin-bottom: 16px;
       line-height: 1.07;
@@ -156,7 +171,7 @@
   right: 15px;
   padding: 8px 8px 8px 10px;
 
-  border: 1px solid $accent-color;
+  border: 1px solid $accent-transparent-color;
   border-radius: 2px;
   padding: 8px 5px 9px 11px;
 
@@ -196,6 +211,7 @@
 .btn--mobile {
   margin: 0 auto;
   width: auto;
+  max-height: 48px;
 
   @media screen and (min-width: 1024px) {
     margin-bottom: 0;
@@ -204,6 +220,7 @@
 
 .btn:hover,
 .btn:focus {
+  color: $accent-transparent-color;
   background-color: $white-color;
 }
 
@@ -212,9 +229,9 @@
   gap: 20px;
   list-style: none;
 
-  position: absolute;
-  left: 15px;
-  bottom: 20px;
+  // position: absolute;
+  // left: 15px;
+  // bottom: 20px;
 
   @media screen and (min-width: 1024px) {
     position: static;
@@ -225,16 +242,7 @@
     display: none;
   }
 
-  &__icon {
-    width: 24px;
-    height: 24px;
+  &__link {
     fill: $accent-transparent-color;
-
-    transition: background-color 250ms $animation;
-
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
   }
 }
