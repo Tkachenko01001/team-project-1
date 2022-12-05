@@ -40,8 +40,9 @@
 <symbol id="icon-close-btn-vector-2" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M2.395 2.395l27.429 27.429"></path>
 </symbol>
-<symbol id="icon-icon-close-btn" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M27.429 3.428l-24 24M3.429 3.428l24 24"></path>
+<symbol id="icon-close-btn" viewBox="0 0 32 32">
+<path d="M28.284 0.808l-27.476 27.476c-0.446 0.446-0.446 1.17 0 1.616s1.17 0.446 1.616 0l27.476-27.476c0.446-0.446 0.446-1.17 0-1.616s-1.17-0.446-1.616 0z"></path>
+<path d="M2.424 0.808l27.476 27.476c0.446 0.446 0.446 1.17 0 1.616s-1.17 0.446-1.616 0l-27.476-27.476c-0.446-0.446-0.446-1.17 0-1.616s1.17-0.446 1.616 0z"></path>
 </symbol>
 </defs>
 </svg>
