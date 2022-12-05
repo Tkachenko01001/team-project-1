@@ -1,14 +1,14 @@
-$primary-text-color: rgba(122, 122, 122, 1); // text primary
-$primary-dark-text: rgba(95, 95, 95, 1); //restaurant text
+$primary-text-color: rgb(122, 122, 122); // text primary
+$primary-dark-text: rgb(95, 95, 95); //restaurant text
 $black-color: rgba(0, 0, 0, 1);
 $btn-bgc: rgba(0, 0, 0, 0.4); //buttons background
 $img-shadow: rgba(0, 0, 0, 0.25); //images shadow
 $white-color: rgba(255, 255, 255, 1);
-$accent-color: rgba(243, 198, 83, 1); //yellow color accent
+$accent-color: rgb(243, 198, 83); //yellow color accent
 $accent-transparent-color: rgba(243, 198, 83, 0.7); //transparent yellow
 $brown-color: rgba(199, 144, 2, 1); //simple brown color
-$logo-color: rgba(73, 72, 72, 1); //page logo color
-$grey-font: rgba(130, 130, 130, 1); // grey logo
+$logo-color: rgb(73, 72, 72); //page logo color
+$grey-font: rgb(130, 130, 130); // grey logo
 $address-text-color: rgba(229, 229, 229, 1); //address text
 $subtitle-color: rgba(180, 180, 180, 1);
 $gradient-color: rgba(0, 0, 0, 0.65);
@@ -24,7 +24,7 @@ $footer-bgc: rgba(14, 12, 7, 1); //footer bacjground
 $img-background: rgba(218, 218, 218, 1); //images background
 
 //icons
-$arrow-grey: rgba(128, 128, 128, 1); //arrow background
+$arrow-grey: rgb(128, 128, 128); //arrow background
 $close-icon: rgba(217, 217, 217, 1); //close icon
 
 //animation

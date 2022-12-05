@@ -3,11 +3,14 @@
 @import './base/typography'; // fonts
 @import './utils/variables'; // colors/animations etc..
 
+@import './layout/header'; //header
+
 @import './components/visually-hidden'; // Hidden blocks
 @import './components/container'; // Container
+@import './components/modal-table-reserve'; // Modal table reserve
 @import './components/btn'; // default button
-
 @import './components/main-hero';
+
 @import './layout/about-our-restaurant';
 @import './components/restaurant-hero'; // Restaurant page Hero
 @import './components/contacts';
