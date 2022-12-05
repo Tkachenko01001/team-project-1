@@ -14,13 +14,13 @@
 // @import './example';
 @import './layout/hotel-hero'; // hotel Hero
 
-
 body {
   font-family: 'Montserrat', 'Times New Roman', sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.25;
+  max-width: 1600px;
 }
 
 h1,
