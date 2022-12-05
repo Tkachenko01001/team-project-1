@@ -136,6 +136,7 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
     list-style: none;
     gap: 20px;
 
+
     @media screen and (min-width: 1024px) {
         left: 47px;
         bottom: 15px;
@@ -166,8 +167,8 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
     border-radius: 2px;
     color: $address-text-color;
 
-    & hover,
-    & focus {
+    &:hover,
+    &:focus {
         cursor: pointer;
     }
 
@@ -252,8 +253,8 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
     }
 
 
-    & hover,
-    & focus {
+    &:hover,
+    &:focus {
         background-color: $white-color;
         border-color: $white-color;
         color: $accent-color;
@@ -281,8 +282,8 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
         margin-bottom: 0px;
     }
 
-    & hover,
-    & focus {
+    &:hover,
+    &:focus {
         background-color: $white-color;
         border-color: $white-color;
         color: $accent-color;
