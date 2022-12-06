@@ -29,24 +29,24 @@
     screen and (min-resolution: 192dpi) and (min-width: 1024px),
     screen and (min-resolution: 2dppx) and (min-width: 1024px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/tablet/homepage/tablet-homepage-bg-pic@2x.jpg);
+      url(../images/tablet/homepage/tablet-homepage-pic-3@2x.jpg);
   }
 
   @media screen and (min-width: 1024px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/tablet/homepage/tablet-homepage-bg-pic@1x.jpg);
+      url(../images/tablet/homepage/tablet-homepage-pic-3@1x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
     screen and (min-resolution: 192dpi) and (min-width: 1280px),
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/desktop/homepage/desktop-homepage-bg-pic@2x.jpg);
+      url(../images/desktop/homepage/desktop-homepage-pic-3@2x.jpg);
   }
 
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/desktop/homepage/desktop-homepage-bg-pic@1x.jpg);
+      url(../images/desktop/homepage/desktop-homepage-pic-3@1x.jpg);
   }
 }
 
@@ -74,12 +74,12 @@
   margin-right: 0;
 
   @media screen and (min-width: 1024px) {
-    max-width: 610px;
-    margin-bottom: 198px;
-    margin-right: 89px;
+    width: 549px;
+    margin: 0 auto 198px;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 595px;
     margin-bottom: 200px;
     margin-right: auto;
     margin-left: auto;
@@ -145,6 +145,7 @@
   list-style: none;
 
   @media screen and (min-width: 1024px) {
+    margin-right: 0;
     text-align: left;
   }
 }
@@ -154,6 +155,11 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-right: auto;
+    text-align: left;
   }
 }
 
@@ -241,12 +247,13 @@
 
   @media screen and (min-width: 1024px) {
     top: 254px;
-    right: 50px;
+    left: 0;
+    right: auto;
   }
 
-  @media screen and (min-width: 1024px) {
-    right: 52px;
-  }
+  //   @media screen and (min-width: 1024px) {
+  //     right: 52px;
+  //   }
 }
 
 .swiper {
