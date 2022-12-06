@@ -18,10 +18,13 @@
     z-index: 2;
   }
   &__about-content {
-    @media screen and (max-width: 1024px) {
-      padding-top: 16px;
-      padding-bottom: 28px;
-    }
+    width: 242px;
+    margin-left: auto;
+    text-align: right;
+
+    padding-top: 16px;
+    padding-bottom: 28px;
+
     @media screen and (min-width: 1024px) {
       padding-top: 120px;
       padding-bottom: 142px;
@@ -69,6 +72,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $primary-dark-text;
+    text-align: left;
     @media screen and (min-width: 414px) {
       width: 258px;
       font-size: 12px;
@@ -83,12 +87,8 @@
   }
   &__thumb1 {
     max-width: 244px;
-    margin-left: 100px;
-    @media screen and (min-width: 414px) {
-      width: 244px;
-      max-width: auto;
-      margin-left: auto;
-    }
+    max-width: auto;
+
     @media screen and (min-width: 1024px) {
       width: 400px;
       margin-left: 0;
@@ -202,7 +202,7 @@
     position: relative;
     width: 245px;
     @media screen and (min-width: 414px) {
-      right: -15px;
+      left: -15px;
       width: 330px;
     }
     @media screen and (min-width: 1024px) {
@@ -216,8 +216,7 @@
       margin-top: 32px;
     }
     height: 100%;
-    margin-left: auto;
-    margin-right: 0;
+
     overflow: hidden;
     list-style: none;
     padding: 0;
@@ -263,10 +262,10 @@
     &-buttons-wrap {
       width: auto;
       display: flex;
-      justify-content: end;
+      justify-content: flex-start;
       gap: 32px;
-      margin-left: auto;
-      margin-right: 0;
+      margin-left: 15px;
+
       @media screen and (max-width: 1024px) {
         padding-top: 20px;
         padding-right: 15px;
