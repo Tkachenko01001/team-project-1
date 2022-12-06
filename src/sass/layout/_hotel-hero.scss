@@ -66,6 +66,10 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
   }
 }
 
+.hotel-hero .container {
+  position: relative;
+}
+
 .hero__content {
   margin-bottom: 60px;
 
@@ -162,7 +166,7 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
   align-items: center;
   justify-content: right;
   position: absolute;
-  top: 64px;
+  top: -117px;
   right: 15px;
   padding: 8px 8px 8px 10px;
   text-decoration: none;
@@ -250,8 +254,8 @@ $img-hero-color: rgba(0, 0, 0, 0.65); //images hero shadow
   }
 }
 
-.btn:hover,
-.btn:focus {
+.btn__hotel:hover,
+.btn__hotel:focus {
   color: $accent-transparent-color;
   background-color: $white-color;
 }
