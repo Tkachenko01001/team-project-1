@@ -1,0 +1,70 @@
+<div class="backdrop visually-hidden" data-modal-room>
+    <div class="modal-room-room modal-room">
+        <h1 class="modal-room__heading">ЗАБРОНЮВАТИ НОМЕР</h1>
+        <button type="button" class="modal-room__close-btn" data-modal-room-close>
+            <svg class="modal-room__close-icon">
+                <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+            </svg>
+        </button>
+        <form name="modal-room__room-reserve" class="modal-room__form">
+            <div class="modal-room__form-container">
+                <div class="modal-room__input-container">
+                    <div class="modal-room__form-wrapper">
+                        <input class="modal-room__form-input" id="client-name" type="text" name="client-name" pattern="^[а-яА-Я]+\s[а-яА-Я]+$"  title="Поле має містити ім'я та прізвище українською мовою."placeholder="Ваше ім'я"></input>
+                        <label class="modal-room__form-label" for="client-name">На кого забронювати номер?</label>
+                    </div>
+                    <div class="modal-room__form-wrapper">
+                        <input class="modal-room__form-input" id="client-phone" type="text" name="client-phone" minlength="10" maxlength="23" pattern="^[0-9+()-\s]+" title="Поле має містити тільки цифри." placeholder="+38 (___) ___-__-__"></input>
+                        <label class="modal-room__form-label" for="client-phone">Номер телефону</label>
+                    </div>
+                </div>
+                <div class="modal-room__select-container">
+                    <div class="modal-room__desktop-row-2">
+                        <div class="modal-room__form-wrapper">
+                            <div class="modal-room__select-icon">
+                                <select class="modal-room__form-input modal-room__form-dropdown" id="room-type" name="room-type">
+                                    <option value="room-double-luxe">Двомісний люкс</option>
+                                    <option value="room-triple-standart">Трьохмісний стандарт</option>
+                                    <option value="room-double-standart">Двомісний стандарт</option>
+                                </select>
+                                <svg class="modal-room__dropdown-icon">
+                                    <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                                </svg>
+                            </div>
+                            <label class="modal-room__form-label" for="room-type">Категорія номеру</label>
+                        </div>
+                    </div>
+                    <div class="modal-room__desktop-row-3">
+                        <div class="modal-room__form-wrapper">
+                            <div class="modal-room__select-icon">
+                                <select class="modal-room__form-input modal-room__form-dropdown" id="arrive-date" name="arrive-date">
+                                    <option value="table-today">Сьогодні</option>
+                                    <option value="table-tomorrow">Завтра</option>
+                                    <option value="table-overmorrow">Післязавтра</option>
+                                </select>
+                                <svg class="modal-room__dropdown-icon">
+                                    <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                                </svg>
+                            </div>
+                            <label class="modal-room__form-label" for="arrive-date">Дата заїзду</label>
+                        </div>
+                        <div class="modal-room__form-wrapper modal-room__form-last">
+                            <div class="modal-room__select-icon">
+                                <select class="modal-room__form-input modal-room__form-dropdown" id="depart-date" name="depart-date">
+                                    <option value="table-today">Сьогодні</option>
+                                    <option value="table-tomorrow">Завтра</option>
+                                    <option value="table-overmorrow">Післязавтра</option>
+                                </select>
+                                <svg class="modal-room__dropdown-icon">
+                                    <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                                </svg>
+                            </div>
+                            <label class="modal-room__form-label" for="depart-date">Дата виїзду</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="modal-room__submit-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
+        </form>
+    </div>
+</div>
