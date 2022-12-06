@@ -12,9 +12,18 @@
 @import './components/main-hero';
 
 @import './layout/about-our-restaurant';
+
+ // Container
+@import './layout/room-details';
+@import './components/hero-room-page';
+
 @import './components/restaurant-hero'; // Restaurant page Hero
+
+@import './components/restaurant_page-menu'; // Restaurant page menu
+
 @import './components/contacts';
 @import './components/footer';
+
 @import './details_restaurant_mainpage';
 // @import './example';
 @import './layout/hotel-hero'; // hotel Hero
