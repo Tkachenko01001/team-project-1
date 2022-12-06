@@ -79,13 +79,10 @@
       width: 518px;
     }
   }
-  &__picture1 {
-    max-width: auto;
-  }
   &__image1 {
     margin-left: 150px;
     border-radius: 2px;
-    max-width: auto;
+    max-width: 100%;
     margin-bottom: 32px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     @media screen and (min-width: 1024px) {
@@ -119,9 +116,6 @@
       padding-bottom: 175px;
     }
   }
-  &__picture {
-    max-width: 200px;
-  }
   &__image2 {
     border-radius: 2px;
     max-width: 100%;
@@ -136,11 +130,13 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 10px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $brown-color;
-    max-width: 110px;
+    @media screen and (max-width: 414px) {
+      max-width: 110px;
+      font-size: 10px;
+    }
     @media screen and (min-width: 414px) {
       width: 163px;
       font-size: 12px;
@@ -280,4 +276,7 @@
       fill: $accent-color;
     }
   }
+}
+.div-image1 {
+  max-width: 244px;
 }
