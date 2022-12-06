@@ -26,10 +26,12 @@
     padding-bottom: 28px;
 
     @media screen and (min-width: 1024px) {
+      width: 419px;
       padding-top: 120px;
       padding-bottom: 142px;
     }
     @media screen and (min-width: 1280px) {
+      width: 488px;
       padding-bottom: 162px;
     }
   }
@@ -108,13 +110,12 @@
     @media screen and (min-width: 1024px) {
       position: absolute;
       top: -32px;
-      left: 50%;
+
       box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     }
     @media screen and (min-width: 1280px) {
       position: absolute;
       top: -33px;
-      left: 50%;
     }
   }
   &__block2 {
@@ -125,6 +126,8 @@
       margin-bottom: 32px;
     }
     @media screen and (min-width: 1024px) {
+      align-items: center;
+      justify-content: end;
       gap: 48px;
       padding-bottom: 230px;
     }
@@ -274,7 +277,7 @@
         padding-top: 32px;
       }
       @media screen and (min-width: 1280px) {
-        padding-top: 36px;
+        padding-top: 104px;
       }
     }
     &-button-prev,
