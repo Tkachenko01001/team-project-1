@@ -17,12 +17,13 @@
 
 // Container
 @import './layout/room-details';
+@import './components/about-our-hotel';
 @import './components/hero-room-page';
 @import './components/section-double-room-luxe';
 
 @import './components/restaurant-hero'; // Restaurant page Hero
 
-@import './components/about-our-kitchen'; 
+@import './components/about-our-kitchen';
 
 @import './components/restaurant_page-menu'; // Restaurant page menu
 
@@ -44,7 +45,6 @@ body {
   line-height: 1.25;
   max-width: 1600px;
 }
-
 
 h1,
 h2,
