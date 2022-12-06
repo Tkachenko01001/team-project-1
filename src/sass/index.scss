@@ -14,8 +14,9 @@
 
 @import './layout/about-our-restaurant';
 
-@import './footer'; // Container
+ // Container
 @import './layout/room-details';
+@import './components/hero-room-page';
 
 @import './components/restaurant-hero'; // Restaurant page Hero
 @import './components/contacts';
