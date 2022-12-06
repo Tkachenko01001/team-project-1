@@ -1,7 +1,7 @@
 @import './common';
-
 @import './base/typography'; // fonts
 @import './utils/variables'; // colors/animations etc..
+@import './utils/mixin'; // colors/animations etc..
 
 @import './layout/header'; //header
 
@@ -14,15 +14,25 @@
 
 @import './layout/about-our-restaurant';
 
- // Container
+// Container
 @import './layout/room-details';
 @import './components/hero-room-page';
+@import './components/section-double-room-luxe';
 
 @import './components/restaurant-hero'; // Restaurant page Hero
+
+@import './components/about-our-kitchen'; 
+
+@import './components/restaurant_page-menu'; // Restaurant page menu
+
 @import './components/contacts';
 @import './components/footer';
+@import './components/one-room-for-two-adults';
+
 @import './details_restaurant_mainpage';
+
 // @import './example';
+
 @import './layout/hotel-hero'; // hotel Hero
 
 body {
@@ -33,6 +43,7 @@ body {
   line-height: 1.25;
   max-width: 1600px;
 }
+
 
 h1,
 h2,
@@ -51,8 +62,7 @@ img {
   display: block;
   height: auto;
 
-  @media screen and (max-width: 414px)
- {
+  @media screen and (max-width: 414px) {
     width: auto;
-}
+  }
 }
