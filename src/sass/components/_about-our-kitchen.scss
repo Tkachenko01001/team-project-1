@@ -1,29 +1,44 @@
 
 .about-kitchen {
-    padding: 16px 0 20px;
-    position: relative;
+    
+    
     width: 100%;
+    background: $fon-lemon;
+
+    & .container {
+        position: relative;
+        
+        padding-top: 16px;
+        padding-bottom: 20px;
+        @media screen and (min-width: 1024px) {
+            
+            padding-top: 120px;
+            padding-bottom: 32px;
+            
+        }
+        @media screen and (min-width: 1280px) {
+            
+        }
+    }    
     
     
-    @media screen and (min-width: 1024px) {
-        padding: 120px 0 32px;
-        width: 1024px;
+    
+    &__wrap {
+        position: relative;
+        z-index: 2;
     }
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-    }
-      
-    
     &__lines::before {
         content: '';
         position: absolute;
         display: block;
         width: 1px;
-        height: 100%;
+        top: 0;
+        bottom: 0;
         background-color: $ligh-grey;
         top: 0;
         bottom: 0;
-        left: 33.3%
+        left: 33.3%;
+        
         
     }
     &__lines::after {
@@ -52,6 +67,7 @@
         }
         
     }
+    
 
 
     &__slogan {
@@ -100,7 +116,7 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
         max-width: 258px;
-        margin-bottom: 382px;
+        margin-bottom: 28px;
         color: $primary-dark-text;
        
         @media screen and (min-width: 1024px) {
@@ -117,23 +133,23 @@
 
     
     &__img {
-        position: absolute;
-        background-color: $img-background;
-        border-radius: 2px;
-        top: 210px;
-        right: 0;
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-        z-index: 2;      
-       
+            margin-left: auto;
+            border-radius: 2px;
+         @media screen and (max-width: 1023px) {
+            margin-bottom: 32px;
+            box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        }
         @media screen and (min-width: 1024px) {
-            right: 112px;
+            position: absolute;
             top: -152px;
+            left: 50%;
             box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
         }
         @media screen and (min-width: 1280px) {
-            right: 180px;
+            position: absolute;
             top: -153px;
-        }
+            left: 50%;
+    }
     }
 
     &__box {
@@ -141,15 +157,15 @@
         align-items: center;        
         margin-bottom: 32px;
         gap: 20px;
-        margin-bottom: 297px;
+        margin-bottom: 32px;
 
         @media screen and (min-width: 1024px) {
             gap: 48px;
-            margin-bottom: 198px;
+            padding-bottom: 230px;
         }
         @media screen and (min-width: 1280px) {
             gap: 32px;
-            margin-bottom: 143px;
+            padding-bottom: 175px;
         }
     }
 
@@ -181,52 +197,150 @@
             font-size: 16px;
             line-height: 1.25;
         }
+        
     }
 
-    &__wrapper {
-        display: flex;
-        position: absolute;        
-        margin-bottom: 20px;
-        gap: 24px;
-        left: 84px;
-        bottom: 52px;
-        
+    .swiper {
+        @media screen and (min-width: 414px) {
+          position: relative;
+          right: -15px;
+          width: 330px;
+        }
         @media screen and (min-width: 1024px) {
-            gap: 40px;
-            left: 536px;
-            bottom: 34px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 428px;
         }
         @media screen and (min-width: 1280px) {
-            left: 665px;
-            bottom: 38px;
+          width: 548px;
+          margin-top: 32px;
         }
-    }
+        height: 100%;
+        margin-left: auto;
+        margin-right: 0;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        /* Fix of Webkit flickering */
+        z-index: 1;
+    
+        &-wrapper {
+          position: relative;
+          height: 100%;
+          z-index: 1;
+          display: flex;
+          transition-property: transform;
+          box-sizing: content-box;
+        }
+        &-slide {
+          flex-shrink: 0;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transition-property: transform;
+        }
+        &-slide img {
+          border-radius: 2px;
+          box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.05);
+        }
+        &-slide-invisible-blank {
+          visibility: hidden;
+        }
+        /* Auto Height */
+        &-autoheight,
+        &-autoheight &-slide {
+          height: auto;
+        }
+        &-autoheight &-wrapper {
+          align-items: flex-start;
+          transition-property: transform, height;
+        }
+        &-backface-hidden &-slide {
+          transform: translateZ(0);
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        &-buttons-wrap {
+          width: auto;
+          display: flex;
+          justify-content: end;
+          gap: 32px;
+          margin-left: auto;
+          margin-right: 0;
+          @media screen and (max-width: 1024px) {
+            padding-top: 20px;
+            padding-right: 15px;
+          }
+          @media screen and (min-width: 1024px) {
+            padding-top: 32px;
+          }
+          @media screen and (min-width: 1280px) {
+            padding-top: 36px;
+          }
+        }
+        &-button-prev,
+        &-button-next {
+          cursor: pointer;
+          width: 32px;
+          height: 32px;
+          color: black;
+          fill: $black-color;
+          transition: color 250ms $animation;
+        }
+        &-button-prev:hover,
+        &-button-prev:focus,
+        &-button-next:hover,
+        &-button-next:focus {
+          fill: $accent-color;
+          color: $accent-color;
+        }
+      }
 
-    &__swiper {
-        border-radius: 2px;
-        box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+    // &__wrapper {
+    //     display: flex;
+    //     position: absolute;        
+    //     margin-bottom: 20px;
+    //     gap: 24px;
+    //     left: 84px;
+    //     bottom: 52px;
         
-    }
+    //     @media screen and (min-width: 1024px) {
+    //         gap: 40px;
+    //         left: 536px;
+    //         bottom: 34px;
+    //     }
+    //     @media screen and (min-width: 1280px) {
+    //         left: 665px;
+    //         bottom: 38px;
+    //     }
+    // }
+
+    // &__swiper {
+    //     border-radius: 2px;
+    //     box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+        
+    // }
 
 
-    &__tumb {
-        display: flex;
-        justify-content: flex-end;
-        gap: 30px;
-    }
+    // &__tumb {
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     gap: 30px;
+    // }
 
-    &__btn {
-        fill: black-color;
-        background-color: #FFFDEE;
-        border: none;    
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;    
-    }
+    // &__btn {
+    //     fill: black-color;
+    //     background-color: #FFFDEE;
+    //     border: none;    
+    //     transition-property: fill;
+    //     transition-duration: 250ms;
+    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    //     transition-delay: 0;    
+    // }
 
-    &__btn:hover,
-    &__btn:focus {
-        fill: $accent-transparent-color;
-    }
+    // &__btn:hover,
+    // &__btn:focus {
+    //     fill: $accent-transparent-color;
+    // }
 }
