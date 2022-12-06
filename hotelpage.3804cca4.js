@@ -1,2 +1,0 @@
-(()=>{const o={openModalRoomBtn:document.querySelector("[data-modal-room-open]"),closeModalRoomBtn:document.querySelector("[data-modal-room-close]"),modalRoom:document.querySelector("[data-modal-room]")};function e(){o.modalRoom.classList.toggle("visually-hidden")}o.openModalRoomBtn.addEventListener("click",e),o.closeModalRoomBtn.addEventListener("click",e)})();
-//# sourceMappingURL=hotelpage.3804cca4.js.map
