@@ -82,12 +82,11 @@
     }
   }
   &__thumb1 {
-    @media screen and (max-width: 414px) {
-      max-width: 244px;
-      margin-left: 100px;
-    }
+    max-width: 244px;
+    margin-left: 100px;
     @media screen and (min-width: 414px) {
       width: 244px;
+      max-width: auto;
       margin-left: auto;
     }
     @media screen and (min-width: 1024px) {
