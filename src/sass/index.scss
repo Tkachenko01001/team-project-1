@@ -4,18 +4,31 @@
 @import './utils/variables'; // colors/animations etc..
 @import './utils/mixin'; // colors/animations etc..
 
+@import './layout/header'; //header
+
 @import './components/visually-hidden'; // Hidden blocks
 @import './components/container'; // Container
+@import './components/modal-table-reserve'; // Modal table reserve
 @import './components/btn'; // default button
-
 @import './components/main-hero';
-@import './footer'; // Container
+
+@import './layout/about-our-restaurant';
+
+ // Container
+@import './layout/room-details';
+@import './components/hero-room-page';
+
 @import './components/restaurant-hero'; // Restaurant page Hero
+
+@import './components/restaurant_page-menu'; // Restaurant page menu
+
+@import './components/contacts';
+@import './components/footer';
+
 @import './details_restaurant_mainpage';
 // @import './example';
 @import './_one-room-for-two-adults';
 @import './layout/hotel-hero'; // hotel Hero
-
 
 body {
   font-family: 'Montserrat', 'Times New Roman', sans-serif;
@@ -23,6 +36,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.25;
+  max-width: 1600px;
 }
 
 
@@ -42,4 +56,9 @@ ul {
 img {
   display: block;
   height: auto;
+
+  @media screen and (max-width: 414px)
+ {
+    width: auto;
+}
 }
