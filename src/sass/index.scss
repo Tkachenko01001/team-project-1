@@ -1,5 +1,4 @@
 @import './common';
-
 @import './base/typography'; // fonts
 @import './utils/variables'; // colors/animations etc..
 @import './utils/mixin'; // colors/animations etc..
@@ -20,12 +19,16 @@
 
 @import './components/restaurant-hero'; // Restaurant page Hero
 
+@import './components/about-our-kitchen'; 
+
 @import './components/restaurant_page-menu'; // Restaurant page menu
 
 @import './components/contacts';
 @import './components/footer';
 @import './components/one-room-for-two-adults';
+
 @import './details_restaurant_mainpage';
+
 // @import './example';
 
 @import './layout/hotel-hero'; // hotel Hero
