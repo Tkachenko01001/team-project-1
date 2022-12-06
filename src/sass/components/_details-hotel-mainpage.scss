@@ -16,13 +16,13 @@
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient($gradient-color, $gradient-color),
-    url(../images/mobile/homepage/mobile-homepage-bg-pic-1@1x.jpg);
+    url(../images/mobile/homepage/mobile-homepage-bg-pic-2@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
     screen and (min-resolution: 192dpi) and (max-width: 1023px),
     screen and (min-resolution: 2dppx) and (max-width: 1023px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/mobile/homepage/mobile-homepage-bg-pic-1@2x.jpg);
+      url(../images/mobile/homepage/mobile-homepage-bg-pic-2@2x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
