@@ -1,0 +1,121 @@
+<section class="section double-room">
+  <div class="container double-room__section">
+    <p class="section-room__subtitle">Amet minim mollit non</p>
+    <h2 class="hotel__title">MIMIHO</h2>
+    <h3 class="hotel__title-secondary">ДВОМІСНИЙ НОМЕР</h3>
+    <p class="double-room__describe">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <div class="room-picture">
+      <picture>
+        <source
+          srcset="
+            ./images/tablet/hotel/tablet-hotel-pic-1@1x.jpg 1x,
+            ./images/tablet/hotel/tablet-hotel-pic-1@2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/hotel/mobile-hotel-pic@1x.jpg 1x,
+            ./images/mobile/hotel/mobile-hotel-pic@2x.jpg 2x
+          "
+          media="(min-width: 414px)"
+        />
+        <img
+          class="room-picture-img"
+          src="./images/desktop/hotel/desktop-hotel-pic-1@1x.jpg"
+          alt="Номер готелю"
+        />
+      </picture>
+    </div>
+  </div>
+
+  <div class="room-pictures">
+    <div class="room-pictures-slider">
+      <ul class="room-pictures-list list">
+        <li class="room-pictures-list__item">
+          <picture>
+            <source
+              srcset="
+                ./images/tablet/hotel/tablet-hotel-carusel-pic-1@1x.jpg 1x,
+                ./images/tablet/hotel/tablet-hotel-carusel-pic-1@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/hotel/mobile-hotel-carusel-pic-2@1x.jpg 1x,
+                ./images/mobile/hotel/mobile-hotel-carusel-pic-2@2x.jpg 2x
+              "
+              media="(min-width: 414px)"
+            />
+            <img
+              class="double-room__img"
+              src="./images/desktop/hotel/desktop-hotel-carusel -1-pic-1@1x.jpg"
+              alt="Номер готелю"
+            />
+          </picture>
+        </li>
+        <li class="room-pictures-list__item">
+          <picture>
+            <source
+              srcset="
+                ./images/tablet/hotel/tablet-hotel-carusel-pic-2@1x.jpg 1x,
+                ./images/tablet/hotel/tablet-hotel-carusel-pic-2@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg 1x,
+                ./images/mobile/hotel/mobile-hotel-carusel-pic-1@2x.jpg 2x
+              "
+              media="(min-width: 414px)"
+            />
+            <img
+              class="double-room__img"
+              src="./images/desktop/hotel/desktop-hotel-carusel -1-pic-2@1x.jpg"
+              alt="Ванна кімната"
+            />
+          </picture>
+        </li>
+      </ul>
+      <div class="room-pictures-swiper__control">
+        <button
+          class="room-pictures-swiper__btn room-pictures-swiper__btn_next"
+        >
+          <svg width="32" height="32">
+            <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="room-pictures-swiper__btn room-pictures-swiper__btn_prev"
+        >
+          <svg width="32" height="32">
+            <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="buttons-container">
+      <button
+        class="hotel-button"
+        type="button"
+        onclick="location.href='./roompage.html'"
+        data-modal-open
+      >
+        Детальніше
+      </button>
+      <button class="hotel-button" type="button" data-modal-open>
+        Переглянути ціни
+      </button>
+    </div>
+  </div>
+  <span class="doubleroom-line-one"></span>
+  <span class="doubleroom-line-two"></span>
+  <span class="doubleroom-line-three"></span>
+</section>
