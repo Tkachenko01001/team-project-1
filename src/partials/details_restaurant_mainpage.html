@@ -11,7 +11,10 @@
       </div>
       <ul class="restaurant-btn__list">
         <li class="restaurant-btn__item">
-          <button type="button" class="restaurant-btn btn">
+          <button 
+          type="button" 
+          class="restaurant-btn btn"
+          data-modal-table-open__restaurant-mainpage>
             Забронювати столик
           </button>
         </li>
@@ -21,157 +24,93 @@
           </button>
         </li>
       </ul>
-            <div class="swiper__container">
+      <div class="swiper__container">
         <div class="swiper">
           <div class="swiper__wrapper">
             <div class="swiper__slide">
               <picture>
-                <source
-                  srcset="
+                <source srcset="
                     ./images/mobile/homepage/mobile-homepage-carusel-2-pic-1@1x.jpg 1x,
                     ./images/mobile/homepage/mobile-homepage-carusel-2-pic-1@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="
+                  " type="image/jpeg" media="(max-width:1023px)" />
+                <source srcset="
                     ./images/tablet/homepage/tablet-homepage-carusel-2-pic-1@1x.jpg 1x,
                     ./images/tablet/homepage/tablet-homepage-carusel-2-pic-1@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="
+                  " type="image/jpeg" media="(min-width:1024px) and (max-width:1079px)" />
+                <source srcset="
                     ./images/desktop/homepage/desktop-homepage-carusel-2-pic-1@1x.jpg,
                     ./images/desktop/homepage/desktop-homepage-carusel-2-pic-1@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img
-                  src="./images/desktop/homepage/desktop-homepage-carusel-2-pic-1@1x.jpg"
-                  alt="Смажене м'ясо"
-                />
+                  " type="image/jpeg" media="(min-width:1280px)" />
+                <img src="./images/desktop/homepage/desktop-homepage-carusel-2-pic-1@1x.jpg" width="270" height="270"
+                  alt="Смажене м'ясо" />
               </picture>
             </div>
             <div class="swiper__slide">
               <picture>
-                <source
-                  srcset="
-                    ./images/mobile/homepage/mobile-homepage-carusel-2-pic-1@1x.jpg 1x,
-                    ./images/mobile/homepage/mobile-homepage-carusel-2-pic-1@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width:1023px)"
-                />
-                <source
-                  srcset="
+                <source srcset="
                     ./images/tablet/homepage/tablet-homepage-carusel-2-pic-2@1x.jpg 1x,
                     ./images/tablet/homepage/tablet-homepage-carusel-2-pic-2@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1024px)"
-                />
-                <source
-                  srcset="
+                  " type="image/jpeg" media="(max-width:1023px)" />
+                <source srcset="
+                    ./images/tablet/homepage/tablet-homepage-carusel-2-pic-2@1x.jpg 1x,
+                    ./images/tablet/homepage/tablet-homepage-carusel-2-pic-2@2x.jpg 2x
+                  " type="image/jpeg" media="(min-width:1024px) and (max-width:1079px)" />
+                <source srcset="
                     ./images/desktop/homepage/desktop-homepage-carusel-2-pic-2@1x.jpg,
                     ./images/desktop/homepage/desktop-homepage-carusel-2-pic-2@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img
-                  src="./images/desktop/homepage/desktop-homepage-carusel-2-pic-2@1x.jpg"
-                  alt="Хліб"
-                />
+                  " type="image/jpeg" media="(min-width:1280px)" />
+                <img src="./images/desktop/homepage/desktop-homepage-carusel-2-pic-2@1x.jpg" width="162" height="270"
+                  alt="Хліб" />
               </picture>
             </div>
             <div class="swiper__slide">
               <picture>
-                <source
-                  srcset="
+                <!-- <source srcset="
                     ./images/tablet/homepage/tablet-homepage-carusel-2-pic-3@1x.jpg 1x,
                     ./images/tablet/homepage/tablet-homepage-carusel-2-pic-3@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1023px)"
-                />
-                <source
-                  srcset="
+                  " type="image/jpeg" media="(min-width:1024px) and (max-width:1079px)" />-->
+                <source srcset="
                     ./images/desktop/homepage/desktop-homepage-carusel-2-pic-3@1x.jpg 1x,
                     ./images/desktop/homepage/desktop-homepage-carusel-2-pic-3@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  width="270"
-                  media="(min-width:1280px)"
-                />
-                <img
-                  src="./images/desktop/homepage/desktop-homepage-carusel-2-pic-3@1x.jpg"
-                  alt="Салат"
-                />
+                  " type="image/jpeg" media="(min-width:1280px)" />
+                <img src="./images/desktop/homepage/desktop-homepage-carusel-2-pic-3@1x.jpg" width="270" height="270"
+                  alt="Салат" />
               </picture>
             </div>
             <div class="swiper__slide">
               <picture>
-                <source
-                  srcset="
+                <source srcset="
                     ./images/mobile/sliders-photo/mobile-slider-pic-6@1x.jpg 1x,
                     ./images/mobile/sliders-photo/mobile-slider-pic-6@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1023px)"
-                />
-                <source
-                  srcset="
+                  " type="image/jpeg" media="(max-width:1023px)" />
+                <source srcset="
                     ./images/tablet/sliders-photo/tablet-slider-pic-6@1x.jpg 1x,
                     ./images/tablet/sliders-photo/tablet-slider-pic-6@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1023px)"
-                />
-                <source
-                  srcset="
+                  " type="image/jpeg" media="(min-width:1024px) and (max-width:1079px)" />
+                <source srcset="
                     ./images/desktop/sliders-photo/desktop-slider-pic-6@1x.jpg 1x,
                     ./images/desktop/sliders-photo/desktop-slider-pic-6@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1280px)"
-                />
-                <img
-                  src="./images/desktop/sliders-photo/desktop-slider-pic-6@1x.jpg"
-                  alt="Чай"
-                />
+                  " type="image/jpeg" media="(min-width:1280px)" />
+                <img src="./images/desktop/sliders-photo/desktop-slider-pic-6@1x.jpg" width="270" height="270"
+                  alt="Чай" />
               </picture>
             </div>
             <div class="swiper__slide">
               <picture>
-                <source
-                  srcset="
+                <source srcset="
                     ./images/mobile/sliders-photo/mobile-slider-pic-7@1x.jpg 1x,
                     ./images/mobile/sliders-photo/mobile-slider-pic-7@2x.jpg 2x
-                  "
-                  media="(min-width:1023px)"
-                />
-                <source
-                  srcset="
+                  " type="image/jpeg" media="(max-width:1023px)" />
+                <source srcset="
                     ./images/tablet/sliders-photo/tablet-slider-pic-7@1x.jpg 1x,
                     ./images/tablet/sliders-photo/tablet-slider-pic-7@2x.jpg 2x
-                  "
-                  media="(min-width:1023px)"
-                />
-                <source
-                  srcset="
+                  " type="image/jpeg" media="(min-width:1024px) and (max-width:1079px)" />
+                <source srcset="
                     ./images/desktop/sliders-photo/desktop-slider-pic-7@1x.jpg 1x,
                     ./images/desktop/sliders-photo/desktop-slider-pic-7@2x.jpg 2x
-                  "
-                  media="(min-width:1280px)"
-                />
-                <img
-                  src="./images/desktop/sliders-photo/desktop-slider-pic-7@1x.jpg"
-                  alt="Устриці"
-                />
+                  " type="image/jpeg" media="(min-width:1280px)" />
+                <img src="./images/desktop/sliders-photo/desktop-slider-pic-7@1x.jpg" width="270" height="270"
+                  alt="Устриці" />
               </picture>
             </div>
           </div>
@@ -189,19 +128,13 @@
           </button>
         </div>
       </div>
- 
-      <span
-        class="details-restaurant__background-line details-restaurant__background-line--line1"
-      ></span>
-      <span
-        class="details-restaurant__background-line details-restaurant__background-line--line2"
-      ></span>
-      <span
-        class="details-restaurant__background-line details-restaurant__background-line--line3"
-      ></span>
-      </div>
-        </div>
-       
+
+      <span class="details-restaurant__background-line details-restaurant__background-line--line1"></span>
+      <span class="details-restaurant__background-line details-restaurant__background-line--line2"></span>
+      <span class="details-restaurant__background-line details-restaurant__background-line--line3"></span>
     </div>
+  </div>
+
+  </div>
   </div>
 </section>
