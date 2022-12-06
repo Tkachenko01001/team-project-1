@@ -256,44 +256,47 @@
     margin-right: 32px;
 }
 
-.doubleroom-line-one::after {
-    @media screen and (min-width:1024px) {
-        content: '';
-        height: 785px;
-        display: block;
-        top: 0;
-        position: absolute;
-        border: 1px solid rgba(122, 122, 122, 0.4);
-        filter: blur(0.5px);
-        z-index: 1;
-        right: 26.4%;
+
+.doubleroom-background-line {
+    z-index: 0;
+    filter: blur(0.5px);
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.doubleroom-background-line--line1 {
+    
+    left: 33.81%;
+
+    @media screen and (min-width: 1024px) {
+        left: 31.1%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 26.406%;
     }
 }
 
-.doubleroom-line-two::after {
-    @media screen and (min-width:1024px) {
-        content: '';
-        height: 785px;
-        display: block;
-        top: 0;
-        position: absolute;
-        border: 1px solid rgba(122, 122, 122, 0.4);
-        filter: blur(0.5px);
-        z-index: 1;
+.doubleroom-background-line--line2 {
+    @media screen and (max-width: 1024px) {
+        opacity: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
         left: 50%;
     }
 }
 
-.doubleroom-line-three::after {
-    @media screen and (min-width:1024px) {
-        content: '';
-        height: 785px;
-        left: 26.4%;
-        display: block;
-        top: 0;
-        position: absolute;
-        border: 1px solid rgba(122, 122, 122, 0.4);
-        filter: blur(0.5px);
-        z-index: 1;
+.doubleroom-background-line--line3 {
+    right: 33.81%;
+
+    @media screen and (min-width: 1024px) {
+        right: 27.148%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        right: 26.406%;
     }
 }

@@ -7,7 +7,7 @@ td {
     width: 100%;
     padding-top: 32px;
     margin: 0 auto;
-    background: #F0ECD6;
+    background: #FFFDEE;
 
 
     @media screen and (min-width: 1024px) {
@@ -218,13 +218,11 @@ td {
         background: #000000;
         border: 2px solid #FFFDEE;
         border-radius: 25px;
-        cursor: pointer;
-  }
 
-        .menu__button:hover,
-        .menu__button:focus {
-         color: $accent-transparent-color;
-         background-color: $white-color;
-  }
+        @media screen and (min-width: 1024px) {
+            margin: 40px 0 0 auto;
+        }
+
     }
 
+}
