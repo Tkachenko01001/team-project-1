@@ -42,6 +42,5 @@
 
   function toggleModalRoom() {
       refs.modalRoom.classList.toggle("visually-hidden");
-      console.log('modal opening')
   }
 })();
