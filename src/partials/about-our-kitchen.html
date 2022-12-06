@@ -1,49 +1,117 @@
 <section class="about-kitchen">
+    <span class="about-kitchen__lines"></span>
+    <span class="about-kitchen__line"></span>
     <div class="container">
-        <h1 class="visually-hidden">About our kitchen</h1>
-        <h2 class="about-kitchen__slogan">Amet minim mollit non</h2>
-        <h3 class="about-kitchen__title">Mimiho</h3>
-        <p class="about-kitchen__text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-            Velit officia consequat duis enim velit mollit. 
-            Exercitation veniam consequat sunt nostrud amet.
-        </p>
-        <img class="about-kitchen__img"
-        srcset="./images/mobile/restaurant/mobile-restaurant-pic-1@1x.jpg 1x,
-        ./images/mobile/restaurant/mobile-restaurant-pic-1@2x.jpg 2x"
-        src="./images/mobile/restaurant/mobile-restaurant-pic-1@1x.jpg" 
-        alt="Повар з пательньою в руках"
-        width="244px">
-        <div class="about-kitchen__box">
-            <img class="about-kitchen__image"
-            srcset="./images/mobile/restaurant/mobile-restaurant-pic-2@1x.jpg 1x,
-            ./images/mobile/restaurant/mobile-restaurant-pic-2@2x.jpg 2x"
-            src="./images/mobile/restaurant/mobile-restaurant-pic-2@1x.jpg" 
-            alt="Шматок свіжого м'яса на кухонному столі"
-            width="200px">
-            <p class="about-kitchen__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+        
+            <h1 class="visually-hidden">About our kitchen</h1>
+            <h2 class="about-kitchen__slogan">Amet minim mollit non</h2>
+            <h3 class="about-kitchen__title">Mimiho</h3>
+            <p class="about-kitchen__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
                 Velit officia consequat duis enim velit mollit. 
                 Exercitation veniam consequat sunt nostrud amet.
-            </p>                
-        </div>
-        <img class="about-kitchen__swiper"
-        src="./images/mobile/restaurant/mobile-restaurant-carusel-pic-1@1x.jpg" 
-        alt="Повар посипає тісто мукою"
-        width="245px">
-        <img class="about-kitchen__swiper"
-        src="./images/mobile/restaurant/mobile-restaurant-carusel-pic-1@1x.jpg" 
-        alt="Повар посипає тісто мукою"
-        width="245px">
-        <button class="about-kitchen__btn" type="button">
-            <svg width="32" height="32">
-                <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
-            </svg>
-        </button>
-        <button class="about-kitchen__btn" type="button">
-            <svg width="32" height="32">
-                <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-            </svg>
-        </button>
-        
+            </p>        
+                <picture class="about-kitchen__img">
+                    <source 
+                    srcset="./images/mobile/restaurant/mobile-restaurant-pic-1@1x.jpg 1x,
+                    ./images/mobile/restaurant/mobile-restaurant-pic-1@2x.jpg 2x"
+                    src="./images/mobile/restaurant/mobile-restaurant-pic-1@1x.jpg"
+                    width="244px" 
+                    media="(max-width: 1023px)">
+                    <source
+                    srcset="./images/tablet/restaurant/tablet-restaurant-pic-1@1x.jpg 1x,
+                    ./images/tablet/restaurant/tablet-restaurant-pic-1@2x.jpg 2x"
+                    src="./images/tablet/restaurant/tablet-restaurant-pic-1@1x.jpg"
+                    width="400px"
+                    media="(max-width: 1279px)">
+                    <img 
+                    srcset="./images/desktop/restaurant/desktop-restaurant-pic-1@1x.jpg 1x,
+                    ./images/desktop/restaurant/desktop-restaurant-pic-1@2x.jpg 2x"
+                    src="./images/desktop/restaurant/desktop-restaurant-pic-1@1x.jpg" 
+                    alt="Повар з пательньою в руках"
+                    width="460px">
+                </picture>        
+            <div class="about-kitchen__box">
+                <picture class="about-kitchen__image">
+                    <source 
+                    srcset="./images/mobile/restaurant/mobile-restaurant-pic-2@1x.jpg 1x,
+                    ./images/mobile/restaurant/mobile-restaurant-pic-2@2x.jpg 2x"
+                    src="./images/mobile/restaurant/mobile-restaurant-pic-2@1x.jpg"
+                    width="200px" 
+                    media="(max-width: 1023px)">
+                    <source
+                    srcset="./images/tablet/restaurant/tablet-restaurant-pic-2@1x.jpg 1x,
+                    ./images/tablet/restaurant/tablet-restaurant-pic-2@2x.jpg 2x"
+                    src="./images/tablet/restaurant/tablet-restaurant-pic-2@1x.jpg"
+                    width="350px"
+                    media="(max-width: 1279px)">
+                    <img 
+                    srcset="./images/desktop/restaurant/desktop-restaurant-pic-2@1x.jpg 1x,
+                    ./images/desktop/restaurant/desktop-restaurant-pic-2@2x.jpg 2x"
+                    src="./images/desktop/restaurant/desktop-restaurant-pic-2@1x.jpg" 
+                    alt="Шматок свіжого м'яса на кухонному столі"
+                    width="460px">
+                </picture>
+                <p class="about-kitchen__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                    Velit officia consequat duis enim velit mollit. 
+                    Exercitation veniam consequat sunt nostrud amet.
+                </p>                
+            </div>
+            <div class="about-kitchen__wrapper">
+                <picture class="about-kitchen__swiper">
+                    <source 
+                    srcset="./images/mobile/restaurant/mobile-restaurant-carusel-pic-1@1x.jpg 1x,
+                    ./images/mobile/restaurant/mobile-restaurant-carusel-pic-1@2x.jpg 2x"
+                    src="./images/mobile/restaurant/mobile-restaurant-carusel-pic-1@1x.jpg"
+                    width="245px" 
+                    media="(max-width: 1023px)">
+                    <source
+                    srcset="./images/tablet/restaurant/tablet-restaurant-carusel-pic-1@x1.jpg 1x,
+                    ./images/tablet/restaurant/tablet-restaurant-carusel-pic-1@2x.jpg 2x"
+                    src="./images/tablet/restaurant/tablet-restaurant-carusel-pic-1@x1.jpg"
+                    width="194px"
+                    media="(max-width: 1279px)">
+                    <img 
+                    srcset="./images/desktop/restaurant/desktop-restaurant-carusel-pic-1@1x.jpg 1x,
+                    ./images/desktop/restaurant/desktop-restaurant-carusel-pic-1@2x.jpg 2x"
+                    src="./images/desktop/restaurant/desktop-restaurant-carusel-pic-1@1x.jpg" 
+                    alt="Повар посипає тісто мукою"
+                    width="245px">
+                </picture>
+                <picture class="about-kitchen__swiper">
+                    <source 
+                    srcset="./images/mobile/restaurant/mobile-restaurant-carusel-pic-2@1x.jpg 1x,
+                    ./images/mobile/restaurant/mobile-restaurant-carusel-pic-2@2x.jpg 2x"
+                    src="./images/mobile/restaurant/mobile-restaurant-carusel-pic-2@1x.jpg"
+                    width="245px" 
+                    media="(max-width: 1023px)">
+                    <source
+                    srcset="./images/tablet/restaurant/tablet-restaurant-carusel-pic-2@1x.jpg 1x,
+                    ./images/tablet/restaurant/tablet-restaurant-carusel-pic-2@2x.jpg 2x"
+                    src="./images/tablet/restaurant/tablet-restaurant-carusel-pic-2@1x.jpg"
+                    width="194px"
+                    media="(max-width: 1279px)">
+                    <img 
+                    srcset="./images/desktop/restaurant/desktop-restaurant-carusel-pic-2@1x.jpg 1x,
+                    ./images/desktop/restaurant/desktop-restaurant-carusel-pic-2@2x.jpg 2x"
+                    src="./images/desktop/restaurant/desktop-restaurant-carusel-pic-2@1x.jpg"
+                    alt="Повар посипає тісто мукою"
+                    width="245px">
+                </picture>
+            </div>
+           
+            <div class="about-kitchen__tumb">
+                <button class="about-kitchen__btn swiper-button-prev" type="button">
+                <svg width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+                </svg>
+            </button>
+            <button class="about-kitchen__btn swiper-button-next" type="button">
+                <svg width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+        </div>        
+    
     </div>
 </section>

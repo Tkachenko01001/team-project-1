@@ -1,5 +1,4 @@
 @import './common';
-
 @import './base/typography'; // fonts
 @import './utils/variables'; // colors/animations etc..
 
@@ -8,15 +7,13 @@
 @import './components/btn'; // default button
 
 @import './components/main-hero';
-<<<<<<< HEAD
-@import './components/about-our-kitchen'; 
 
-=======
 @import './layout/about-our-restaurant';
 @import './footer'; // Container
 @import './components/restaurant-hero'; // Restaurant page Hero
+@import './components/about-our-kitchen'; 
 @import './details_restaurant_mainpage';
->>>>>>> main
+
 // @import './example';
 @import './layout/hotel-hero'; // hotel Hero
 
