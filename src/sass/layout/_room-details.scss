@@ -28,6 +28,10 @@
     bottom: 0;
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
+
+    @media (max-width: 1280px) {
+        display: none;
+    }
 }
 
 
@@ -95,7 +99,6 @@
     line-height: calc(20/16);
     color: $primary-text-color;
     margin-bottom: 16px;
-
 }
 
 .room-details__text {
@@ -132,8 +135,6 @@
     outline: none;
 
     transition: color 250ms $animation, background-color 250ms $animation;
-
-    width: 384px;
     padding: 15px 24px;
     margin-bottom: 20px;
     background-color: $black-color;
@@ -152,6 +153,10 @@
         color: $black-color;
         border-color: $accent-color;
         cursor: pointer;
+    }
+
+    @media (min-width:414px) {
+        width: 384px;
     }
 
     @media (min-width:1024px) {
@@ -214,7 +219,7 @@
     }
 
     @media (min-width:1280px) {
-        position: absolute;
+
         margin: 0;
         right: 199px;
         bottom: 179px;
