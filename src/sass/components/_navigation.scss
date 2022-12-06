@@ -1,0 +1,90 @@
+.link {
+  display: inline-block;
+  color: inherit;
+}
+
+.nav {
+  &__list {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    color: $accent-color;
+    font-weight: 500;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+
+    @media screen and (min-width: 1024px) {
+      margin-right: 32px;
+    }
+  }
+
+  &__item:nth-child(2n) {
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid $accent-transparent-color;
+    border-radius: 2px;
+
+    @media screen and (min-width: 1024px) {
+      display: inline-block;
+    }
+  }
+
+  &__item:nth-child(2) {
+    margin-right: 72px;
+  }
+
+  &__item:nth-child(3) {
+    @media screen and (max-width: 1023px) {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &__link--inherit {
+    color: $white-color;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  &__content {
+    vertical-align: middle;
+  }
+
+  &__svg {
+    vertical-align: middle;
+    color: $accent-color;
+
+    @media screen and (max-width: 1023px) {
+      margin-left: 6px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-left: 8px;
+    }
+  }
+
+  &__svg--hidden {
+    display: none;
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+      display: inline-block;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

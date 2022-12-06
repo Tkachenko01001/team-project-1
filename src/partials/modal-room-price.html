@@ -1,0 +1,35 @@
+<div class="backdrop visually-hidden" data-modal-price>
+    <div class="modal-price-room-price modal-price">
+        <button type="button" class="modal-price__close-btn" data-modal-price-price-close>
+            <svg class="modal-price__close-icon" data-modal-price-close>
+                <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+            </svg>
+        </button>
+        <h1 class="modal-price__heading">ЦІНИ НА НОМЕР</h1>
+        <h2 class="modal-price__subheading">Двомісний люкс</h2>
+        <p class="modal-price__room-type" for="client-name">Категорія номеру</p>
+        <form name="modal-price__room-price" class="modal-price__form">
+            <div class="modal-price__form-container">
+                <div class="modal-price__select-icon">
+                    <div class="modal-price__form-wrapper">
+                        <select class="modal-price__form-input modal-price__form-dropdown" id="client-name" type="text" name="client-name" maxlength="2" pattern="^[0-9-]+"  title="Поле має містити тільки цифри."placeholder="1">
+                            <option value="modal-room-people">1</option>
+                            <option value="modal-room-people">2</option>
+                            <option value="modal-room-people">3</option>
+                            <option value="modal-room-people">4</option>
+                        </select>
+                        <svg class="modal-price__dropdown-icon">
+                            <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                        </svg>
+                        <label class="modal-price__form-label" for="client-name">Кількість ночей</label>
+                    </div>
+                </div>
+                <div class="modal-price__form-wrapper">
+                    <input class="modal-price__form-input" id="client-phone" type="text" name="client-phone" minlength="3" maxlength="10" pattern="^[0-9,\s]+" title="Поле має містити тільки цифри." placeholder="1000"></input>
+                    <label class="modal-price__form-label" for="client-phone">грн</label>
+                </div>
+            </div>
+            <button type="submit" class="modal-price__submit-btn">ЗАБРОНЮВАТИ НОМЕР</button>
+        </form>
+    </div>
+</div>
