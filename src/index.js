@@ -16,15 +16,15 @@
 
   // MODAL TABLE RESERVE 2
 (() => {
-  const refs2 = {
+  const refs = {
     openModalTableBtn: document.querySelector("[data-modal-table-open__restaurant-mainpage]"),
     modalTable: document.querySelector("[data-modal-table]"),
   };
 
-  refs2.openModalTableBtn.addEventListener("click", toggleModalTable);
+  refs.openModalTableBtn.addEventListener("click", toggleModalTable);
 
   function toggleModalTable() {
-      refs2.modalTable.classList.toggle("visually-hidden");
+      refs.modalTable.classList.toggle("visually-hidden");
   }
 })();
 
