@@ -9,7 +9,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 24px 0px 40px 0px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,13 +30,11 @@
     screen and (min-resolution: 2dppx) and (min-width: 1024px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/tablet/homepage/tablet-homepage-bg-pic@2x.jpg);
-    padding: 48px 0px 96px 0px;
   }
 
   @media screen and (min-width: 1024px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/tablet/homepage/tablet-homepage-bg-pic@1x.jpg);
-    padding: 48px 0px 96px 0px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
@@ -44,18 +42,26 @@
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/desktop/homepage/desktop-homepage-bg-pic@2x.jpg);
-    padding: 48px 0px 94px 0px;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/desktop/homepage/desktop-homepage-bg-pic@1x.jpg);
-    padding: 48px 0px 94px 0px;
   }
 }
 
 .details-restaurant__container {
   z-index: 2;
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 94px;
+  }
 }
 
 .details-restaurant__info {
@@ -178,80 +184,39 @@
   }
 }
 
-.line-one::after {
-  content: '';
-  height: 735px;
-  right: 33.81%;
-  display: block;
-  top: 0;
+.details-restaurant__background-line {
+  z-index: 0;
   position: absolute;
-  border: 1px solid rgba(122, 122, 122, 0.4);
+  top: 0;
+  bottom: 0;
+  border: 1px solid rgba(186, 186, 186, 0.4);
   filter: blur(0.5px);
-  z-index: 1;
-
+}
+.details-restaurant__background-line--line1 {
+  left: 33.81%;
   @media screen and (min-width: 1024px) {
-    height: 620px;
-    right: 27.14%;
+    left: 27.148%;
   }
-
-  @media screen and (min-width: 1024px) {
-    right: 26.4%;
+  @media screen and (min-width: 1280px) {
+    left: 26.406%;
   }
 }
-
-.line-two::after {
-  content: '';
-  height: 735px;
-  left: 33.81%;
-  display: block;
-  top: 0;
-  position: absolute;
-  border: 1px solid rgba(122, 122, 122, 0.4);
-  filter: blur(0.5px);
-  z-index: 1;
-
+.details-restaurant__background-line--line2 {
+  @media screen and (max-width: 1024px) {
+    opacity: 0;
+  }
   @media screen and (min-width: 1024px) {
-    height: 620px;
     left: 50%;
   }
 }
-
-.line-three::after {
+.details-restaurant__background-line--line3 {
+  right: 33.81%;
   @media screen and (min-width: 1024px) {
-    content: '';
-    height: 620px;
-    left: 27.14%;
-    display: block;
-    top: 0;
-    position: absolute;
-    border: 1px solid rgba(122, 122, 122, 0.4);
-    filter: blur(0.5px);
-    z-index: 1;
-
-    @media screen and (min-width: 1024px) {
-      left: 26.4%;
-    }
+    right: 27.148%;
   }
-}
-
-.swiper {
-  max-width: 379px;
-  overflow: hidden;
-  margin-bottom: 16px;
-
-  @media screen and (min-width: 1024px) {
-    max-width: 664px;
-    margin-bottom: 24px;
-  }
-
   @media screen and (min-width: 1280px) {
-    max-width: 876px;
+    right: 26.406%;
   }
-}
-
-.swiper__wrapper {
-  width: 100%;
-  display: flex;
 }
 
 .swiper__container {
@@ -270,6 +235,25 @@
   @media screen and (min-width: 1024px) {
     right: 52px;
   }
+}
+.swiper {
+  max-width: 379px;
+  overflow: hidden;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 664px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 876px;
+  }
+}
+
+.swiper__wrapper {
+  width: 100%;
+  display: flex;
 }
 
 .swiper__slide {

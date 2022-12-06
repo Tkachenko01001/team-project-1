@@ -53,10 +53,11 @@
     color: $logo-color;
     margin-bottom: 12px;
     @media screen and (min-width: 1024px) {
-      color: $grey-font;
       font-size: 64px;
       margin-bottom: 24px;
     }
+     @media screen and (min-width: 1280px) {
+      color: $grey-font;}
   }
   &__text1 {
     font-family: 'Montserrat';
@@ -262,16 +263,14 @@
       cursor: pointer;
       width: 32px;
       height: 32px;
-      color: black;
-      fill: $black-color;
-      transition: color 250ms $animation;
     }
-    &-button-prev:hover,
-    &-button-prev:focus,
-    &-button-next:hover,
-    &-button-next:focus {
+    &-button-icon {
+      fill: $black-color;
+      transition: fill 250ms $animation;
+    }
+    &-button-icon:hover,
+    &-button-icon:focus {
       fill: $accent-color;
-      color: $accent-color;
     }
   }
 }
