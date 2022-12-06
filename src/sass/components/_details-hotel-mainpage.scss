@@ -67,11 +67,11 @@
 }
 
 .details-hotel__info {
-  max-width: 259px;
-  margin-right: 0;
-  margin-left: auto;
-  margin-bottom: 398px;
+  width: 243px;
   text-align: left;
+  margin-bottom: 398px;
+
+  margin-right: 0;
 
   @media screen and (min-width: 1024px) {
     max-width: 610px;
@@ -99,6 +99,7 @@
   margin-top: 0;
   height: 43px;
   text-transform: uppercase;
+  text-align: right;
 
   @media screen and (min-width: 1024px) {
     font-size: 64px;
@@ -115,6 +116,7 @@
   color: $white-color;
 
   margin-bottom: 20px;
+  text-align: right;
 
   @media screen and (min-width: 1024px) {
     font-size: 24px;
@@ -285,7 +287,9 @@
 
 .swiper__control {
   display: flex;
-  text-align: left;
+
+  justify-content: flex-end;
+  padding-right: 42px;
 }
 
 .swiper__btn {
