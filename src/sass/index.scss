@@ -10,6 +10,7 @@
 @import './components/modal-table-reserve'; // Modal table reserve
 @import './components/modal-room-reserve'; // Modal room reserve
 @import './components/btn'; // default button
+@import './components/line';
 @import './components/main-hero';
 @import './components/modal-room-price';
 
@@ -22,7 +23,7 @@
 
 @import './components/restaurant-hero'; // Restaurant page Hero
 
-@import './components/about-our-kitchen'; 
+@import './components/about-our-kitchen';
 
 @import './components/restaurant_page-menu'; // Restaurant page menu
 
@@ -44,7 +45,6 @@ body {
   line-height: 1.25;
   max-width: 1600px;
 }
-
 
 h1,
 h2,
