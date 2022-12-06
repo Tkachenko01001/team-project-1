@@ -13,3 +13,33 @@
         refs.modalRoom.classList.toggle("visually-hidden");
     }
   })();
+
+  // MODAL ROOM PRICE
+(() => {
+  const refs = {
+    openModalPriceBtn: document.querySelector("[data-modal-price-open]"),
+    closeModalPriceBtn: document.querySelector("[data-modal-price-close]"),
+    modalPrice: document.querySelector("[data-modal-price]"),
+  };
+
+  refs.openModalPriceBtn.addEventListener("click", toggleModalPrice);
+  refs.closeModalPriceBtn.addEventListener("click", toggleModalPrice);
+
+  function toggleModalPrice() {
+      refs.modalPrice.classList.toggle("visually-hidden");
+  }
+})();
+
+  // MODAL ROOM PRICE 2
+  (() => {
+    const refs = {
+      openModalPriceBtn: document.querySelector("[data-modal-price-open__hotelpage_double]"),
+      modalPrice: document.querySelector("[data-modal-price]"),
+    };
+  
+    refs.openModalPriceBtn.addEventListener("click", toggleModalPrice);
+  
+    function toggleModalPrice() {
+        refs.modalPrice.classList.toggle("visually-hidden");
+    }
+  })();
