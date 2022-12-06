@@ -44,6 +44,12 @@
     margin-right: 72px;
   }
 
+  &__item:nth-child(3) {
+    @media screen and (max-width: 1023px) {
+      margin-right: 0;
+    }
+  }
+
   &__link {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -65,6 +71,9 @@
 
     @media screen and (max-width: 1023px) {
       margin-left: 6px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-left: 8px;
     }
   }
 
