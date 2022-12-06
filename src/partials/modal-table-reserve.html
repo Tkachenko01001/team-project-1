@@ -1,0 +1,55 @@
+<div class="backdrop visually-hidden" data-modal-table>
+    <div class="modal-table modal">
+        <h1 class="modal__heading">ЗАБРОНЮВАТИ СТОЛИК</h1>
+        <button type="button" class="modal__close-btn" data-modal-table-close>
+            <svg class="modal__close-icon">
+                <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+            </svg>
+        </button>
+        <form name="modal__table-reserve" class="modal__form">
+            <div class="modal__form-container">
+                <div class="modal__input-container">
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" id="client-name" type="text" name="client-name" pattern="^[а-яА-Я]+\s[а-яА-Я]+$"  title="Поле має містити ім'я та прізвище українською мовою."placeholder="Ваше ім'я"></input>
+                        <label class="modal__form-label" for="client-name">На кого забронювати столик?</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" id="client-phone" type="text" name="client-phone" minlength="10" maxlength="23" pattern="^[0-9+()-\s]+" title="Поле має містити тільки цифри." placeholder="+38 (___) ___-__-__"></input>
+                        <label class="modal__form-label" for="client-phone">Номер телефону</label>
+                    </div>
+                </div>
+                <div class="modal__select-container">
+                    <div class="modal__form-wrapper">
+                        <div class="modal__select-icon">
+                            <select class="modal__form-input modal__form-dropdown" id="people-amount" name="people-amount">
+                                <option value="table-amount-2" class="modal__form-option">2</option>
+                                <option value="table-amount-4" class="modal__form-option">4</option>
+                                <option value="table-amount-6" class="modal__form-option">6</option>
+                                <option value="table-amount-8" class="modal__form-option">8</option>
+                                <option value="table-amount-10" class="modal__form-option">10</option>
+                            </select>
+                            <svg class="modal__dropdown-icon">
+                                <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                            </svg>
+                        </div>
+                        <label class="modal__form-label" for="people-amount">Столик на яку кількість осіб?</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <div class="modal__select-icon">
+                            <select class="modal__form-input modal__form-dropdown" id="table-date" name="table-date">
+                                <option value="table-today">Сьогодні</option>
+                                <option value="table-tomorrow">Завтра</option>
+                                <option value="table-overmorrow">Післязавтра</option>
+                            </select>
+                            <svg class="modal__dropdown-icon">
+                                <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                            </svg>
+                        </div>
+                        <label class="modal__form-label" for="table-date">На яку дату бронювати?</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="modal__submit-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
+        </form>
+    </div>
+</div>
