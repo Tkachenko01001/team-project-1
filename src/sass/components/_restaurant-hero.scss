@@ -52,7 +52,9 @@
     padding: 164px 0px 64px 0px;
   }
 }
-
+.restaurant-hero .container {
+  position: relative;
+}
 .restaurant-hero__title {
   font-family: 'Film P3';
   font-style: normal;
@@ -169,6 +171,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
+  padding-top: 13px;
 
   &:hover,
   &:focus {
@@ -198,7 +201,7 @@
   align-items: center;
   justify-content: right;
   position: absolute;
-  top: 64px;
+  top: -117px;
   right: 15px;
   padding: 8px 8px 8px 10px;
 
