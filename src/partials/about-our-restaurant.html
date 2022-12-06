@@ -11,31 +11,33 @@
                     Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
-            <picture>
-                <source
-                    srcset="./images/mobile/homepage/mobile-homepage-pic-1@1x.jpg 1x, ./images/mobile/homepage/mobile-homepage-pic-1@2x.jpg 2x"
-                    type="image/jpeg" width="244" media="(max-width: 1023px)" />
-                <source
-                    srcset="./images/desktop/homepage/desktop-homepage-pic-1@1x.jpg 1x, ./images/desktop/homepage/desktop-homepage-pic-1@2x.jpg 2x"
-                    type="image/jpeg" width="460" media="(min-width: 1280px)" />
-                <source
-                    srcset="./images/tablet/homepage/tablet-homepage-pic-1@1x.jpg 1x, ./images/tablet/homepage/tablet-homepage-pic-1@2x.jpg 2x"
-                    type="image/jpeg" width="400" media="(min-width: 1024px)" />
-                <img srcset="./images/tablet/homepage/tablet-homepage-pic-1@1x.jpg 1x, ./images/tablet/homepage/tablet-homepage-pic-1@2x.jpg 2x"
-                    src="./images/tablet/homepage/tablet-homepage-pic-1@1x.jpg" alt="restaurant interior1"
-                    class="about-our-restaurant__image1">
-            </picture>
+            <div class="about-our-restaurant__thumb1">
+                <picture>
+                    <source
+                        srcset="./images/mobile/homepage/mobile-homepage-pic-1@1x.jpg 1x, ./images/mobile/homepage/mobile-homepage-pic-1@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 1023px)" />
+                    <source
+                        srcset="./images/desktop/homepage/desktop-homepage-pic-1@1x.jpg 1x, ./images/desktop/homepage/desktop-homepage-pic-1@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)" />
+                    <source
+                        srcset="./images/tablet/homepage/tablet-homepage-pic-1@1x.jpg 1x, ./images/tablet/homepage/tablet-homepage-pic-1@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1024px)" />
+                    <img srcset="./images/tablet/homepage/tablet-homepage-pic-1@1x.jpg 1x, ./images/tablet/homepage/tablet-homepage-pic-1@2x.jpg 2x"
+                        src="./images/tablet/homepage/tablet-homepage-pic-1@1x.jpg" alt="restaurant interior1"
+                        class="about-our-restaurant__image1">
+                </picture>
+            </div>
             <div class="about-our-restaurant__block2">
-                <picture class="about-our-restaurant__picture">
+                <picture>
                     <source
                         srcset="./images/mobile/homepage/mobile-homepage-pic-2@1x.jpg 1x, ./images/mobile/homepage/mobile-homepage-pic-2@2x.jpg 2x"
-                        type="image/jpeg" width="244" media="(max-width: 1023px)" />
+                        type="image/jpeg" width="200" media="(max-width: 1023px)" />
                     <source
                         srcset="./images/desktop/homepage/desktop-homepage-pic-2@1x.jpg 1x, ./images/desktop/homepage/desktop-homepage-pic-2@2x.jpg 2x"
                         type="image/jpeg" width="460" media="(min-width: 1280px)" />
                     <source
                         srcset="./images/tablet/homepage/tablet-homepage-pic-2@1x.jpg 1x, ./images/tablet/homepage/tablet-homepage-pic-2@2x.jpg 2x"
-                        type="image/jpeg" width="400" media="(min-width: 1024px)" />
+                        type="image/jpeg" width="350" media="(min-width: 1024px)" />
                     <img srcset="./images/tablet/homepage/tablet-homepage-pic-2@1x.jpg 1x, ./images/tablet/homepage/tablet-homepage-pic-2@2x.jpg 2x"
                         src="./images/mobile/homepage/mobile-homepage-pic-2@1x.jpg" alt="restaurant interior2"
                         class="about-our-restaurant__image2">
@@ -116,12 +118,12 @@
                 </div>
                 <div class="swiper-buttons-wrap">
                     <div class="swiper-button-prev">
-                        <svg width="32" height="32" aria-label="Кнопка попереднє фото">
+                        <svg width="32" height="32" aria-label="Кнопка попереднє фото" class="swiper-button-icon">
                             <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
                         </svg>
                     </div>
                     <div class="swiper-button-next">
-                        <svg width="32" height="32" aria-label="Кнопка наступне фото">
+                        <svg width="32" height="32" aria-label="Кнопка наступне фото" class="swiper-button-icon">
                             <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
                         </svg>
                     </div>
@@ -134,8 +136,10 @@
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
                     breakpoints: {
-                        300: {
+                        414: {
                             slidesPerView: 1.315,
                             spaceBetween: 25
                         },

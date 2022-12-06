@@ -1,0 +1,23 @@
+@import '../components/navigation'; // navigation
+@import '../components/logo'; // logo
+@import '../components/social-icons'; // social-icons default
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  &__social {
+    margin-left: 60px;
+
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
+}
+
+.container__header {
+  display: flex;
+}
