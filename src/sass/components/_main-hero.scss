@@ -1,8 +1,8 @@
 .main-hero {
   width: 100%;
-  position: relative;
+
   align-items: center;
-  padding: 181px 15px 20px;
+  padding: 181px 0 20px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -13,13 +13,6 @@
   background-size: cover;
   background-position: center;
 
-  // @media screen and (min-width: 1024px) {
-  //   max-width: 1024px;
-  // }
-
-  // @media screen and (min-width: 1280px) {
-  //   max-width: 1280px;
-  // }
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
     screen and (min-resolution: 192dpi) and (max-width: 1023px),
     screen and (min-resolution: 2dppx) and (max-width: 1023px) {
@@ -52,13 +45,9 @@
     background-image: linear-gradient($gradient-color, $gradient-color),
       url(../images/desktop/homepage/desktop-homepage-hero@2x.jpg);
   }
-
-  // &__wrapper {
-  //   @media screen and (max-width: 1024px) {
-
-  // }
-  // }
-
+  & .container {
+    position: relative;
+  }
   &__content {
     margin-bottom: 60px;
     @media screen and (min-width: 1024px) {
@@ -167,7 +156,7 @@
   align-items: center;
   justify-content: right;
   position: absolute;
-  top: 64px;
+  top: -117px;
   right: 15px;
   padding: 8px 8px 8px 10px;
 
@@ -212,14 +201,15 @@
   margin: 0 auto;
   width: auto;
   max-height: 48px;
+  padding-top: 13px;
 
   @media screen and (min-width: 1024px) {
     margin-bottom: 0;
   }
 }
 
-.btn:hover,
-.btn:focus {
+.btn__hero:hover,
+.btn__hero:focus {
   color: $accent-transparent-color;
   background-color: $white-color;
 }
@@ -234,7 +224,6 @@
   // bottom: 20px;
 
   @media screen and (min-width: 1024px) {
-    position: static;
     margin-top: 25px;
   }
 
