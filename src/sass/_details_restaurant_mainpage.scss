@@ -217,75 +217,74 @@
   @media screen and (min-width: 1280px) {
     right: 26.406%;
   }
+}
 
-  .swiper {
-    max-width: 379px;
-    overflow: hidden;
-    margin-bottom: 16px;
+.swiper__container {
+  position: absolute;
+  top: 228px;
+  right: 0;
+  left: auto;
+  z-index: 2;
+  left: auto;
 
-    @media screen and (min-width: 1024px) {
-      max-width: 664px;
-      margin-bottom: 24px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      max-width: 876px;
-    }
+  @media screen and (min-width: 1024px) {
+    top: 254px;
+    right: 50px;
   }
 
-  .swiper__wrapper {
-    width: 100%;
-    display: flex;
+  @media screen and (min-width: 1024px) {
+    right: 52px;
+  }
+}
+.swiper {
+  max-width: 379px;
+  overflow: hidden;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 664px;
+    margin-bottom: 24px;
   }
 
-  .swiper__container {
-    position: absolute;
-    top: 228px;
-    right: 0;
-    left: auto;
-    z-index: 2;
-    left: auto;
+  @media screen and (min-width: 1280px) {
+    max-width: 876px;
+  }
+}
 
-    @media screen and (min-width: 1024px) {
-      top: 254px;
-      right: 50px;
-    }
+.swiper__wrapper {
+  width: 100%;
+  display: flex;
+}
 
-    @media screen and (min-width: 1024px) {
-      right: 52px;
-    }
+.swiper__slide {
+  margin-right: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 34px;
   }
 
-  .swiper__slide {
-    margin-right: 20px;
-
-    @media screen and (min-width: 1024px) {
-      margin-right: 34px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-right: 86px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-right: 86px;
   }
+}
 
-  .swiper__control {
-    display: flex;
-    text-align: left;
+.swiper__control {
+  display: flex;
+  text-align: left;
+}
+
+.swiper__btn {
+  background: none;
+  border: none;
+  fill: $white-color;
+  transition: fill 250ms $animation;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
   }
+}
 
-  .swiper__btn {
-    background: none;
-    border: none;
-    fill: $white-color;
-    transition: fill 250ms $animation;
-
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
-  }
-
-  .swiper__btn_next {
-    margin-right: 32px;
-  }
+.swiper__btn_next {
+  margin-right: 32px;
 }
