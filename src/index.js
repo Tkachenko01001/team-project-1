@@ -22,7 +22,6 @@
   };
 
   refs.openModalTableBtn.addEventListener("click", toggleModalTable);
-  refs.closeModalTableBtn.addEventListener("click", toggleModalTable);
 
   function toggleModalTable() {
       refs.modalTable.classList.toggle("visually-hidden");
