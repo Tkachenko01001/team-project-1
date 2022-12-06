@@ -1,0 +1,254 @@
+.backdrop {
+    width: 100%;
+    height: 100vh;
+    background-color: $gradient-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.modal-room {
+    width: 100%;
+    height: auto;
+    background-color: $fon-lemon;
+    padding: 60px 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 2px;
+
+    @media (min-width: 414px) {
+        width: 414px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 712px;
+        padding: 60px;
+    }
+
+    &__form {
+        width: 100%;
+
+        &-container {
+            width: 100%;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-wrapper {
+            margin-bottom: 20px;
+
+            @media (min-width: 1024px) {
+                width: 288px;
+                max-height: 92px;
+                margin-bottom: 28px;
+            }
+        }
+
+        &-last {
+            margin: 0;
+        }
+
+        &-input {
+            width: 100%;
+            height: 54px;
+            background-color: transparent;
+            border: 1px solid $brown-color;
+            border-radius: 2px;
+            padding: 16px 12px;
+            margin-bottom: 8px;
+            outline: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Times New Roman';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.15;
+            letter-spacing: 0.05em;
+            color: $arrow-grey;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+            @media (min-width: 1024px) {
+                height: 64px;
+                padding: 18px 12px;
+                font-size: 24px;
+                line-height: 1.17;
+            }
+        }
+    
+        &-label {
+            display: block;
+            margin-left: 13px;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.21;
+            letter-spacing: 0.02em;
+            color: $brown-color;
+
+            @media (min-width: 1024px) {
+                font-size: 16px;
+                line-height: 1.25;
+            }
+        }
+    
+        &-dropdown {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            position: relative;
+            cursor: pointer;
+
+            @media (min-width: 1024px) {
+                flex-basis: calc((100% - 16px) / 2);
+            }
+        }
+    }
+
+    &__select-icon {
+        position: relative;
+    }
+
+    &__dropdown-icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        fill: $brown-color;
+        pointer-events: none;
+        transition: transform 250ms $animation;
+
+        @media (min-width: 1024px) {
+            top: 20px;
+            right: 20px;
+        }
+    }
+
+    &__form-dropdown:focus-within + &__dropdown-icon{
+        transform: rotate(180deg);
+    }
+
+    &__close-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: fill 250ms $animation;
+
+        &:hover,
+        &:focus,
+        &:active.close-cross-icon {
+            fill: var(--accent-color);
+        }
+    }
+
+    &__close-icon {
+        width: 100%;
+        height: 100%;
+        fill: $black-color;
+    }
+
+    &__heading {
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+        color: $black-color;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+
+        @media (min-width: 1024px) {
+            font-size: 40px;
+            line-height: 1.15;
+        }
+    }
+
+    &__input-container,
+    &__select-container {
+        width: 100%;
+    }
+
+    &__input-container {
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+        }
+    }
+
+    &__select-container {
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__submit-btn {
+        width: 100%;
+        height: 64px;
+        background-color: $black-color;
+        border: 1px solid $accent-color;
+        border-radius: 2px;
+        cursor: pointer;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: $white-color;
+        text-transform: uppercase;
+        transition: background-color 250ms $animation,
+        color 250ms $animation;
+
+        @media (min-width: 1024px) {
+            font-size: 24px;
+            line-height: 1.21;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $accent-color;
+            color: $black-color;
+        }
+    }
+
+    &__desktop-row-2 {
+        @media (min-width: 1024px) {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__desktop-row-3 {
+        @media (min-width: 1024px) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__desktop-row-3 &__form-wrapper {
+        @media (min-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+}
