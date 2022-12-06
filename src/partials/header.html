@@ -1,82 +1,116 @@
-<header class="page-header">
-  <div class="container-header">
-    <!-- Logo -->
-    <a href="./index.html" lang="en" class="logo">mimiho</a>
+<!-- main-header -->
+<header class="header">
+  <div class="container container__header">
+    <a
+      class="link logo logo--padding logo--inverse"
+      href="./index.html"
+      lang="en"
+      >Mimiho</a
+    >
 
-    <div class="nav">
-      <ul class="nav__list-restaurant">
-        <li class="nav__item-restaurant">
-          <a href="./restaurantpage.html" class="nav__link-restaurant"
-            >Ресторан</a
-          >
-        </li>
-        <li class="nav__list-phone1">
-          <a href="./restaurantpage.html" class="nav__link-restaurant-phone">
-            095 555 95 33</a
-          >
-          <svg class="icon-phone-restaurant">
+    <!-- navigation -->
+
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="link nav__link" href="./restaurantpage.html">
+          <span class="nav__content">Ресторан</span>
+          <svg class="nav__svg nav__svg--hidden" width="24" height="24">
             <use
-              href="./images/symbol-defs.svg#icon-phone-1"
-              class="icon-phone-restaurant"
+              class="nav__icon"
+              href="./images/symbol-defs.svg#icon-phone"
             ></use>
           </svg>
-        </li>
-      </ul>
+        </a>
+      </li>
 
-      <ul class="nav__list-hotel">
-        <li class="nav__item-hotel">
-          <a href="./hotelpage.html" class="nav__link-hotel">Готель</a>
-        </li>
-        <li class="nav__list-phone2">
-          <a href="./hotelpage.html" class="nav__link-hotel-phone">
-            066 849 10 89</a
-          >
-          <svg class="icon-phone-hotel1">
-            <use href="./images/symbol-defs.svg#icon-phone-1"></use>
-          </svg>
-          <a href="./hotelpage.html" class="nav__link-hotel-phone">
-            067 275 85 40</a
-          >
-          <svg class="icon-phone-hotel2">
-            <use href="./images/symbol-defs.svg#icon-phone-1"></use>
-          </svg>
-        </li>
-      </ul>
-    </div>
+      <li class="nav__item">
+        <svg class="nav__svg" width="24" height="24">
+          <use
+            class="nav__icon"
+            href="./images/symbol-defs.svg#icon-phone"
+          ></use>
+        </svg>
+        <a class="link nav__link nav__link--inherit" href="tel:+380955559533">
+          095 555 95 33
+        </a>
+      </li>
 
-    <div>
-      <ul class="header__social-net">
-        <li>
-          <a
-            class="social-net__link"
-            href="https://www.instagram.com/"
-            target="_blank"
-            ><svg class="icon-instagram">
-              <use href="./images/symbol-defs.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            class="social-net__link"
-            href="https://www.facebook.com/"
-            target="_blank"
-            ><svg class="icon-facebook">
-              <use href="./images/symbol-defs.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            class="social-net__link"
-            href="https://web.telegram.org/"
-            target="_blank"
-            ><svg class="icon-telegram-plane">
-              <use href="./images/symbol-defs.svg#icon-telegram-plane"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+      <li class="nav__item">
+        <a class="link nav__link" href="./hotelpage.html"
+          ><span class="nav__content">Готель</span>
+          <svg class="nav__svg nav__svg--hidden" width="24" height="24">
+            <use
+              class="nav__icon"
+              href="./images/symbol-defs.svg#icon-phone"
+            ></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="nav__item">
+        <svg class="nav__svg" width="24" height="24">
+          <use
+            class="nav__icon"
+            href="./images/symbol-defs.svg#icon-phone"
+          ></use>
+        </svg>
+        <a class="link nav__link nav__link--inherit" href="tel:+380668491089">
+          066 849 10 89
+        </a>
+        <a class="link nav__link nav__link--inherit" href="tel:+380672758540"
+          >067 275 85 40</a
+        >
+      </li>
+    </ul>
+
+    <!-- social-icons -->
+
+    <ul class="social header__social">
+      <li class="social__item">
+        <a
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          href="https://www.instagram.com/"
+          class="link social__link"
+        >
+          <svg class="icon" width="24" height="24">
+            <use
+              class="nav__icon"
+              href="./images/symbol-defs.svg#icon-instagram"
+            ></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          href="https://uk-ua.facebook.com"
+          class="link social__link"
+        >
+          <svg class="icon" width="24" height="24">
+            <use
+              class="nav__icon"
+              href="./images/symbol-defs.svg#icon-facebook"
+            ></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          href="https://web.telegram.org/k/"
+          class="link social__link"
+        >
+          <svg class="icon" width="24" height="24">
+            <use
+              class="nav__icon"
+              href="./images/symbol-defs.svg#icon-telegram-plane"
+            ></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </header>
