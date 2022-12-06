@@ -14,7 +14,7 @@
 
 @import './layout/about-our-restaurant';
 
- // Container
+// Container
 @import './layout/room-details';
 @import './components/hero-room-page';
 
@@ -57,8 +57,7 @@ img {
   display: block;
   height: auto;
 
-  @media screen and (max-width: 414px)
- {
+  @media screen and (max-width: 414px) {
     width: auto;
-}
+  }
 }
