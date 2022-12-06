@@ -7,13 +7,20 @@
 
 @import './components/visually-hidden'; // Hidden blocks
 @import './components/container'; // Container
+@import './components/modal-table-reserve'; // Modal table reserve
 @import './components/btn'; // default button
 @import './components/main-hero';
 @import './components/modal-room-price';
 
 @import './layout/about-our-restaurant';
-@import './footer'; // Container
+
+ // Container
+@import './layout/room-details';
+@import './components/hero-room-page';
+
 @import './components/restaurant-hero'; // Restaurant page Hero
+@import './components/contacts';
+@import './components/footer';
 @import './details_restaurant_mainpage';
 // @import './example';
 @import './layout/hotel-hero'; // hotel Hero
@@ -43,4 +50,9 @@ ul {
 img {
   display: block;
   height: auto;
+
+  @media screen and (max-width: 414px)
+ {
+    width: auto;
+}
 }
