@@ -1,0 +1,66 @@
+.background-line {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+}
+.background-line--line1 {
+  left: 33.81%;
+  @media screen and (min-width: 1024px) {
+    left: 27.148%;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 26.406%;
+  }
+}
+.background-line--line2 {
+  opacity: 0;
+
+  @media screen and (min-width: 1024px) {
+    opacity: 1;
+    left: 50%;
+  }
+}
+.background-line--line3 {
+  right: 33.81%;
+  @media screen and (min-width: 1024px) {
+    right: 27.148%;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 26.406%;
+  }
+}
+
+.footer__line {
+  opacity: 0;
+}
+
+.hotel__line {
+  opacity: 0;
+  @media screen and (min-width: 1024px) {
+    opacity: 1;
+  }
+}
+
+.line-hidden {
+  opacity: 0;
+  @media screen and (min-width: 1024px) {
+    opacity: 1;
+  }
+}
+.menu__line {
+  max-height: 616px;
+  opacity: 0;
+  @media screen and (min-width: 1024px) {
+    opacity: 1;
+  }
+}
+
+.menu__line--hidden {
+  opacity: 0;
+  @media screen and (min-width: 1280px) {
+    opacity: 1;
+  }
+}

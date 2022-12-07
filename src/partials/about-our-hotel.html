@@ -1,0 +1,181 @@
+<section class="about-our-hotel">
+  <div class="container">
+    <div class="about-our-hotel__wrap">
+      <h2 class="visually-hidden">About our restaurant</h2>
+      <div class="about-our-hotel__about-content">
+        <p class="about-our-hotel__subtitle">Amet minim mollit non</p>
+        <h3 class="about-our-hotel__title">mimiho</h3>
+        <p class="about-our-hotel__text1">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <div class="about-our-hotel__thumb1">
+        <picture>
+          <source
+            srcset="
+              ./images/mobile/hotel/mobile-hotel-pic@1x.jpg 1x,
+              ./images/mobile/hotel/mobile-hotel-pic@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="
+              ./images/desktop/hotel/desktop-hotel-pic-1@1x.jpg 1x,
+              ./images/desktop/hotel/desktop-hotel-pic-1@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/hotel/tablet-hotel-pic-1@1x.jpg 1x,
+              ./images/tablet/hotel/tablet-hotel-pic-1@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 1024px)"
+          />
+          <img
+            srcset="
+              ./images/tablet/hotel/tablet-hotel-pic-1@1x.jpg 1x,
+              ./images/tablet/hotel/tablet-hotel-pic-1@2x.jpg 2x
+            "
+            src="./images/desktop/homepage/desktop-homepage-pic-4@2x.jpg"
+            alt="restaurant interior1"
+            class="about-our-hotel__image1"
+          />
+        </picture>
+      </div>
+      <div class="about-our-hotel__block2">
+        <p class="about-our-hotel__text2">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <picture>
+          <source
+            srcset="
+              ./images/mobile/homepage/mobile-homepage-pic-4@1x.jpg 1x,
+              ./images/mobile/homepage/mobile-homepage-pic-4@2x.jpg 2x
+            "
+            type="image/jpeg"
+            width="200"
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="
+              ./images/desktop/homepage/desktop-homepage-pic-4@1x.jpg 1x,
+              ./images/desktop/homepage/desktop-homepage-pic-4@2x.jpg 2x
+            "
+            type="image/jpeg"
+            width="460"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/homepage/tablet-homepage-pic-4@1x.jpg 1x,
+              ./images/tablet/homepage/tablet-homepage-pic-4@2x.jpg 2x
+            "
+            type="image/jpeg"
+            width="350"
+            media="(min-width: 1024px)"
+          />
+          <img
+            srcset="
+              ./images/tablet/homepage/tablet-homepage-pic-4@1x.jpg 1x,
+              ./images/tablet/homepage/tablet-homepage-pic-4@2x.jpg 2x
+            "
+            src="./images/desktop/homepage/desktop-homepage-pic-4@1x.jpg"
+            alt="restaurant interior2"
+            class="about-our-homepage__image2"
+          />
+        </picture>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="
+              ./images/desktop/homepage/desktop-homepage-carusel-3-pic-2@1x.jpg 1x"
+               media="(max-width: 1023px)">
+              <source srcset="
+              ./images/tablet/homepage/tablet-homepage-carusel-3-pic-2@1x.jpg 1x"
+               media="(min-width: 1024px) and (max-width: 1279px)">
+               <img src="./images/desktop/homepage/desktop-homepage-carusel-3-pic-2@1x.jpg" >
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="
+              ./images/desktop/homepage/desktop-homepage-carusel-3-pic-1@1x.jpg 1x"
+               media="(max-width: 1023px)">
+              <source srcset="
+              ./images/tablet/homepage/tablet-homepage-carusel-3-pic-1@1x.jpg 1x"
+               media="(min-width: 1024px) and (max-width: 1279px)">
+               <img src="./images/desktop/homepage/desktop-homepage-carusel-3-pic-1@1x.jpg" >
+              <source>
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-wrap">
+          <div class="swiper-button-prev">
+            <svg
+              width="32"
+              height="32"
+              aria-label="Кнопка попереднє фото"
+              class="swiper-button-icon"
+            >
+              <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg
+              width="32"
+              height="32"
+              aria-label="Кнопка наступне фото"
+              class="swiper-button-icon"
+            >
+              <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="./js/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.mySwiper', {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          breakpoints: {
+            414: {
+              slidesPerView: 1.315,
+              spaceBetween: 25,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          autoplay: {
+            delay: 5000,
+          },
+          autoHeight: true,
+        });
+      </script>
+    </div>
+   <span class="background-line background-line--line1"></span>
+    <span class="background-line background-line--line2"></span>
+    <span class="background-line background-line--line3"></span>
+  </div>
+</section>

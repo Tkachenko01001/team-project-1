@@ -31,7 +31,6 @@
         />
       </picture>
     </div>
-  </div>
 
   <div class="room-pictures">
     <div class="room-pictures-slider">
@@ -85,43 +84,25 @@
       </ul>
       <div class="room-pictures-swiper__control">
         <button
-          class="room-pictures-swiper__btn room-pictures-swiper__btn_next"
+          class="hotel-button"
+          type="button"
+          onclick="location.href='./roompage.html'"
+          data-modal-open
         >
-          <svg width="32" height="32">
-            <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
-          </svg>
+          Детальніше
         </button>
         <button
-          class="room-pictures-swiper__btn room-pictures-swiper__btn_prev"
+          class="hotel-button"
+          type="button"
+          data-modal-price-open__roompage
         >
-          <svg width="32" height="32">
-            <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-          </svg>
+          Переглянути ціни
         </button>
       </div>
     </div>
 
-    <div class="buttons-container">
-      <button
-        class="hotel-button"
-        type="button"
-        onclick="location.href='./roompage.html'"
-        data-modal-open
-      >
-        Детальніше
-      </button>
-      <button class="hotel-button" type="button" data-modal-price-open__roompage>
-        Переглянути ціни
-      </button>
-    </div>
+    <span class="background-line background-line--line1 hotel__line"></span>
+    <span class="background-line background-line--line2 hotel__line"></span>
+    <span class="background-line background-line--line3 hotel__line"></span>
   </div>
-  <span
-    class="doubleroom-background-line doubleroom-background-line--line1"
-  ></span>
-  <span
-    class="doubleroom-background-line doubleroom-background-line--line2"
-  ></span>
-  <span
-    class="doubleroom-background-line doubleroom-background-line--line3"
-  ></span>
 </section>

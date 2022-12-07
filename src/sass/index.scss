@@ -10,6 +10,7 @@
 @import './components/modal-table-reserve'; // Modal table reserve
 @import './components/modal-room-reserve'; // Modal room reserve
 @import './components/btn'; // default button
+@import './components/line';
 @import './components/main-hero';
 @import './components/modal-room-price';
 
@@ -17,14 +18,17 @@
 
 // Container
 @import './layout/room-details';
+@import './components/about-our-hotel';
 @import './components/hero-room-page';
 @import './components/section-double-room-luxe';
 
 @import './components/restaurant-hero'; // Restaurant page Hero
 
-@import './components/about-our-kitchen'; 
+@import './components/about-our-kitchen';
 
 @import './components/restaurant_page-menu'; // Restaurant page menu
+
+@import './components/details-hotel-mainpage';
 
 @import './components/contacts';
 @import './components/footer';
@@ -44,7 +48,6 @@ body {
   line-height: 1.25;
   max-width: 1600px;
 }
-
 
 h1,
 h2,

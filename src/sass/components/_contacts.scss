@@ -1,24 +1,12 @@
 .section {
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .contacts {
   position: relative;
   background-color: $fon-lemon;
   width: 100%;
-  
-  padding: 36px 0 32px;
-  
-
-  @media screen and (min-width: 1024px) {
-    padding: 69px 0 40px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding: 64px 0 74px;
-  }
 }
 
 .contacts__container {
@@ -27,17 +15,24 @@
   display: block;
   width: 100%;
   max-width: 414px;
+  padding-top: 36px;
+  padding-bottom: 32px;
 
   @media screen and (min-width: 1024px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1024px;
+    padding-top: 69px;
+    padding-bottom: 40px;
   }
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;}
-}
 
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-top: 64px;
+    padding-bottom: 74px;
+  }
+}
 
 .contacts__subtitle {
   font-family: 'Film P3', sans-serif;
@@ -49,7 +44,7 @@
   color: $logo-color;
   margin-bottom: 12px;
 
-  @media screen and (min-width:1024px) {
+  @media screen and (min-width: 1024px) {
     font-weight: 700;
     font-size: 64px;
   }
@@ -64,7 +59,7 @@
   color: $primary-dark-text;
   margin-bottom: 16px;
 
-  @media screen and (min-width:1024px){
+  @media screen and (min-width: 1024px) {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -82,16 +77,16 @@
   @media screen and (max-width: 414px) {
     display: block;
     justify-content: start;
-    }
+  }
 
   @media screen and (min-width: 1024px) {
     display: block;
     justify-content: start;
   }
-
 }
 
 .contacts__item {
+  z-index: 3;
   display: flex;
 
   @media screen and (max-width: 414px) {
@@ -99,7 +94,7 @@
   }
 }
 
-.contacts__item--left{
+.contacts__item--left {
   margin-left: 0px;
   display: block;
 }
@@ -117,7 +112,6 @@
   @media screen and (min-width: 414px) {
     font-size: 20px;
   }
-
 }
 .contacts__item:nth-child(2n) {
   padding: 0;
@@ -136,7 +130,7 @@
   }
 }
 
-.contacts__item:nth-child(2n+1) {
+.contacts__item:nth-child(2n + 1) {
   margin-bottom: 8px;
 }
 
@@ -150,7 +144,7 @@
     margin-bottom: 8px;
   }
 
-  @media screen and (min-width: 414px){
+  @media screen and (min-width: 414px) {
     width: 144px;
     margin-right: 100px;
     margin-left: 6px;
@@ -160,7 +154,6 @@
     margin-right: 100px;
     margin-left: 0;
   }
-  
 }
 
 .contacts__item:nth-child(4) {
@@ -173,16 +166,14 @@
   }
 
   @media screen and (min-width: 414px) {
-      width: 260px;
-      margin-left: 38px;
-    }
+    width: 260px;
+    margin-left: 38px;
+  }
 
   @media screen and (min-width: 1024px) {
     margin-left: 0;
   }
-
 }
-
 
 .contacts__link {
   display: flex;
@@ -205,16 +196,16 @@
   display: flex;
   justify-content: end;
 
-  @media screen and (max-width: 414px){
+  @media screen and (max-width: 414px) {
     justify-content: start;
   }
 
   @media screen and (min-width: 1024px) {
     justify-content: start;
   }
-
 }
 .contacts__link-map {
+  z-index: 3;
   display: flex;
   align-items: center;
   padding: 8px 33px 7px 10px;
@@ -236,7 +227,7 @@
 
   @media screen and (max-width: 414px) {
     width: 200px;
-  } 
+  }
 
   @media screen and (min-width: 414px) {
     font-size: 16px;
@@ -273,10 +264,13 @@
     display: block;
   }
 }
+.contacts__container-map {
+  z-index: 3;
+}
 
 .contacts__map {
   width: 100%;
-  
+
   @media screen and (min-width: 414px) {
     width: 384px;
     height: 220px;
@@ -290,46 +284,5 @@
   @media screen and (min-width: 1280px) {
     width: 634px;
     height: 412px;
-  }
-
-}
-
-.contact-background-line {
-  z-index: 0;
-  filter: blur(0.5px);
-  border: 1px solid rgba(186, 186, 186, 0.4);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-.contact-background-line--line1 {
-  left: 33.81%;
-
-  @media screen and (min-width: 1024px) {
-    left: 27.148%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    left: 26.406%;
-  }
-}
-.contact-background-line--line2 {
-  @media screen and (max-width: 1024px) {
-    opacity: 0;
-  }
-
-  @media screen and (min-width: 1024px) {
-    left: 50%;
-  }
-}
-.contact-background-line--line3 {
-  right: 33.81%;
-
-  @media screen and (min-width: 1024px) {
-    right: 27.148%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    right: 26.406%;
   }
 }
