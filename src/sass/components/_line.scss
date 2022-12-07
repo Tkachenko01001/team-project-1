@@ -36,10 +36,31 @@
 .footer__line {
   opacity: 0;
 }
-.line-hidden,
+
 .hotel__line {
   opacity: 0;
   @media screen and (min-width: 1024px) {
+    opacity: 1;
+  }
+}
+
+.line-hidden {
+  opacity: 0;
+  @media screen and (min-width: 1024px) {
+    opacity: 1;
+  }
+}
+.menu__line {
+  max-height: 616px;
+  opacity: 0;
+  @media screen and (min-width: 1024px) {
+    opacity: 1;
+  }
+}
+
+.menu__line--hidden {
+  opacity: 0;
+  @media screen and (min-width: 1280px) {
     opacity: 1;
   }
 }

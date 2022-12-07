@@ -4,12 +4,13 @@ td {
 
 .menu {
   width: 100%;
-  padding-top: 32px;
+
   margin: 0 auto;
   background: #fffdee;
 
   @media screen and (min-width: 1024px) {
-    padding-top: 58;
+    background-color: #f0ecd6;
+
     position: relative;
   }
 
@@ -19,10 +20,12 @@ td {
     max-width: 320px;
     margin: 0 auto;
     padding: 0 10px;
+    padding-top: 32px;
 
     @media screen and (min-width: 414px) {
       max-width: 414px;
       padding: 0 15px;
+      padding-top: 58px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -66,8 +69,8 @@ td {
   &__box-flex {
     @media screen and (min-width: 1024px) {
       display: flex;
-      justify-content: space-between;
-      gap: 89px;
+      // justify-content: space-between;
+      gap: 88px;
       width: 937px;
       margin: 0 auto;
     }
@@ -115,11 +118,11 @@ td {
     }
 
     @media screen and (min-width: 1024px) {
-      width: 420px;
+      min-width: 420px;
     }
 
     @media screen and (min-width: 1280px) {
-      width: 485px;
+      min-width: 485px;
       gap: 12px;
     }
   }
