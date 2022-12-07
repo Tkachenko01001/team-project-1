@@ -43,3 +43,17 @@
         refs.modalRoom.classList.toggle("visually-hidden");
     }
   })();
+
+    // MODAL ROOM RESERVE 2
+    (() => {
+      const refs = {
+        openModalRoomBtn: document.querySelector("[data-modal-room-open__mainpage-hotel]"),
+        modalRoom: document.querySelector("[data-modal-room]"),
+      };
+    
+      refs.openModalRoomBtn.addEventListener("click", toggleModalRoom);
+    
+      function toggleModalRoom() {
+          refs.modalRoom.classList.toggle("visually-hidden");
+      }
+    })();
