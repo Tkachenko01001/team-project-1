@@ -137,4 +137,34 @@
 
   </div>
   </div>
+  <!-- Swiper JS -->
+  <script src="./js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      breakpoints: {
+        414: {
+          slidesPerView: 1.315,
+          spaceBetween: 25
+        },
+        // when window width is >= 1024px
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        },
+
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 5000,
+      },
+      autoHeight: true,
+    });
+  </script>
 </section>
