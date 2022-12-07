@@ -18,8 +18,9 @@
         <div class="section-double-room-luxe__flex--picture">
             <picture>
                 <source srcset="/src/images/mobile/hotel/mobile-hotel-pic@1x.jpg 1x, 
-                            /src/images/mobile/hotel/mobile-hotel-pic@2x.jpg 2x" media="(max-width: 413px)"
-                    type="image/jpeg">
+                            /src/images/mobile/hotel/mobile-hotel-pic@2x.jpg 2x" 
+                        media="(max-width: 413px)"
+                        type="image/jpeg">
                 <source srcset="/src/images/tablet/hotel/tablet-hotel-pic-1@1x.jpg 1x, 
                             /src/images/tablet/hotel/tablet-hotel-pic-1@2x.jpg 2x"
                     media="(min-width: 1024px) and (max-width: 1280px)" type="image/jpeg">
@@ -36,6 +37,10 @@
                 <div class="section-double-room-luxe__swiper-wrapper swiper-wrapper">
                     <div class="section-double-room-luxe__swiper-slide swiper-slide">
                         <picture>
+                            <source srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg 1x, 
+                                            ./images/mobile/hotel/mobile-hotel-carusel-pic-1@2x.jpg 2x" 
+                                media="(max-width: 413px)"
+                                type="image/jpeg">
                             <source
                                 srcset="./images/tablet/hotel/tablet-hotel-carusel-pic-2@1x.jpg 1x, ./images/tablet/hotel/tablet-hotel-carusel-pic-2@2x.jpg 2x"
                                 type="image/jpeg" media="(min-width: 1024px) and (max-width: 1280px)" />
@@ -48,6 +53,11 @@
                     </div>
                     <div class="section-double-room-luxe__swiper-slide swiper-slide">
                         <picture>
+                            <source 
+                                srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-2@1x.jpg 1x, 
+                                        ./images/mobile/hotel/mobile-hotel-carusel-pic-2@2x.jpg 2x"
+                                media="(max-width: 413px)" 
+                                type="image/jpeg">
                             <source
                                 srcset="./images/tablet/hotel/tablet-hotel-carusel-pic-1@1x.jpg 1x, ./images/tablet/hotel/tablet-hotel-carusel-pic-1@2x.jpg 2x"
                                 type="image/jpeg" media="(min-width: 1024px) and (max-width: 1280px)" />
@@ -60,6 +70,11 @@
                     </div>
                     <div class="section-double-room-luxe__swiper-slide swiper-slide">
                         <picture>
+                            <source 
+                                srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg 1x, 
+                                        ./images/mobile/hotel/mobile-hotel-carusel-pic-1@2x.jpg 2x"
+                                media="(max-width: 413px)" 
+                                type="image/jpeg">
                             <source
                                 srcset="./images/tablet/hotel/tablet-hotel-carusel-pic-2@1x.jpg 1x, ./images/tablet/hotel/tablet-hotel-carusel-pic-2@2x.jpg 2x"
                                 type="image/jpeg" media="(min-width: 1024px) and (max-width: 1280px)" />
@@ -72,6 +87,11 @@
                     </div>
                     <div class="section-double-room-luxe__swiper-slide swiper-slide">
                         <picture>
+                            <source 
+                            srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-2@1x.jpg 1x, 
+                                    ./images/mobile/hotel/mobile-hotel-carusel-pic-2@2x.jpg 2x"
+                                media="(max-width: 413px)" 
+                                type="image/jpeg">
                             <source
                                 srcset="./images/tablet/hotel/tablet-hotel-carusel-pic-1@1x.jpg 1x, ./images/tablet/hotel/tablet-hotel-carusel-pic-1@2x.jpg 2x"
                                 type="image/jpeg" media="(min-width: 1024px) and (max-width: 1280px)" />
@@ -131,7 +151,7 @@
             <button class="section-double-room-luxe__button--first" type="button" onclick="location.href='./roompage.html'">
                 Детальніше
             </button>
-            <button class="section-double-room-luxe__button--second" type="button" data-modal-price>
+            <button data-modal-price-open__hotelpage_double class="section-double-room-luxe__button--second" type="button" >
                 Переглянути ціни
             </button>
         </div>

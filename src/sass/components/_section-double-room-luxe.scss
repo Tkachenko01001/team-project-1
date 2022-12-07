@@ -99,11 +99,17 @@
         border-radius: 2px;
 
         @media (min-width: 1024px) {
+                position: absolute;
+                margin: 0;
+                right: 112px;
+                top: -32px;
+            }
+        
+        @media (min-width: 1280px) {
             position: absolute;
-            margin: 0;
-            right: 65px;
-            top: -32px;
-        }
+                right: 180px;
+                top: -33px;
+            }
     }
 
     &__buttons {
