@@ -29,24 +29,24 @@
     screen and (min-resolution: 192dpi) and (min-width: 1024px),
     screen and (min-resolution: 2dppx) and (min-width: 1024px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/tablet/homepage/tablet-homepage-pic-3@2x.jpg);
+      url(../images/tablet/homepage/tablet-homepage-pic-2@2x.jpg);
   }
 
   @media screen and (min-width: 1024px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/tablet/homepage/tablet-homepage-pic-3@1x.jpg);
+      url(../images/tablet/homepage/tablet-homepage-bg-pic-2@1x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
     screen and (min-resolution: 192dpi) and (min-width: 1280px),
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/desktop/homepage/desktop-homepage-pic-3@2x.jpg);
+      url(../images/desktop/homepage/desktop-homepage-bg-pic-2@2x.jpg);
   }
 
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/desktop/homepage/desktop-homepage-pic-3@1x.jpg);
+      url(../images/desktop/homepage/desktop-homepage-bg-pic-2@1x.jpg);
   }
 }
 
@@ -195,7 +195,6 @@
     color: $accent-transparent-color;
   }
 }
-
 
 .swiper__container-hotel-details {
   position: absolute;
