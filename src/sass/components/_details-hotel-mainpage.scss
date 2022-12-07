@@ -29,24 +29,24 @@
     screen and (min-resolution: 192dpi) and (min-width: 1024px),
     screen and (min-resolution: 2dppx) and (min-width: 1024px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/tablet/homepage/tablet-homepage-pic-3@2x.jpg);
+      url(../images/tablet/homepage/tablet-homepage-pic-2@2x.jpg);
   }
 
   @media screen and (min-width: 1024px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/tablet/homepage/tablet-homepage-pic-3@1x.jpg);
+      url(../images/tablet/homepage/tablet-homepage-bg-pic-2@1x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
     screen and (min-resolution: 192dpi) and (min-width: 1280px),
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/desktop/homepage/desktop-homepage-pic-3@2x.jpg);
+      url(../images/desktop/homepage/desktop-homepage-bg-pic-2@2x.jpg);
   }
 
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url(../images/desktop/homepage/desktop-homepage-pic-3@1x.jpg);
+      url(../images/desktop/homepage/desktop-homepage-bg-pic-2@1x.jpg);
   }
 }
 
@@ -193,49 +193,6 @@
   &:hover,
   &:focus {
     color: $accent-transparent-color;
-  }
-}
-
-.details-hotel__background-line {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  border: 1px solid rgba(186, 186, 186, 0.4);
-  filter: blur(0.5px);
-}
-
-.details-hotel__background-line--line1 {
-  left: 33.81%;
-
-  @media screen and (min-width: 1024px) {
-    left: 27.148%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    left: 26.406%;
-  }
-}
-
-.details-hotel__background-line--line2 {
-  @media screen and (max-width: 1024px) {
-    opacity: 0;
-  }
-
-  @media screen and (min-width: 1024px) {
-    left: 50%;
-  }
-}
-
-.details-hotel__background-line--line3 {
-  right: 33.81%;
-
-  @media screen and (min-width: 1024px) {
-    right: 27.148%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    right: 26.406%;
   }
 }
 

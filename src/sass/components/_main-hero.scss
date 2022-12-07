@@ -197,7 +197,7 @@
     }
   }
 }
-.btn--mobile {
+.btn__hero {
   margin: 0 auto;
   width: auto;
   max-height: 48px;
@@ -206,12 +206,12 @@
   @media screen and (min-width: 1024px) {
     margin-bottom: 0;
   }
-}
 
-.btn__hero:hover,
-.btn__hero:focus {
-  color: $accent-transparent-color;
-  background-color: $white-color;
+  &:hover,
+  &:focus {
+    color: $accent-transparent-color;
+    background-color: $white-color;
+  }
 }
 
 .social-net {
