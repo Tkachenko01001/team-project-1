@@ -33,7 +33,7 @@
   // MODAL ROOM PRICE 2
   (() => {
     const refs = {
-      openModalPriceBtn: document.querySelector("[data-modal-price-open__hotelpage_double]"),
+      openModalPriceBtn: document.querySelector("[data-modal-price-open__hotelpage_double_lux]"),
       modalPrice: document.querySelector("[data-modal-price]"),
     };
   
@@ -43,3 +43,31 @@
         refs.modalPrice.classList.toggle("visually-hidden");
     }
   })();
+
+    // MODAL ROOM PRICE 3
+    (() => {
+      const refs = {
+        openModalPriceBtn: document.querySelector("[data-modal-price-open__hotelpage_triple]"),
+        modalPrice: document.querySelector("[data-modal-price]"),
+      };
+    
+      refs.openModalPriceBtn.addEventListener("click", toggleModalPrice);
+    
+      function toggleModalPrice() {
+          refs.modalPrice.classList.toggle("visually-hidden");
+      }
+    })();
+
+    // MODAL ROOM PRICE 4
+    (() => {
+      const refs = {
+        openModalPriceBtn: document.querySelector("[data-modal-price-open__hotelpage_double]"),
+        modalPrice: document.querySelector("[data-modal-price]"),
+      };
+    
+      refs.openModalPriceBtn.addEventListener("click", toggleModalPrice);
+    
+      function toggleModalPrice() {
+          refs.modalPrice.classList.toggle("visually-hidden");
+      }
+    })();
