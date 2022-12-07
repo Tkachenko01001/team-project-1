@@ -17,8 +17,8 @@
 @import './components/footer';
 @import './details_restaurant_mainpage';
 // @import './example';
+@import './components/hero-room-page';
 @import './layout/hotel-hero'; // hotel Hero
-
 body {
   font-family: 'Montserrat', 'Times New Roman', sans-serif;
   font-size: 16px;
@@ -45,8 +45,7 @@ img {
   display: block;
   height: auto;
 
-  @media screen and (max-width: 414px)
- {
+  @media screen and (max-width: 414px) {
     width: auto;
-}
+  }
 }

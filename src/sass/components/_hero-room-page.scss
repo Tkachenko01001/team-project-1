@@ -1,34 +1,34 @@
 .hero-room-page {
   // background-image: url('/src/images/desktop/room/desktop-room-hero@1x.jpg');
-  background: linear-gradient(
-      180deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0.55) 10.17%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url('/src/images/desktop/room/desktop-room-hero@1x.jpg');
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    // background-image: url('/src/images/desktop/room/desktop-room-hero@2x.jpg');
+  &__container {
+    position: relative;
+  }
+  &__item {
+    list-style: none;
     background: linear-gradient(
         180deg,
         #000000 0%,
         rgba(0, 0, 0, 0.55) 10.17%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url('/src/images/desktop/room/desktop-room-hero@2x.jpg');
-  }
-  &__container {
+      url('/src/images/desktop/room/desktop-room-hero@1x.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-  }
-  &__item {
-    list-style: none;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      // background-image: url('/src/images/desktop/room/desktop-room-hero@2x.jpg');
+      background: linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 10.17%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url('/src/images/desktop/room/desktop-room-hero@2x.jpg');
+    }
   }
   &__slider {
     height: 100vh;
@@ -205,4 +205,12 @@
       left: 85px;
     }
   }
+}
+.swiper-wrapper {
+  max-width: 100%;
+  display: flex;
+}
+.hero-room-page__list.mySwiper {
+  max-width: 100%;
+  overflow: hidden;
 }
