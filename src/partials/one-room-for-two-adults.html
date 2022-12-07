@@ -1,108 +1,162 @@
-<section class="section double-room">
-  <div class="container double-room__section">
-    <p class="section-room__subtitle">Amet minim mollit non</p>
-    <h2 class="hotel__title">MIMIHO</h2>
-    <h3 class="hotel__title-secondary">ДВОМІСНИЙ НОМЕР</h3>
-    <p class="double-room__describe">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
-    <div class="room-picture">
+<div class="section-double-room">
+  <div class="container">
+    <div class="section-double-room__block">
+      <p class="section-double-room__subdiscription">
+        Amet minim mollit non
+      </p>
+      <h3 class="section-double-room__logo">
+        Mimino
+      </h3>
+      <h2 class="section-double-room__title">
+        <span class="section-double-room__title--uppercase">Двомісний номер</span>
+      </h2>
+      <p class="section-double-room__disccription">Amet minim mollit non deserunt ullamco est sit aliqua
+        dolor do
+        amet sint. Velit officia consequat duis enim velit
+        mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    </div>
+    <div class="section-double-room__flex--picture">
       <picture>
+        <source srcset="/src/images/mobile/hotel/mobile-hotel-pic@1x.jpg 1x, 
+                            /src/images/mobile/hotel/mobile-hotel-pic@2x.jpg 2x" media="(max-width: 413px)"
+          type="image/jpeg">
+        <source srcset="/src/images/tablet/hotel/tablet-hotel-pic-1@1x.jpg 1x, 
+                            /src/images/tablet/hotel/tablet-hotel-pic-1@2x.jpg 2x"
+          media="(min-width: 1024px) and (max-width: 1280px)" type="image/jpeg">
         <source
-          srcset="
-            ./images/tablet/hotel/tablet-hotel-pic-1@1x.jpg 1x,
-            ./images/tablet/hotel/tablet-hotel-pic-1@2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            ./images/mobile/hotel/mobile-hotel-pic@1x.jpg 1x,
-            ./images/mobile/hotel/mobile-hotel-pic@2x.jpg 2x
-          "
-          media="(min-width: 414px)"
-        />
-        <img
-          class="room-picture-img"
-          src="./images/desktop/hotel/desktop-hotel-pic-1@1x.jpg"
-          alt="Номер готелю"
-        />
+          srcset="/src/images/desktop/hotel/desktop-hotel-pic-1@1x.jpg 1x, /src/images/desktop/hotel/desktop-hotel-pic-1@2x.jpg 2x"
+          media="(min-width: 1280px)" type="image/jpeg">
+        <img class="section-double-room__photo"
+          srcset="/src/images/mobile/hotel/mobile-hotel-pic@1x.jpg 1x, /src/images/mobile/hotel/mobile-hotel-pic@2x.jpg 2x"
+          src="/src/images/mobile/hotel/mobile-hotel-pic@1x.jpg" alt="Hotel room">
       </picture>
     </div>
-
-  <div class="room-pictures">
-    <div class="room-pictures-slider">
-      <ul class="room-pictures-list list">
-        <li class="room-pictures-list__item">
-          <picture>
-            <source
-              srcset="
-                ./images/tablet/hotel/tablet-hotel-carusel-pic-1@1x.jpg 1x,
-                ./images/tablet/hotel/tablet-hotel-carusel-pic-1@2x.jpg 2x
-              "
-              media="(min-width: 1024px)"
-            />
-            <source
-              srcset="
-                ./images/mobile/hotel/mobile-hotel-carusel-pic-2@1x.jpg 1x,
-                ./images/mobile/hotel/mobile-hotel-carusel-pic-2@2x.jpg 2x
-              "
-              media="(min-width: 414px)"
-            />
-            <img
-              class="double-room__img"
-              src="./images/desktop/hotel/desktop-hotel-carusel-1-pic-1@1x.jpg"
-              alt="Номер готелю"
-            />
-          </picture>
-        </li>
-        <li class="room-pictures-list__item">
-          <picture>
-            <source
-              srcset="
-                ./images/tablet/hotel/tablet-hotel-carusel-pic-2@1x.jpg 1x,
-                ./images/tablet/hotel/tablet-hotel-carusel-pic-2@2x.jpg 2x
-              "
-              media="(min-width: 1024px)"
-            />
-            <source
-              srcset="
-                ./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg 1x,
-                ./images/mobile/hotel/mobile-hotel-carusel-pic-1@2x.jpg 2x
-              "
-              media="(min-width: 414px)"
-            />
-            <img
-              class="double-room__img"
-              src="./images/desktop/hotel/desktop-hotel-carusel-1-pic-2@1x.jpg"
-              alt="Ванна кімната"
-            />
-          </picture>
-        </li>
-      </ul>
-      <div class="room-pictures-swiper__control">
-        <button
-          class="hotel-button"
-          type="button"
-          onclick="location.href='./roompage.html'"
-          data-modal-open
-        >
-          Детальніше
-        </button>
-        <button
-          class="hotel-button"
-          type="button"
-          data-modal-price-open__roompage
-        >
-          Переглянути ціни
-        </button>
+    <div class="section-double-room__flex--block">
+      <div class="section-double-room__swiper swiper mySwiper">
+        <div class="section-double-room__swiper-wrapper swiper-wrapper">
+          <div class="section-double-room__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg 1x, 
+                                            ./images/mobile/hotel/mobile-hotel-carusel-pic-1@2x.jpg 2x"
+                media="(max-width: 413px)" type="image/jpeg">
+              <source
+                srcset="./images/tablet/hotel/tablet-hotel-carusel-pic-2@1x.jpg 1x, ./images/tablet/hotel/tablet-hotel-carusel-pic-2@2x.jpg 2x"
+                type="image/jpeg" media="(min-width: 1024px) and (max-width: 1280px)" />
+              <source
+                srcset="./images/desktop/hotel/desktop-hotel-carusel-1-pic-2@1x.jpg 1x, ./images/desktop/hotel/desktop-hotel-carusel-1-pic-2@2x.jpg 2x"
+                type="image/jpeg" media="(min-width: 1280px)" />
+              <img
+                srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg 1x, ./images/mobile/hotel/mobile-hotel-carusel-pic-1@2x.jpg 2x"
+                src="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg" alt="cup of coffee">
+            </picture>
+          </div>
+          <div class="section-double-room__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-2@1x.jpg 1x, 
+                                        ./images/mobile/hotel/mobile-hotel-carusel-pic-2@2x.jpg 2x"
+                media="(max-width: 413px)" type="image/jpeg">
+              <source
+                srcset="./images/tablet/hotel/tablet-hotel-carusel-pic-1@1x.jpg 1x, ./images/tablet/hotel/tablet-hotel-carusel-pic-1@2x.jpg 2x"
+                type="image/jpeg" media="(min-width: 1024px) and (max-width: 1280px)" />
+              <source
+                srcset="./images/desktop/hotel/desktop-hotel-carusel-1-pic-1@1x.jpg 1x, ./images/desktop/hotel/desktop-hotel-carusel-1-pic-1@2x.jpg 2x"
+                type="image/jpeg" media="(min-width: 1280px)" />
+              <img
+                srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-2@1x.jpg 1x, ./images/mobile/hotel/mobile-hotel-carusel-pic-2@2x.jpg 2x"
+                src="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg" alt="cup of coffee">
+            </picture>
+          </div>
+          <div class="section-double-room__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg 1x, 
+                                        ./images/mobile/hotel/mobile-hotel-carusel-pic-1@2x.jpg 2x"
+                media="(max-width: 413px)" type="image/jpeg">
+              <source
+                srcset="./images/tablet/hotel/tablet-hotel-carusel-pic-2@1x.jpg 1x, ./images/tablet/hotel/tablet-hotel-carusel-pic-2@2x.jpg 2x"
+                type="image/jpeg" media="(min-width: 1024px) and (max-width: 1280px)" />
+              <source
+                srcset="./images/desktop/hotel/desktop-hotel-carusel-1-pic-2@1x.jpg 1x, ./images/desktop/hotel/desktop-hotel-carusel-1-pic-2@2x.jpg 2x"
+                type="image/jpeg" media="(min-width: 1280px)" />
+              <img
+                srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg 1x, ./images/mobile/hotel/mobile-hotel-carusel-pic-1@2x.jpg 2x"
+                src="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg" alt="cup of coffee">
+            </picture>
+          </div>
+          <div class="section-double-room__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-2@1x.jpg 1x, 
+                                    ./images/mobile/hotel/mobile-hotel-carusel-pic-2@2x.jpg 2x"
+                media="(max-width: 413px)" type="image/jpeg">
+              <source
+                srcset="./images/tablet/hotel/tablet-hotel-carusel-pic-1@1x.jpg 1x, ./images/tablet/hotel/tablet-hotel-carusel-pic-1@2x.jpg 2x"
+                type="image/jpeg" media="(min-width: 1024px) and (max-width: 1280px)" />
+              <source
+                srcset="./images/desktop/hotel/desktop-hotel-carusel-1-pic-1@1x.jpg 1x, ./images/desktop/hotel/desktop-hotel-carusel-1-pic-1@2x.jpg 2x"
+                type="image/jpeg" media="(min-width: 1280px)" />
+              <img
+                srcset="./images/mobile/hotel/mobile-hotel-carusel-pic-2@1x.jpg 1x, ./images/mobile/hotel/mobile-hotel-carusel-pic-2@2x.jpg 2x"
+                src="./images/mobile/hotel/mobile-hotel-carusel-pic-1@1x.jpg" alt="cup of coffee">
+            </picture>
+          </div>
+        </div>
+        <div class="section-double-room__swiper-buttons-wrap swiper-buttons-wrap">
+          <div class="section-double-room__swiper-button-prev swiper-button-prev">
+            <svg width="32" height="32" aria-label="Кнопка попереднє фото" class="swiper-button-icon">
+              <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
+          <div class="section-double-room__swiper-button-next swiper-button-next ">
+            <svg width="32" height="32" aria-label="Кнопка наступне фото" class="swiper-button-icon">
+              <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <span class="background-line background-line--line1 hotel__line"></span>
-    <span class="background-line background-line--line2 hotel__line"></span>
-    <span class="background-line background-line--line3 hotel__line"></span>
+      <!-- Swiper JS -->
+      <script src="./js/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          breakpoints: {
+            300: {
+              slidesPerView: 1.315,
+              spaceBetween: 25
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 40
+            },
+
+
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+            delay: 5000,
+          },
+          autoHeight: true,
+        });
+      </script>
+    </div>
+    <div class="section-double-room__buttons">
+      <button class="section-double-room__button--first" type="button" onclick="location.href='./roompage.html'">
+        Детальніше
+      </button>
+      <button data-modal-price-open__hotelpage_double class="section-double-room__button--second" type="button">
+        Переглянути ціни
+      </button>
+    </div>
   </div>
-</section>
+  <span class="section-double-room__line section-double-room__line--1"></span>
+  <span class="section-double-room__line section-double-room__line--2"></span>
+  <span class="section-double-room__line section-double-room__line--3"></span>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
