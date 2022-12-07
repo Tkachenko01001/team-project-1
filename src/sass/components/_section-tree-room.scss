@@ -1,0 +1,374 @@
+.section-tree-room {
+    position: relative;
+    background-color: $fon-dark-lemon;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @media (min-width:1024px) {
+        padding-top: 62px;
+        padding-bottom: 62px;
+    }
+
+    /* &__block {
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-wrap: wrap;;
+            max-width: 425px;
+            justify-content: end;
+        }
+
+    }*/
+
+    &__subdiscription {
+        text-align: end;
+        font-family: 'Times New Roman';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        color: $subtitle-color;
+        padding: 0;
+        margin: 0 0 8px 0;
+
+        @media (min-width: 1024px) {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 1.16;
+        }
+    }
+
+    &__logo {
+        text-align: end;
+        font-family: 'Film P3';
+        font-weight: 700;
+        font-style: normal;
+        font-size: 40px;
+        line-height: 1.1;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: $logo-color;
+        margin: 0 0 32px 0;
+
+        @media (min-width: 1024px) {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 1.07;
+        }
+    }
+
+    &__title {
+        text-align: end;
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+        color: #000;
+        margin: 0 0 12px 0;
+
+        @media (min-width: 1024px) {
+            font-size: 30px;
+            line-height: 1.13;
+        }
+    }
+
+    &__title--uppercase {
+        text-transform: uppercase;
+    }
+
+    &__disccription {
+        text-align: end;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: #5F5F5F;
+        margin: 0;
+
+        @media (min-width: 1024px) {
+            font-size: 16px;
+            line-height: 1.25;
+        }
+    }
+
+    &__photo {
+        z-index: 1;
+        margin: 32px 140px 32px 0;
+        padding: 0;
+        background: #DADADA;
+        box-shadow: 5px 5px 70px 17px $img-shadow;
+        border-radius: 2px;
+
+        @media (min-width: 1024px) {
+            position: absolute;
+            margin: 0;
+            left: 112px;
+            top: -32px;
+        }
+
+        @media (min-width: 1280px) {
+            position: absolute;
+            left: 180px;
+            top: -33px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        @media (min-width: 1024px) {
+            position: absolute;
+            display: block;
+            left: 47px;
+            bottom: 145px;
+        }
+
+        @media (min-width: 1280px) {
+            left: 85px;
+            bottom: 182px;
+        }
+
+    }
+
+    &__button--first {
+        z-index: 1;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: #F3C653;
+        margin: 20px 0 0 0;
+        padding: 14px 64px;
+        border: 1px solid #F3C653;
+        border-radius: 25px;
+        background-color: #000;
+        cursor: pointer;
+
+        @media (min-width: 1024px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__button--second {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: #F3C653;
+        margin: 0;
+        padding: 14px 37px;
+        border: 2px solid #FFFFFF;
+        border-radius: 25px;
+        background-color: #000;
+        cursor: pointer;
+
+    }
+
+
+    &__button--first:hover {
+        background: #FFFFFF;
+        border: 2px solid #F3C653;
+        border-radius: 25px;
+    }
+
+    &__button--second:hover {
+        background: #FFFFFF;
+        border: 2px solid #F3C653;
+        border-radius: 25px;
+    }
+
+    &__button--first:focus {
+        background: #FFFFFF;
+        border: 2px solid #F3C653;
+        border-radius: 25px;
+    }
+
+    &__button--second:focus {
+        background: #FFFFFF;
+        border: 2px solid #F3C653;
+        border-radius: 25px;
+    }
+
+    &__line {
+        display: none;
+        z-index: 0;
+
+        @media (min-width: 1024px) {
+            display: inline;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            border: 1px solid rgba(186, 186, 186, 0.4);
+            filter: blur(0.5px);
+        }
+
+    }
+
+    &__line--1 {
+        @media (min-width: 1024px) {
+            left: 26.4%;
+        }
+
+        @media screen and (min-width: 1280px) {
+            left: 26.406%;
+        }
+
+    }
+
+    &__line--2 {
+
+        @media screen and (min-width: 1024px) {
+            left: 50%;
+        }
+
+    }
+
+    &__line--3 {
+
+        @media screen and (min-width: 1024px) {
+            right: 27.148%;
+        }
+
+        @media screen and (min-width: 1280px) {
+            right: 26.406%;
+        }
+
+    }
+
+    &__flex--block {
+        @media (min-width: 1024px) {
+            position: relative;
+            display: flex;
+            margin-top: 169px;
+            flex-wrap: nowrap;
+        }
+
+        @media (min-width: 1280px) {
+            position: relative;
+            display: flex;
+            margin-top: 188px;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.section-tree-room__swiper {
+    position: relative;
+    right: 0px;
+    width: 330px;
+
+
+    @media screen and (min-width: 1024px) {
+        position: relative;
+        left: 53.61%;
+        width: 428px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 548px;
+        left: 53.61%;
+    }
+
+    height: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    /* Fix of Webkit flickering */
+    z-index: 1;
+
+    .section-tree-room__swiper-wrapper {
+        position: relative;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+        justify-content: start;
+    }
+
+    .section-tree-room__swiper-slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+    }
+
+    .section-tree-room__swiper-slide {
+        border-radius: 2px;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .section-tree-room__swiper-slide-invisible-blank {
+        visibility: hidden;
+    }
+
+    /* Auto Height */
+    .section-tree-room__swiper-autoheight,
+    .section-tree-room__swiper-autoheight .section-tree-room__swiper-slide {
+        height: auto;
+    }
+
+    .section-tree-room__swiper-autoheight .section-tree-room__swiper-wrapper {
+        align-items: flex-start;
+        transition-property: transform, height;
+    }
+
+    .section-tree-room__swiper-backface-hidden .section-tree-room__swiper-slide {
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .section-tree-room__swiper-buttons-wrap {
+        width: auto;
+        display: flex;
+        justify-content: start;
+        gap: 32px;
+        margin-left: auto;
+        margin-right: 0;
+
+        @media screen and (min-width: 1024px) {
+            padding-top: 32px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding-top: 36px;
+        }
+    }
+
+    .section-tree-room__swiper-button-prev,
+    .section-tree-room__swiper-button-next {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+
+    .section-tree-room__swiper-button-icon {
+        fill: $black-color;
+        transition: fill 250ms $animation;
+    }
+
+    .swiper-button-icon:hover,
+    .swiper-button-icon:focus {
+        fill: $accent-color;
+    }
+}
