@@ -18,14 +18,16 @@
 
 .footer__container {
   display: flex;
+  gap: 85px;
   align-items: center;
   width: 100%;
   max-width: 414px;
-  padding: 40px 30px;
+  padding: 40px 15px;
 
   @media screen and (min-width: 1024px) {
+    gap: 163px;
     max-width: 1024px;
-    padding: 80px 122px;
+    padding: 80px 75px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -45,12 +47,12 @@
   letter-spacing: 0.3em;
   color: $accent-color;
 
-  @media screen and (min-width: 380px) {
-    margin-left: 29px;
-  }
+  // @media screen and (min-width: 380px) {
+  //   margin-left: 29px;
+  // }
 
   @media screen and (min-width: 1024px) {
-    margin-left: 32px;
+    // margin-left: 32px;
     font-size: 64px;
   }
 }
