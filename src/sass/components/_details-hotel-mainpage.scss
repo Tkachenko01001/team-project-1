@@ -232,14 +232,93 @@
   @media screen and (min-width: 1280px) {
     max-width: 876px;
   }
+
+  /* Fix of Webkit flickering */
+  z-index: 1;
+
+  &-wrapper {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+  &-slide {
+    flex-shrink: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+  }
+  &-slide img {
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.05);
+  }
+  &-slide-invisible-blank {
+    visibility: hidden;
+  }
+  /* Auto Height */
+  &-autoheight,
+  &-autoheight &-slide {
+    height: auto;
+  }
+  &-autoheight &-wrapper {
+    align-items: flex-start;
+    transition-property: transform, height;
+  }
+  &-backface-hidden &-slide {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  &-buttons-wrap {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+    margin-left: 15px;
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 20px;
+      padding-right: 15px;
+    }
+    @media screen and (min-width: 1024px) {
+      padding-top: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 40px;
+    }
+  }
+  &-button-prev,
+  &-button-next {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+  &-button-icon {
+    fill: $black-color;
+    transition: fill 250ms $animation;
+  }
+  &-button-icon:hover,
+  &-button-icon:focus {
+    fill: $accent-color;
+  }
+}
+.swiper-control {
+  display: flex;
+  gap: 30px;
+
+  justify-content: flex-end;
+  padding-right: 42px;
 }
 
-.swiper__wrapper {
+.swiper-wrapper {
   width: 100%;
   display: flex;
 }
 
-.swiper__slide {
+.swiper-slide {
   margin-right: 20px;
 
   @media screen and (min-width: 1024px) {
@@ -249,13 +328,6 @@
   @media screen and (min-width: 1280px) {
     margin-right: 86px;
   }
-}
-
-.swiper__control {
-  display: flex;
-
-  justify-content: flex-end;
-  padding-right: 42px;
 }
 
 .swiper__btn {
