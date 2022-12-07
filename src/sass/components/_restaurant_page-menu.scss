@@ -25,7 +25,7 @@ td {
     @media screen and (min-width: 414px) {
       max-width: 414px;
       padding: 0 15px;
-      padding-top: 58px;
+      padding-top: 32px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -46,7 +46,8 @@ td {
     font-weight: 700;
     font-size: 27px;
     line-height: 1.16;
-    margin-bottom: 16px;
+
+    text-transform: uppercase;
 
     color: #000000;
 
@@ -62,6 +63,7 @@ td {
     color: #000000;
 
     @media screen and (min-width: 1024px) {
+      padding-top: 58px;
       margin-bottom: 20px;
     }
   }
@@ -176,7 +178,7 @@ td {
     letter-spacing: 0.02em;
 
     @media screen and (min-width: 1280px) {
-      height: 20px;
+      height: auto;
       font-size: 16px;
       line-height: 1.25;
     }
@@ -221,7 +223,7 @@ td {
   }
 
   &__button {
-    width: 236px;
+    min-width: 236px;
     display: block;
     padding: 15px 24px;
     margin: 32px auto 0;
